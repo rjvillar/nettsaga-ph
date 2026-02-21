@@ -228,7 +228,7 @@ const en: Dictionary = {
     quickLinks: "Quick links",
     getInTouch: "Get in touch",
     copyright: "\u00a9 {year} Nettsaga. All rights reserved.",
-    links: ["How it works", "Why us", "Portfolio", "FAQ", "Contact"],
+    links: ["How it works", "Why us", "Pricing", "Portfolio", "FAQ", "About", "Contact"],
   },
   contact: {
     title: "Get in touch",

@@ -237,7 +237,7 @@ const fil: Dictionary = {
     quickLinks: "Mabilisang links",
     getInTouch: "Makipag-ugnayan",
     copyright: "\u00a9 {year} Nettsaga. Lahat ng karapatan ay nakalaan.",
-    links: ["Paano gumagana", "Bakit kami", "Portfolio", "FAQ", "Makipag-ugnayan"],
+    links: ["Paano gumagana", "Bakit kami", "Presyo", "Portfolio", "FAQ", "Tungkol sa amin", "Makipag-ugnayan"],
   },
   contact: {
     title: "Makipag-ugnayan",

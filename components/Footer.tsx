@@ -4,10 +4,12 @@ import { Mail } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/context";
 
 const linkHrefs = [
-  "#how-it-works",
-  "#local-edge",
-  "#portfolio",
-  "#faq",
+  "/#how-it-works",
+  "/#local-edge",
+  "/pricing",
+  "/#portfolio",
+  "/#faq",
+  "/about",
   "/contact",
 ];
 
