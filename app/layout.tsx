@@ -3,6 +3,9 @@ import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import { LanguageProvider } from "@/lib/i18n/context";
+import { getLocaleFromCookie } from "@/lib/i18n/cookie";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -22,25 +25,33 @@ const peterTest = localFont({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Nettsaga — Get Your Business Online This Week",
-  description:
-    "Professional websites for Philippine businesses. One fixed yearly fee covers your website, hosting, and support. Get online fast with Nettsaga.",
-  metadataBase: new URL("https://nettsaga.com"),
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocaleFromCookie();
+  const dict = getDictionary(locale);
+  return {
+    title: dict.metadata.home.title,
+    description: dict.metadata.home.description,
+    metadataBase: new URL("https://nettsaga.com"),
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocaleFromCookie();
+  const dictionary = getDictionary(locale);
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${plusJakartaSans.variable} ${inter.variable} ${peterTest.variable} antialiased`}
       >
         <SmoothScroll />
-        {children}
+        <LanguageProvider initialLocale={locale} dictionary={dictionary}>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

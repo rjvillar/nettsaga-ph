@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/context";
 
 const samples = [
   {
@@ -24,6 +25,7 @@ const samples = [
 ];
 
 export default function SampleWork() {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(1);
   const [offset, setOffset] = useState(0);
   const maxOffset = samples.length - visible;
@@ -38,7 +40,6 @@ export default function SampleWork() {
     return () => mql.removeEventListener("change", update);
   }, []);
 
-  // Clamp offset when visible changes
   useEffect(() => {
     setOffset((o) => Math.min(o, samples.length - visible));
   }, [visible]);
@@ -51,31 +52,26 @@ export default function SampleWork() {
       id="portfolio"
       className="bg-grain relative overflow-hidden bg-dark py-20 sm:py-28"
     >
-      {/* Hero-style diagonal light wash */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.07)_45%,rgba(255,255,255,0.12)_55%,rgba(255,255,255,0.05)_70%,transparent_85%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_45%_55%_at_68%_42%,rgba(255,255,255,0.10),transparent)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />
 
-      {/* Monospace corner accents */}
       <span className="absolute right-6 top-8 hidden font-mono text-[10px] uppercase tracking-widest text-white/[0.07] lg:block">
         Delivered: 7_Days
       </span>
 
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Header row — title left, arrows right */}
         <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between">
           <div className="text-center sm:text-left">
             <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[40px]">
-              Real sites.{" "}
-              <span className="text-white/50">Real businesses.</span>
+              {t.sampleWork.title}
+              <span className="text-white/50">{t.sampleWork.titleMuted}</span>
             </h2>
             <p className="mt-4 max-w-2xl text-base text-white/50 sm:text-[22px]">
-              Different industries, different needs — every site is
-              custom-designed to match your brand and business.
+              {t.sampleWork.subtitle}
             </p>
           </div>
 
-          {/* Navigation arrows */}
           <div className="mt-6 flex items-center gap-3 sm:mt-0 sm:shrink-0">
             <button
               onClick={prev}
@@ -96,7 +92,6 @@ export default function SampleWork() {
           </div>
         </div>
 
-        {/* ── Carousel ── */}
         <div className="mt-14 overflow-hidden">
           <div
             className="flex gap-6 transition-transform duration-500 ease-in-out"
@@ -112,7 +107,6 @@ export default function SampleWork() {
                 key={sample.src}
                 className="group w-full shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] transition-colors hover:bg-white/[0.06] sm:w-[calc(50%-12px)]"
               >
-                {/* Browser chrome */}
                 <div className="flex items-center border-b border-white/[0.06] px-4 py-3">
                   <div className="flex gap-1.5">
                     <div className="h-2.5 w-2.5 rounded-full bg-[#FF5F57]" />
@@ -121,7 +115,6 @@ export default function SampleWork() {
                   </div>
                 </div>
 
-                {/* Screenshot */}
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <Image
                     src={sample.src}
@@ -136,7 +129,6 @@ export default function SampleWork() {
           </div>
         </div>
 
-        {/* Dot indicators */}
         <div className="mt-8 flex items-center justify-center gap-2">
           {Array.from({ length: maxOffset + 1 }).map((_, i) => (
             <button

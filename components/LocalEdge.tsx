@@ -1,49 +1,28 @@
-import Image from "next/image";
+"use client";
 
-const features = [
-  {
-    title: "Built for speed",
-    description:
-      "Optimized for Philippine internet. Your site loads fast on any connection, keeping customers engaged.",
-  },
-  {
-    title: "Mobile-first design",
-    description:
-      "Over 90% of Filipinos browse on mobile. Every site we build looks and works great on phones first.",
-  },
-  {
-    title: "Your own online presence",
-    description:
-      "A professional website that makes your business easy to find, builds trust, and turns visitors into customers.",
-  },
-  {
-    title: "Always monitored",
-    description:
-      "We track uptime, speed, and security 24/7. If something needs attention, we handle it before you notice.",
-  },
-];
+import Image from "next/image";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function LocalEdge() {
+  const { t } = useTranslation();
+
   return (
     <section id="local-edge" className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-6xl px-6">
-        {/* ── Top — centered headline ── */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
-            Modern tech that{" "}
-            <span className="text-muted">works for your business</span>
+            {t.localEdge.title}
+            <span className="text-muted">{t.localEdge.titleMuted}</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[22px]">
-            We build with the latest tools but we understand the Philippine
-            market. Fast, secure, and optimized for local customers.
+            {t.localEdge.subtitle}
           </p>
         </div>
 
-        {/* ── Middle — hero image with baked-in widgets ── */}
         <div className="mt-14">
           <Image
             src="/assets/why-us.png"
-            alt="Filipino professional managing his business online with Nettsaga — surrounded by performance metrics, deploy pipeline, and mobile-first indicators"
+            alt={t.localEdge.altImage}
             width={2060}
             height={1080}
             className="w-full rounded-2xl object-contain"
@@ -51,9 +30,8 @@ export default function LocalEdge() {
           />
         </div>
 
-        {/* ── Bottom — feature grid ── */}
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((f) => (
+          {t.localEdge.features.map((f) => (
             <div key={f.title}>
               <h3 className="font-heading text-sm font-bold text-dark">
                 {f.title}

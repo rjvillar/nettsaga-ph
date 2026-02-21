@@ -2,6 +2,7 @@
 
 import { useState, Fragment } from "react";
 import { Check, Minus, ChevronDown } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/context";
 
 const plans = ["Starter", "Business", "Growth", "Custom"] as const;
 
@@ -18,65 +19,58 @@ interface Category {
   features: Feature[];
 }
 
-const categories: Category[] = [
-  {
-    label: "Website Essentials",
-    techLabel: "Core // Essentials",
-    features: [
-      { name: "Pages", values: ["Up to 5", "Up to 10", "Up to 20", "Unlimited"] },
-      { name: "Custom domain", values: [true, true, true, true] },
-      { name: "SSL certificate", values: [true, true, true, true] },
-      { name: "Responsive design", values: [true, true, true, true] },
-      { name: "Contact form", values: [true, true, true, true] },
-      { name: "Custom design", values: [false, true, true, true] },
-      { name: "Custom functionality", values: [false, false, true, true] },
-    ],
-  },
-  {
-    label: "Hosting & Performance",
-    techLabel: "Infra // Performance",
-    features: [
-      { name: "Managed hosting", values: [true, true, true, true] },
-      { name: "Speed optimization", values: [false, true, true, true] },
-      { name: "Uptime monitoring", values: [false, true, true, true] },
-      { name: "CDN", values: [false, false, true, true] },
-      { name: "Daily backups", values: [false, false, true, true] },
-    ],
-  },
-  {
-    label: "SEO & Marketing",
-    techLabel: "Growth // Marketing",
-    features: [
-      { name: "Basic SEO", values: [true, true, true, true] },
-      { name: "SEO optimization", values: [false, true, true, true] },
-      { name: "Advanced SEO", values: [false, false, true, true] },
-      { name: "Social media integration", values: [false, true, true, true] },
-      { name: "Analytics dashboard", values: [false, false, true, true] },
-      { name: "Google Business setup", values: [false, false, true, true] },
-    ],
-  },
-  {
-    label: "E-commerce",
-    techLabel: "Commerce // Integrations",
-    features: [
-      { name: "E-commerce ready", values: [false, false, true, true] },
-      { name: "Payment integration", values: [false, false, true, true] },
-      { name: "Advanced integrations", values: [false, false, false, true] },
-      { name: "Booking system", values: [false, false, false, true] },
-    ],
-  },
-  {
-    label: "Support & Maintenance",
-    techLabel: "Support // SLA",
-    features: [
-      { name: "Content updates", values: [true, true, true, true] },
-      { name: "Email support", values: [true, true, true, true] },
-      { name: "Priority support", values: [false, true, true, true] },
-      { name: "Dedicated support", values: [false, false, true, true] },
-      { name: "SLA guarantee", values: [false, false, false, true] },
-      { name: "Professional email", values: [false, false, true, true] },
-    ],
-  },
+const techLabels = [
+  "Core // Essentials",
+  "Infra // Performance",
+  "Growth // Marketing",
+  "Commerce // Integrations",
+  "Support // SLA",
+];
+
+const featureValues: [CellValue, CellValue, CellValue, CellValue][][] = [
+  // Website Essentials
+  [
+    ["Up to 5", "Up to 10", "Up to 20", "Unlimited"],
+    [true, true, true, true],
+    [true, true, true, true],
+    [true, true, true, true],
+    [true, true, true, true],
+    [false, true, true, true],
+    [false, false, true, true],
+  ],
+  // Hosting & Performance
+  [
+    [true, true, true, true],
+    [false, true, true, true],
+    [false, true, true, true],
+    [false, false, true, true],
+    [false, false, true, true],
+  ],
+  // SEO & Marketing
+  [
+    [true, true, true, true],
+    [false, true, true, true],
+    [false, false, true, true],
+    [false, true, true, true],
+    [false, false, true, true],
+    [false, false, true, true],
+  ],
+  // E-commerce
+  [
+    [false, false, true, true],
+    [false, false, true, true],
+    [false, false, false, true],
+    [false, false, false, true],
+  ],
+  // Support & Maintenance
+  [
+    [true, true, true, true],
+    [true, true, true, true],
+    [false, true, true, true],
+    [false, false, true, true],
+    [false, false, false, true],
+    [false, false, true, true],
+  ],
 ];
 
 function CellContent({ value }: { value: CellValue }) {
@@ -91,18 +85,18 @@ function CellContent({ value }: { value: CellValue }) {
   );
 }
 
-/* ── Desktop Table ── */
-function DesktopTable() {
+function DesktopTable({ categories }: { categories: Category[] }) {
+  const { t } = useTranslation();
+
   return (
     <div className="hidden lg:block">
       <div className="overflow-hidden rounded-2xl border border-dark/[0.06] bg-paper">
         <table className="w-full text-left">
-          {/* Sticky plan header */}
           <thead>
             <tr className="sticky top-[73px] z-20 bg-paper">
               <th className="w-[280px] border-b border-dark/[0.06] py-5 pl-6 pr-4">
                 <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-                  Feature
+                  {t.comparison.feature}
                 </span>
               </th>
               {plans.map((plan) => (
@@ -117,7 +111,7 @@ function DesktopTable() {
                   </span>
                   {plan === "Business" && (
                     <span className="ml-2 inline-block rounded-full bg-dark px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white">
-                      Popular
+                      {t.comparison.popular}
                     </span>
                   )}
                 </th>
@@ -128,7 +122,6 @@ function DesktopTable() {
           <tbody>
             {categories.map((category) => (
               <Fragment key={category.techLabel}>
-                {/* Category header row */}
                 <tr>
                   <td
                     colSpan={5}
@@ -143,7 +136,6 @@ function DesktopTable() {
                   </td>
                 </tr>
 
-                {/* Feature rows */}
                 {category.features.map((feature) => (
                   <tr
                     key={feature.name}
@@ -173,8 +165,7 @@ function DesktopTable() {
   );
 }
 
-/* ── Mobile Accordion ── */
-function MobileAccordion() {
+function MobileAccordion({ categories }: { categories: Category[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -253,10 +244,21 @@ function MobileAccordion() {
 }
 
 export default function ComparisonTable() {
+  const { t } = useTranslation();
+
+  const categories: Category[] = t.comparison.categories.map((cat, catIdx) => ({
+    label: cat.label,
+    techLabel: techLabels[catIdx],
+    features: cat.features.map((name, featIdx) => ({
+      name,
+      values: featureValues[catIdx][featIdx],
+    })),
+  }));
+
   return (
     <>
-      <DesktopTable />
-      <MobileAccordion />
+      <DesktopTable categories={categories} />
+      <MobileAccordion categories={categories} />
     </>
   );
 }

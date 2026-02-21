@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useTranslation } from "@/lib/i18n/context";
 
 const paymentLogos = [
   { src: "/assets/payment-logos/mastercard.webp", alt: "Mastercard" },
@@ -14,58 +15,26 @@ const paymentLogos = [
   { src: "/assets/payment-logos/unionbank.webp", alt: "UnionBank" },
 ];
 
-const faqs = [
-  {
-    q: "Do we own the website?",
-    a: "Yes — 100%. The domain is registered under your name and you own all content, design, and code. If you ever leave, everything goes with you.",
-  },
-  {
-    q: "How does payment work?",
-    a: "One fixed yearly fee. That's it. No hidden charges, no surprise invoices. Everything is covered — design, development, hosting, domain, and support.",
-  },
-  {
-    q: "Can I cancel?",
-    a: "Anytime. No lock-in contracts, no cancellation fees. Your site stays live until the end of your paid period and we'll help you transition if needed.",
-  },
-  {
-    q: "How fast can you deliver?",
-    a: "Most websites go live within 7 days. You'll get a clear timeline before we start so there are never any surprises on delivery.",
-  },
-  {
-    q: "What if I already have a website?",
-    a: "We can redesign and migrate your existing site or build a completely new one — whichever makes more sense for where your business is heading.",
-  },
-  {
-    q: "What's included in updates?",
-    a: "Text changes, photo swaps, new sections, layout tweaks — just send a message. We handle it within the day, no extra cost.",
-  },
-  {
-    q: "Do you provide email?",
-    a: "Yes. We set up professional email addresses like you@yourbusiness.com so your brand looks credible from the first message.",
-  },
-];
-
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   return (
     <section id="faq" className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-4xl px-6">
-        {/* Header with green active dot */}
         <div className="flex items-center justify-center gap-2 sm:gap-3">
           <div className="hidden h-2 w-2 shrink-0 rounded-full bg-green-500 sm:block" />
           <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
-            Questions?{" "}
-            <span className="text-muted">We&apos;ve got answers.</span>
+            {t.faq.title}
+            <span className="text-muted">{t.faq.titleMuted}</span>
           </h2>
         </div>
         <p className="mx-auto mt-4 max-w-xl text-center text-base text-slate sm:text-[22px]">
-          Straight talk — no fine print, no surprises.
+          {t.faq.subtitle}
         </p>
 
-        {/* Technical container — off-white card */}
         <div className="mt-14 rounded-2xl border border-dark/[0.06] bg-white px-6 py-2 sm:px-8">
-          {faqs.map((faq, i) => {
+          {t.faq.items.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
               <div
@@ -103,10 +72,9 @@ export default function FAQ() {
           })}
         </div>
 
-        {/* Payment logos — outside the FAQ card */}
         <div className="mt-10 text-center">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/30">
-            We accept
+            {t.faq.weAccept}
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4 sm:gap-8">
             {paymentLogos.map((logo) => (

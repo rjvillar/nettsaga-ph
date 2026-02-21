@@ -1,19 +1,23 @@
-import { Mail } from "lucide-react";
+"use client";
 
-const quickLinks = [
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Why us", href: "#local-edge" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "/contact" },
+import { Mail } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/context";
+
+const linkHrefs = [
+  "#how-it-works",
+  "#local-edge",
+  "#portfolio",
+  "#faq",
+  "/contact",
 ];
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-dark pt-16 pb-8">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {/* Brand */}
           <div>
             <span className="font-logo text-2xl italic font-black text-white">
               Nettsaga
@@ -24,29 +28,27 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick links */}
           <div>
             <h4 className="font-heading text-sm font-semibold uppercase tracking-[0.15em] text-white/50">
-              Quick links
+              {t.footer.quickLinks}
             </h4>
             <ul className="mt-4 space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
+              {t.footer.links.map((label, i) => (
+                <li key={linkHrefs[i]}>
                   <a
-                    href={link.href}
+                    href={linkHrefs[i]}
                     className="text-sm text-white/40 transition-colors hover:text-white"
                   >
-                    {link.label}
+                    {label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-heading text-sm font-semibold uppercase tracking-[0.15em] text-white/50">
-              Get in touch
+              {t.footer.getInTouch}
             </h4>
             <ul className="mt-4 space-y-3">
               <li>
@@ -62,10 +64,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="mt-16 border-t border-white/10 pt-8 text-center">
           <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} Nettsaga. All rights reserved.
+            {t.footer.copyright.replace("{year}", String(new Date().getFullYear()))}
           </p>
         </div>
       </div>

@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -22,11 +24,8 @@ export default function ContactForm() {
       method="POST"
       className="space-y-5"
     >
-      {/* Honeypot */}
       <input type="text" name="_honey" className="hidden" />
-      {/* Disable captcha */}
       <input type="hidden" name="_captcha" value="false" />
-      {/* Return to same page */}
       <input type="hidden" name="_next" value="https://nettsaga.com/contact" />
 
       <div>
@@ -34,7 +33,7 @@ export default function ContactForm() {
           htmlFor="name"
           className="block text-xs font-semibold uppercase tracking-[0.15em] text-dark/60"
         >
-          Name <span className="text-red-400">*</span>
+          {t.contact.form.name} <span className="text-red-400">*</span>
         </label>
         <input
           id="name"
@@ -43,7 +42,7 @@ export default function ContactForm() {
           required
           value={form.name}
           onChange={update}
-          placeholder="Your full name"
+          placeholder={t.contact.form.placeholders.name}
           className="mt-2 w-full rounded-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
         />
       </div>
@@ -53,7 +52,7 @@ export default function ContactForm() {
           htmlFor="email"
           className="block text-xs font-semibold uppercase tracking-[0.15em] text-dark/60"
         >
-          Email <span className="text-red-400">*</span>
+          {t.contact.form.email} <span className="text-red-400">*</span>
         </label>
         <input
           id="email"
@@ -62,7 +61,7 @@ export default function ContactForm() {
           required
           value={form.email}
           onChange={update}
-          placeholder="you@example.com"
+          placeholder={t.contact.form.placeholders.email}
           className="mt-2 w-full rounded-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
         />
       </div>
@@ -72,7 +71,10 @@ export default function ContactForm() {
           htmlFor="phone"
           className="block text-xs font-semibold uppercase tracking-[0.15em] text-dark/60"
         >
-          Phone <span className="text-xs font-normal normal-case tracking-normal text-muted">(optional)</span>
+          {t.contact.form.phone}{" "}
+          <span className="text-xs font-normal normal-case tracking-normal text-muted">
+            {t.contact.form.phoneOptional}
+          </span>
         </label>
         <div className="mt-2 flex">
           <span className="inline-flex items-center rounded-l-xl border border-r-0 border-dark/[0.08] bg-dark/[0.04] px-3 text-sm text-slate">
@@ -84,7 +86,7 @@ export default function ContactForm() {
             type="tel"
             value={form.phone}
             onChange={update}
-            placeholder="9XX XXX XXXX"
+            placeholder={t.contact.form.placeholders.phone}
             className="w-full rounded-r-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
           />
         </div>
@@ -95,7 +97,7 @@ export default function ContactForm() {
           htmlFor="message"
           className="block text-xs font-semibold uppercase tracking-[0.15em] text-dark/60"
         >
-          Message <span className="text-red-400">*</span>
+          {t.contact.form.message} <span className="text-red-400">*</span>
         </label>
         <textarea
           id="message"
@@ -104,12 +106,11 @@ export default function ContactForm() {
           rows={5}
           value={form.message}
           onChange={update}
-          placeholder="Tell us about your business and what you need..."
+          placeholder={t.contact.form.placeholders.message}
           className="mt-2 w-full resize-none rounded-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm leading-relaxed text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
         />
       </div>
 
-      {/* Consent checkbox */}
       <label className="flex items-start gap-3 cursor-pointer">
         <input
           type="checkbox"
@@ -118,8 +119,7 @@ export default function ContactForm() {
           className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer rounded border-dark/20 accent-dark"
         />
         <span className="text-xs leading-relaxed text-slate">
-          I agree to Nettsaga collecting and storing my information to respond to
-          this inquiry. Your data will not be shared with third parties.
+          {t.contact.form.consent}
         </span>
       </label>
 
@@ -129,7 +129,7 @@ export default function ContactForm() {
         className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-dark px-6 py-3.5 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-dark/90 disabled:cursor-not-allowed disabled:opacity-40"
       >
         <Send className="h-4 w-4" />
-        Send message
+        {t.contact.form.submit}
       </button>
     </form>
   );
