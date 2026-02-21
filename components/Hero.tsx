@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-grain relative overflow-hidden bg-dark py-20 sm:py-28 lg:py-32">
+    <section className="bg-grain relative flex min-h-svh flex-col justify-center overflow-hidden bg-dark pt-28 pb-20 sm:min-h-0 sm:block sm:py-28 lg:py-32">
       {/* ── PayMongo-style diagonal light wash ── */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.07)_45%,rgba(255,255,255,0.12)_55%,rgba(255,255,255,0.05)_70%,transparent_85%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_45%_55%_at_68%_42%,rgba(255,255,255,0.10),transparent)]" />
@@ -34,6 +34,19 @@ export default function Hero() {
             >
               Contact Sales
             </a>
+          </div>
+        </div>
+
+        {/* Mobile-only hero image */}
+        <div className="mt-10 flex justify-center lg:hidden">
+          <div className="relative h-[300px] w-[300px] overflow-hidden rounded-3xl border border-white/5">
+            <Image
+              src="/assets/person-tablet.png"
+              alt="Filipino professional holding a tablet"
+              fill
+              className="object-cover"
+              sizes="300px"
+            />
           </div>
         </div>
 

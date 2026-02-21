@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -23,11 +23,25 @@ const samples = [
   },
 ];
 
-const VISIBLE = 2;
-
 export default function SampleWork() {
+  const [visible, setVisible] = useState(1);
   const [offset, setOffset] = useState(0);
-  const maxOffset = samples.length - VISIBLE;
+  const maxOffset = samples.length - visible;
+
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 640px)");
+    const update = (e: MediaQueryList | MediaQueryListEvent) => {
+      setVisible(e.matches ? 2 : 1);
+    };
+    update(mql);
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  // Clamp offset when visible changes
+  useEffect(() => {
+    setOffset((o) => Math.min(o, samples.length - visible));
+  }, [visible]);
 
   const prev = () => setOffset((o) => Math.max(0, o - 1));
   const next = () => setOffset((o) => Math.min(maxOffset, o + 1));
@@ -51,11 +65,11 @@ export default function SampleWork() {
         {/* Header row — title left, arrows right */}
         <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between">
           <div className="text-center sm:text-left">
-            <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-white">
+            <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[40px]">
               Real sites.{" "}
               <span className="text-white/50">Real businesses.</span>
             </h2>
-            <p className="mt-4 max-w-2xl text-[22px] text-white/50">
+            <p className="mt-4 max-w-2xl text-base text-white/50 sm:text-[22px]">
               Different industries, different needs — every site is
               custom-designed to match your brand and business.
             </p>
@@ -87,7 +101,10 @@ export default function SampleWork() {
           <div
             className="flex gap-6 transition-transform duration-500 ease-in-out"
             style={{
-              transform: `translateX(calc(-${offset} * (50% + 12px)))`,
+              transform:
+                visible === 1
+                  ? `translateX(calc(-${offset} * (100% + 24px)))`
+                  : `translateX(calc(-${offset} * (50% + 12px)))`,
             }}
           >
             {samples.map((sample) => (

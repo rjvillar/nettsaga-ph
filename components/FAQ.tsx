@@ -52,14 +52,14 @@ export default function FAQ() {
     <section id="faq" className="bg-grain relative bg-white py-20 sm:py-28">
       <div className="relative mx-auto max-w-4xl px-6">
         {/* Header with green active dot */}
-        <div className="flex items-center justify-center gap-3">
-          <div className="h-2 w-2 rounded-full bg-green-500" />
-          <h2 className="font-heading text-center text-[40px] font-bold leading-tight tracking-tight text-dark">
+        <div className="flex items-center justify-center gap-2 sm:gap-3">
+          <div className="hidden h-2 w-2 shrink-0 rounded-full bg-green-500 sm:block" />
+          <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
             Questions?{" "}
             <span className="text-muted">We&apos;ve got answers.</span>
           </h2>
         </div>
-        <p className="mx-auto mt-4 max-w-xl text-center text-[22px] text-slate">
+        <p className="mx-auto mt-4 max-w-xl text-center text-base text-slate sm:text-[22px]">
           Straight talk — no fine print, no surprises.
         </p>
 
@@ -108,7 +108,7 @@ export default function FAQ() {
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/30">
             We accept
           </p>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-8">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-4 sm:gap-8">
             {paymentLogos.map((logo) => (
               <Image
                 key={logo.alt}

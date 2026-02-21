@@ -10,7 +10,11 @@
       "Bash(curl:*)",
       "Bash(playwright-cli open:*)",
       "Bash(playwright-cli resize:*)",
-      "Bash(playwright-cli:*)"
+      "Bash(playwright-cli:*)",
+      "Bash(tail:*)",
+      "Bash(cd D:\\\\Nettsaga\\\\Projects\\\\nettsaga-ph:*)",
+      "Bash(netstat:*)",
+      "Bash(true:*)"
     ]
   }
 }

@@ -29,11 +29,11 @@ export default function LocalEdge() {
       <div className="relative mx-auto max-w-6xl px-6">
         {/* ── Top — centered headline ── */}
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-dark">
+          <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
             Modern tech that{" "}
             <span className="text-muted">works for your business</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-[22px] text-slate">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[22px]">
             We build with the latest tools but we understand the Philippine
             market. Fast, secure, and optimized for local customers.
           </p>

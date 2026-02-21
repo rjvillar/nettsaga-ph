@@ -12,18 +12,18 @@ export default function ValuePillars() {
   return (
     <section className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-6xl px-6">
-        <h2 className="font-heading text-center text-[40px] font-bold leading-tight tracking-tight text-dark">
+        <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
           Everything you need, nothing you don&apos;t.
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-[22px] text-slate">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate sm:text-[22px]">
           We keep it simple so you can focus on running your business.
         </p>
 
         {/* ── Bento Grid ── */}
         <div className="mt-14 grid gap-4 sm:grid-cols-2">
           {/* Card 1 — All-In-One (double width, dark premium card) */}
-          <div className="relative overflow-hidden max-h-[80vh] rounded-2xl border border-white/[0.08] bg-[#121212] sm:col-span-2">
-            <span className="absolute right-6 top-6 z-10 font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-white/15">
+          <div className="relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#121212] sm:col-span-2 lg:max-h-[80vh]">
+            <span className="absolute right-6 top-6 z-10 hidden font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-white/15 sm:block">
               Full-service // Fast launch
             </span>
 
@@ -40,7 +40,7 @@ export default function ValuePillars() {
 
             {/* Copy — overlaps the image top area */}
             <div className="relative z-10 p-8 sm:p-10">
-              <p className="font-heading text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+              <p className="hidden font-heading text-xs font-semibold uppercase tracking-[0.2em] text-white/40 sm:block">
                 True all-in-one
               </p>
               <h3 className="mt-3 font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl lg:max-w-[75%]">
@@ -52,7 +52,7 @@ export default function ValuePillars() {
               </p>
 
               {/* Checklist */}
-              <div className="mt-8 grid max-w-sm grid-cols-2 gap-3">
+              <div className="mt-8 grid max-w-sm grid-cols-1 gap-3 sm:grid-cols-2">
                 {checklist.map((item) => (
                   <div
                     key={item.label}
@@ -145,11 +145,11 @@ export default function ValuePillars() {
 
           {/* Card 3 — Infinite Support (square, image card) */}
           <div className="relative overflow-hidden rounded-2xl border border-dark/[0.06] bg-white">
-            <span className="absolute right-6 top-6 z-10 font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-dark/15">
+            <span className="absolute right-6 top-6 z-10 hidden font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-dark/15 sm:block">
               Support // Included
             </span>
             <div className="relative z-10 p-8 pb-0">
-              <p className="font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+              <p className="hidden font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted sm:block">
                 Always-on support
               </p>
               <h3 className="mt-3 font-heading text-xl font-bold tracking-tight text-dark">

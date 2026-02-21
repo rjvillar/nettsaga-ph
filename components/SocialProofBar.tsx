@@ -28,8 +28,11 @@ export default function SocialProofBar() {
   return (
     <section className="border-y border-dark/10 bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="text-center font-heading text-lg font-semibold tracking-tight text-dark sm:text-xl">
-          Built for the Philippines. Optimized for Manila, Cebu, &amp; Davao.
+        <p className="text-center font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+          Built for the Philippines
+        </p>
+        <p className="mt-2 text-center font-heading text-lg font-semibold tracking-tight text-dark sm:text-xl">
+          Trusted by businesses in Manila, Cebu, &amp; Davao.
         </p>
 
         <div className="mt-10 flex items-center justify-center gap-8 sm:gap-12">
