@@ -29,10 +29,10 @@ export default function LocalEdge() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left — copy */}
           <div>
-            <h2 className="font-heading text-3xl font-bold tracking-tight text-dark sm:text-4xl">
+            <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-dark">
               Modern tech, local heart.
             </h2>
-            <p className="mt-4 text-slate">
+            <p className="mt-4 text-[22px] text-slate">
               We build with the latest tools but we understand the Philippine
               market. Your customers pay with GCash, browse on their phones, and
               expect things to load fast.

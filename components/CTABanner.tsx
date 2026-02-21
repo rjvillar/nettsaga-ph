@@ -4,10 +4,10 @@ export default function CTABanner() {
   return (
     <section id="cta" className="bg-grain relative bg-dark py-20 sm:py-28">
       <div className="relative mx-auto max-w-3xl px-6 text-center">
-        <h2 className="font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-white">
           Ready to get online?
         </h2>
-        <p className="mx-auto mt-4 max-w-lg text-white/50">
+        <p className="mx-auto mt-4 max-w-lg text-[22px] text-white/50">
           No commitment needed. Let&apos;s have a quick chat about what you need
           and we&apos;ll take it from there.
         </p>

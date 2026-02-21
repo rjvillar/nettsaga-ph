@@ -12,10 +12,10 @@ export default function ValuePillars() {
   return (
     <section className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-5xl px-6">
-        <h2 className="font-heading text-center text-3xl font-bold tracking-tight text-dark sm:text-4xl">
+        <h2 className="font-heading text-center text-[40px] font-bold leading-tight tracking-tight text-dark">
           Everything you need, nothing you don&apos;t.
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-slate">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-[22px] text-slate">
           We keep it simple so you can focus on running your business.
         </p>
 
