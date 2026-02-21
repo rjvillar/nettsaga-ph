@@ -13,7 +13,8 @@ export default function ValuePillars() {
     <section className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-6xl px-6">
         <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
-          Everything you need, nothing you don&apos;t.
+          Everything you need,{" "}
+          <span className="text-muted">nothing you don&apos;t.</span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate sm:text-[22px]">
           We keep it simple so you can focus on running your business.
@@ -70,76 +71,56 @@ export default function ValuePillars() {
             </div>
           </div>
 
-          {/* Card 2 — Predictable Pricing (square) */}
-          <div className="relative overflow-hidden rounded-2xl border border-dark/[0.06] bg-white p-8">
+          {/* Card 2 — No Hidden Fees (square) */}
+          <div className="relative flex flex-col overflow-hidden rounded-2xl border border-dark/[0.06] bg-white p-8">
             {/* N. Certified stamp */}
             <span className="absolute right-6 top-6 font-logo text-2xl font-bold italic text-dark/[0.06]">
               N.
             </span>
             <p className="font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-              Predictable Pricing
+              Transparent billing
             </p>
             <h3 className="mt-3 font-heading text-xl font-bold tracking-tight text-dark">
-              One transparent yearly fee.
+              No hidden fees. Ever.
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-slate">
-              No monthly surprises. Know exactly what you pay, every year.
+              One yearly fee covers everything. No setup costs, no surprise
+              invoices, no contracts.
             </p>
 
-            {/* Subscription toggle UI */}
-            <div className="mt-6 rounded-xl border border-dark/[0.06] bg-paper p-5">
-              {/* Toggle header */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs font-semibold text-dark">
-                    Nettsaga Plan
-                  </p>
-                  <p className="mt-0.5 text-[10px] text-muted">
-                    All-inclusive website package
-                  </p>
-                </div>
-                {/* Toggle pill — locked to "Yearly" */}
-                <div className="flex items-center rounded-full bg-dark/[0.06] p-0.5">
-                  <span className="rounded-full px-3 py-1 text-[10px] text-muted">
-                    Monthly
-                  </span>
-                  <span className="rounded-full bg-dark px-3 py-1 text-[10px] font-semibold text-white">
-                    Yearly
-                  </span>
-                </div>
+            {/* Simple trust checklist */}
+            <div className="mt-6 flex-1 space-y-3">
+              <div className="flex items-center gap-2.5">
+                <Check className="h-4 w-4 shrink-0 text-green-500" />
+                <span className="text-sm text-dark/70">No setup fees</span>
               </div>
-
-              <div className="mt-4 border-t border-dashed border-dark/10" />
-
-              {/* Line items */}
-              <div className="mt-4 space-y-2.5">
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate">Website + Design</span>
-                  <Check className="h-3.5 w-3.5 text-dark/30" />
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate">Hosting &amp; Domain</span>
-                  <Check className="h-3.5 w-3.5 text-dark/30" />
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate">Content Updates</span>
-                  <Check className="h-3.5 w-3.5 text-dark/30" />
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate">Support</span>
-                  <Check className="h-3.5 w-3.5 text-dark/30" />
-                </div>
-              </div>
-
-              <div className="mt-4 border-t border-dashed border-dark/10" />
-
-              {/* Total */}
-              <div className="mt-3 flex items-center justify-between">
-                <span className="text-xs text-slate">Hidden Fees</span>
-                <span className="font-heading text-sm font-bold text-dark">
-                  ₱0.00
+              <div className="flex items-center gap-2.5">
+                <Check className="h-4 w-4 shrink-0 text-green-500" />
+                <span className="text-sm text-dark/70">
+                  No lock-in contracts
                 </span>
               </div>
+              <div className="flex items-center gap-2.5">
+                <Check className="h-4 w-4 shrink-0 text-green-500" />
+                <span className="text-sm text-dark/70">Cancel anytime</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Check className="h-4 w-4 shrink-0 text-green-500" />
+                <span className="text-sm text-dark/70">You own everything</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Check className="h-4 w-4 shrink-0 text-green-500" />
+                <span className="text-sm text-dark/70">
+                  Free domain included
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-6 rounded-xl bg-paper px-4 py-3">
+              <p className="text-center text-xs text-slate">
+                Hidden fees:{" "}
+                <span className="font-heading font-bold text-dark">₱0.00</span>
+              </p>
             </div>
           </div>
 

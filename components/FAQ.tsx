@@ -49,7 +49,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="bg-grain relative bg-white py-20 sm:py-28">
+    <section id="faq" className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-4xl px-6">
         {/* Header with green active dot */}
         <div className="flex items-center justify-center gap-2 sm:gap-3">
@@ -64,7 +64,7 @@ export default function FAQ() {
         </p>
 
         {/* Technical container — off-white card */}
-        <div className="mt-14 rounded-2xl border border-dark/[0.06] bg-paper px-6 py-2 sm:px-8">
+        <div className="mt-14 rounded-2xl border border-dark/[0.06] bg-white px-6 py-2 sm:px-8">
           {faqs.map((faq, i) => {
             const isOpen = openIndex === i;
             return (

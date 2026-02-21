@@ -12,8 +12,8 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const navLinks = [
   { label: "How it works", href: "/#how-it-works" },
   { label: "Why us", href: "/#local-edge" },
+  { label: "Pricing", href: "/#pricing" },
   { label: "Portfolio", href: "/#portfolio" },
-  { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/contact" },
 ];
 

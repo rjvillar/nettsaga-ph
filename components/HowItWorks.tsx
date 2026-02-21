@@ -67,7 +67,7 @@ export default function HowItWorks() {
 
       <div className="relative mx-auto max-w-7xl px-6">
         <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
-          How it works
+          How it <span className="text-muted">works</span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate sm:text-[22px]">
           Three simple steps — no complicated process, no long contracts.

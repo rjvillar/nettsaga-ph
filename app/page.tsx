@@ -4,6 +4,7 @@ import SocialProofBar from "@/components/SocialProofBar";
 import ValuePillars from "@/components/ValuePillars";
 import HowItWorks from "@/components/HowItWorks";
 import LocalEdge from "@/components/LocalEdge";
+import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import SampleWork from "@/components/SampleWork";
 import CTABanner from "@/components/CTABanner";
@@ -18,6 +19,7 @@ export default function Home() {
       <ValuePillars />
       <HowItWorks />
       <LocalEdge />
+      <Pricing />
       <FAQ />
       <SampleWork />
       <CTABanner />
