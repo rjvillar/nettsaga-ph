@@ -85,8 +85,8 @@ export default function Hero() {
             <Image
               src="/assets/live-card.png"
               alt={t.hero.altLiveCard}
-              width={150}
-              height={150}
+              width={500}
+              height={500}
               className="block w-full"
             />
           </div>
@@ -95,8 +95,8 @@ export default function Hero() {
             <Image
               src="/assets/ssl.png"
               alt={t.hero.altSSL}
-              width={170}
-              height={40}
+              width={500}
+              height={115}
               className="block w-full"
             />
           </div>
@@ -105,8 +105,8 @@ export default function Hero() {
             <Image
               src="/assets/performance-score.png"
               alt={t.hero.altPerformance}
-              width={130}
-              height={130}
+              width={500}
+              height={500}
               className="block w-full"
             />
           </div>

@@ -7,22 +7,22 @@ const cities = [
   {
     src: "/assets/manila.png",
     alt: "Manila",
-    width: 500,
-    height: 140,
+    width: 1076,
+    height: 250,
     size: "max-w-[200px] sm:max-w-[220px]",
   },
   {
     src: "/assets/cebu.png",
     alt: "Cebu",
-    width: 380,
-    height: 140,
+    width: 774,
+    height: 250,
     size: "max-w-[170px] sm:max-w-[175px]",
   },
   {
     src: "/assets/davao.png",
     alt: "Davao",
-    width: 460,
-    height: 140,
+    width: 1010,
+    height: 250,
     size: "max-w-[200px] sm:max-w-[220px]",
   },
 ];

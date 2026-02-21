@@ -31,8 +31,8 @@ export default function ValuePillars() {
               <Image
                 src="/assets/mockup-transparent.png"
                 alt="Laptop displaying a website built by Nettsaga"
-                width={600}
-                height={400}
+                width={1920}
+                height={1080}
                 className="w-full object-contain object-bottom"
               />
             </div>
@@ -122,8 +122,8 @@ export default function ValuePillars() {
               <Image
                 src="/assets/person-message.png"
                 alt="Nettsaga support team member responding to a client message"
-                width={300}
-                height={300}
+                width={1866}
+                height={1000}
                 className="w-full object-contain object-bottom"
               />
             </div>
