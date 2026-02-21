@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const navLinks = [
   { label: "How it works", href: "/#how-it-works" },
-  { label: "Why us", href: "/#local-edge" },
-  { label: "Pricing", href: "/#pricing" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Portfolio", href: "/#portfolio" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -164,9 +164,9 @@ export default function Header({ solid = false }: { solid?: boolean }) {
           WebkitBackdropFilter: "blur(0px)",
         }}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center px-6 py-4">
           {/* Animated Logo — fixed-width wrapper keeps nav stable */}
-          <div ref={logoWrapRef} className="shrink-0">
+          <div ref={logoWrapRef} className="flex-1 shrink-0">
             <a
               ref={logoRef}
               href="/"
@@ -211,11 +211,53 @@ export default function Header({ solid = false }: { solid?: boolean }) {
             ))}
           </nav>
 
-          {/* CTA — hidden on mobile */}
+          {/* Language toggle + CTA — hidden on mobile */}
+          <div className="hidden flex-1 items-center justify-end gap-3 md:flex">
+            {/* Flag toggle (placeholder for future i18n) */}
+            <div
+              className="flex items-center gap-1 rounded-lg p-1"
+              style={{
+                border: solid
+                  ? "1px solid rgba(11, 11, 11, 0.1)"
+                  : "1px solid rgba(255,255,255,0.15)",
+              }}
+            >
+              <button
+                className="flex cursor-pointer items-center justify-center rounded-md p-1"
+                style={{
+                  backgroundColor: solid
+                    ? "rgba(11, 11, 11, 0.08)"
+                    : "rgba(255,255,255,0.15)",
+                }}
+                aria-label="English"
+              >
+                {/* GB flag */}
+                <svg viewBox="0 0 60 40" className="h-3.5 w-5 rounded-[2px]">
+                  <rect fill="#012169" width="60" height="40" />
+                  <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="8" />
+                  <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" strokeWidth="4" />
+                  <path d="M30,0 V40 M0,20 H60" stroke="#fff" strokeWidth="12" />
+                  <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" strokeWidth="6" />
+                </svg>
+              </button>
+              <button
+                className="flex cursor-pointer items-center justify-center rounded-md p-1 opacity-40 transition-opacity hover:opacity-70"
+                aria-label="Filipino"
+              >
+                {/* PH flag */}
+                <svg viewBox="0 0 60 40" className="h-3.5 w-5 rounded-[2px]">
+                  <rect y="0" fill="#0038A8" width="60" height="20" />
+                  <rect y="20" fill="#CE1126" width="60" height="20" />
+                  <polygon points="0,0 28,20 0,40" fill="#FFF" />
+                  <circle cx="10" cy="20" r="4" fill="#FCD116" />
+                </svg>
+              </button>
+            </div>
+
           <a
             ref={ctaRef}
             href="/contact"
-            className="hidden items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold tracking-wide transition-shadow md:inline-flex"
+            className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold tracking-wide transition-shadow"
             style={
               solid
                 ? {
@@ -233,13 +275,14 @@ export default function Header({ solid = false }: { solid?: boolean }) {
             <MessageCircle className="h-4 w-4" />
             Talk to us
           </a>
+          </div>
 
           {/* Hamburger — visible only on mobile */}
           <button
             ref={hamburgerRef}
             onClick={() => setMobileOpen((v) => !v)}
             className="flex h-10 w-10 items-center justify-center md:hidden"
-            style={mobileOpen ? { color: "#ffffff" } : { color: solid ? "#0B0B0B" : "inherit" }}
+            style={mobileOpen ? { color: "#ffffff" } : { color: solid ? "#0B0B0B" : "#ffffff" }}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
             {mobileOpen ? (
@@ -251,9 +294,9 @@ export default function Header({ solid = false }: { solid?: boolean }) {
         </div>
       </header>
 
-      {/* ── Mobile backdrop (blurred left strip) ── */}
+      {/* ── Mobile backdrop ── */}
       <div
-        className={`fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-[60] bg-black/60 backdrop-blur-md transition-opacity duration-300 md:hidden ${
           mobileOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={() => setMobileOpen(false)}
@@ -261,7 +304,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
 
       {/* ── Mobile slide-in nav (from right) ── */}
       <div
-        className={`fixed inset-y-0 right-0 z-[60] flex w-4/5 max-w-xs flex-col bg-dark transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-y-0 right-0 z-[70] flex w-4/5 max-w-xs flex-col bg-dark transition-transform duration-300 ease-in-out md:hidden ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -293,14 +336,41 @@ export default function Header({ solid = false }: { solid?: boolean }) {
           ))}
         </nav>
 
-        {/* Email at bottom */}
-        <div className="px-6 pb-8 text-center">
+        {/* Email + language toggle at bottom */}
+        <div className="flex flex-col items-center gap-4 px-6 pb-8">
           <a
             href="mailto:support@nettsaga.com"
             className="text-sm text-white/40 transition-colors hover:text-white/70"
           >
             support@nettsaga.com
           </a>
+
+          {/* Flag toggle */}
+          <div className="flex items-center gap-1 rounded-lg border border-white/[0.15] p-1">
+            <button
+              className="flex cursor-pointer items-center justify-center rounded-md bg-white/[0.15] p-1.5"
+              aria-label="English"
+            >
+              <svg viewBox="0 0 60 40" className="h-4 w-6 rounded-[2px]">
+                <rect fill="#012169" width="60" height="40" />
+                <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="8" />
+                <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" strokeWidth="4" />
+                <path d="M30,0 V40 M0,20 H60" stroke="#fff" strokeWidth="12" />
+                <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" strokeWidth="6" />
+              </svg>
+            </button>
+            <button
+              className="flex cursor-pointer items-center justify-center rounded-md p-1.5 opacity-40 transition-opacity hover:opacity-70"
+              aria-label="Filipino"
+            >
+              <svg viewBox="0 0 60 40" className="h-4 w-6 rounded-[2px]">
+                <rect y="0" fill="#0038A8" width="60" height="20" />
+                <rect y="20" fill="#CE1126" width="60" height="20" />
+                <polygon points="0,0 28,20 0,40" fill="#FFF" />
+                <circle cx="10" cy="20" r="4" fill="#FCD116" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </>

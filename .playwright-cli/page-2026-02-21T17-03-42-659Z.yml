@@ -1,0 +1,281 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Nettsaga" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e8]:
+        - link "Nettsidepakker" [ref=e10] [cursor=pointer]:
+          - /url: /nettsidepakker
+        - link "Referanser" [ref=e12] [cursor=pointer]:
+          - /url: /referanser
+        - button "Om" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16]: Om
+          - img [ref=e17]
+        - link "Kontakt" [ref=e20] [cursor=pointer]:
+          - /url: /kontakt
+        - link "Gratis nettsideutkast" [ref=e22] [cursor=pointer]:
+          - /url: /gratis-utkast
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: ★
+          - generic [ref=e29]: ★
+          - generic [ref=e30]: ★
+          - generic [ref=e31]: ★
+          - generic [ref=e32]: ★
+          - generic [ref=e33]: 500+ fornøyde kunder
+        - generic [ref=e34]:
+          - heading "Ny nettside uten stress eller overraskelser?" [level=1] [ref=e35]
+          - paragraph [ref=e36]: Få et gratis utkast tilpasset din bedrift i løpet av 3 dager her. Ingen forpliktelser, ingen kostnader, ingen risiko.
+          - generic [ref=e37]:
+            - button "Nettsidepakker" [ref=e38] [cursor=pointer]
+            - button "Gratis nettsideutkast" [ref=e39] [cursor=pointer]
+      - button "Scroll to services section" [ref=e41] [cursor=pointer]:
+        - img [ref=e42]
+    - generic [ref=e45]:
+      - heading "Våre tjenester" [level=2] [ref=e47]
+      - generic [ref=e49]:
+        - link "Webutvikling Vi utvikler raske nettsider som enkelt kan vedlikeholdes og som gir deg full kontroll over innholdet." [ref=e51] [cursor=pointer]:
+          - /url: /webutvikling
+          - img [ref=e53]
+          - heading "Webutvikling" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Vi utvikler raske nettsider som enkelt kan vedlikeholdes og som gir deg full kontroll over innholdet.
+          - img [ref=e58]
+        - link "SEO SEO er den viktigste investeringen din bedrift kan gjøre. Vi sikrer deg langsiktige resultater som gir en jevn strøm med kunder." [ref=e61] [cursor=pointer]:
+          - /url: /seo
+          - img [ref=e63]
+          - heading "SEO" [level=3] [ref=e66]
+          - paragraph [ref=e67]: SEO er den viktigste investeringen din bedrift kan gjøre. Vi sikrer deg langsiktige resultater som gir en jevn strøm med kunder.
+          - img [ref=e68]
+        - link "Design Godt og minneverdig design kombinert med en sømløs brukeropplevelse hjelper med å bli husket og å få kundene til å komme tilbake." [ref=e71] [cursor=pointer]:
+          - /url: /design
+          - img [ref=e73]
+          - heading "Design" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Godt og minneverdig design kombinert med en sømløs brukeropplevelse hjelper med å bli husket og å få kundene til å komme tilbake.
+          - img [ref=e81]
+        - link "Digital markedsføring Etter mange år med erfaring har vi blitt eksperter på å optimalisere markedsføringen sånn at den blir mest mulig kostnadseffektiv." [ref=e84] [cursor=pointer]:
+          - /url: /digital-markedsforing
+          - img [ref=e86]
+          - heading "Digital markedsføring" [level=3] [ref=e88]
+          - paragraph [ref=e89]: Etter mange år med erfaring har vi blitt eksperter på å optimalisere markedsføringen sånn at den blir mest mulig kostnadseffektiv.
+          - img [ref=e90]
+        - link "SEM Annonsering på Nett kan være ekstremt effektivt og gi deg raske resultater dersom det blir gjort riktig." [ref=e93] [cursor=pointer]:
+          - /url: /sem
+          - img [ref=e95]
+          - heading "SEM" [level=3] [ref=e98]
+          - paragraph [ref=e99]: Annonsering på Nett kan være ekstremt effektivt og gi deg raske resultater dersom det blir gjort riktig.
+          - img [ref=e100]
+        - link "Sosiale medier Det blir bare viktigere og viktigere å være til stede på sosiale medier. Vi tilbur derfor rådgiving og veiledning." [ref=e103] [cursor=pointer]:
+          - /url: /sosiale-medier
+          - img [ref=e105]
+          - heading "Sosiale medier" [level=3] [ref=e107]
+          - paragraph [ref=e108]: Det blir bare viktigere og viktigere å være til stede på sosiale medier. Vi tilbur derfor rådgiving og veiledning.
+          - img [ref=e109]
+        - link "Innholdsproduksjon Innhold som fanger oppmerksomheten og som er tilpasset kanalen det skal publiseres på gjør at budskapet treffer og blir værende." [ref=e112] [cursor=pointer]:
+          - /url: /innholdsproduksjon
+          - img [ref=e114]
+          - heading "Innholdsproduksjon" [level=3] [ref=e117]
+          - paragraph [ref=e118]: Innhold som fanger oppmerksomheten og som er tilpasset kanalen det skal publiseres på gjør at budskapet treffer og blir værende.
+          - img [ref=e119]
+        - link "Rådgiving og analyse Lang erfaring har gjort av vi har skjønt viktigheten av måling og analyse. Det er sånn vi kan jobbe sammen for å gi resultater." [ref=e122] [cursor=pointer]:
+          - /url: /radgiving-og-analyse
+          - img [ref=e124]
+          - heading "Rådgiving og analyse" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Lang erfaring har gjort av vi har skjønt viktigheten av måling og analyse. Det er sånn vi kan jobbe sammen for å gi resultater.
+          - img [ref=e129]
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - heading "Våre Nettsidepakker" [level=2] [ref=e134]
+        - paragraph [ref=e135]: Velg den pakken som passer best for din bedrift og dine behov.
+      - generic [ref=e137]:
+        - generic [ref=e139]:
+          - heading "Liten" [level=3] [ref=e140]
+          - paragraph [ref=e141]: Perfekt for små bedrifter og oppstartsbedrifter
+          - generic [ref=e142]: 7 499 kr/ engangsbeløp
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - img [ref=e145]
+              - generic [ref=e147]: Responsivt design
+            - listitem [ref=e148]:
+              - img [ref=e149]
+              - generic [ref=e151]: Opp til 5 sider
+            - listitem [ref=e152]:
+              - img [ref=e153]
+              - generic [ref=e155]: Kontaktskjema
+            - listitem [ref=e156]:
+              - img [ref=e157]
+              - generic [ref=e159]: Mobiloptimalisering
+            - listitem [ref=e160]:
+              - img [ref=e161]
+              - generic [ref=e163]: SSL-sertifikat
+            - listitem [ref=e164]:
+              - img [ref=e165]
+              - generic [ref=e167]: Gratis support
+          - link "Velg pakke" [ref=e168] [cursor=pointer]:
+            - /url: /pakke-foresporsel?pakke=Liten
+        - generic [ref=e169]:
+          - generic [ref=e170]: Populær
+          - generic [ref=e171]:
+            - heading "Medium" [level=3] [ref=e172]
+            - paragraph [ref=e173]: Ideell for etablerte små og mellomstore bedrifter
+            - generic [ref=e174]: 9999 kr/ engangsbeløp
+            - list [ref=e175]:
+              - listitem [ref=e176]:
+                - img [ref=e177]
+                - generic [ref=e179]: Alt i Liten pakke
+              - listitem [ref=e180]:
+                - img [ref=e181]
+                - generic [ref=e183]: Opp til 10 sider
+              - listitem [ref=e184]:
+                - img [ref=e185]
+                - generic [ref=e187]: Avansert kontaktskjema
+              - listitem [ref=e188]:
+                - img [ref=e189]
+                - generic [ref=e191]: Integrering med sosiale medier
+              - listitem [ref=e192]:
+                - img [ref=e193]
+                - generic [ref=e195]: SEO-optimalisering
+              - listitem [ref=e196]:
+                - img [ref=e197]
+                - generic [ref=e199]: Oppfølging og oppdateringer
+            - link "Velg pakke" [ref=e200] [cursor=pointer]:
+              - /url: /pakke-foresporsel?pakke=Medium
+        - generic [ref=e202]:
+          - heading "Stor" [level=3] [ref=e203]
+          - paragraph [ref=e204]: For større bedrifter med omfattende behov
+          - generic [ref=e205]: 24 999 kr/ engangsbeløp
+          - list [ref=e206]:
+            - listitem [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e210]: Alt i Medium pakke
+            - listitem [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e214]: Opp til 30 sider
+            - listitem [ref=e215]:
+              - img [ref=e216]
+              - generic [ref=e218]: Nettbutikk
+            - listitem [ref=e219]:
+              - img [ref=e220]
+              - generic [ref=e222]: Nyhetsbrev
+            - listitem [ref=e223]:
+              - img [ref=e224]
+              - generic [ref=e226]: Avansert SEO-optimalisering
+            - listitem [ref=e227]:
+              - img [ref=e228]
+              - generic [ref=e230]: Innholdsadministrasjonssystem
+          - link "Velg pakke" [ref=e231] [cursor=pointer]:
+            - /url: /pakke-foresporsel?pakke=Stor
+        - generic [ref=e233]:
+          - heading "Custom" [level=3] [ref=e234]:
+            - img [ref=e236]
+            - text: Custom
+          - paragraph [ref=e238]: Skreddersydd løsning for unike behov
+          - generic [ref=e240]:
+            - text: Tilpasset pris
+            - generic [ref=e241]: basert på dine behov
+          - list [ref=e242]:
+            - listitem [ref=e243]:
+              - img [ref=e244]
+              - generic [ref=e246]: Helt skreddersydd løsning
+            - listitem [ref=e247]:
+              - img [ref=e248]
+              - generic [ref=e250]: Avanserte integrasjoner
+            - listitem [ref=e251]:
+              - img [ref=e252]
+              - generic [ref=e254]: Tilpasset funksjonalitet
+            - listitem [ref=e255]:
+              - img [ref=e256]
+              - generic [ref=e258]: Spesialisert design
+            - listitem [ref=e259]:
+              - img [ref=e260]
+              - generic [ref=e262]: Konkurranseanalyse
+          - link "Velg pakke" [ref=e263] [cursor=pointer]:
+            - /url: /pakke-foresporsel?pakke=Custom
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - heading "Usikker på hvilken pakke som passer for deg?" [level=3] [ref=e266]
+          - paragraph [ref=e267]: Vi hjelper deg med å finne den beste løsningen for din bedrift. Kontakt oss for en uforpliktende samtale, eller få et gratis nettsideutkast for å se hvordan vi kan hjelpe deg.
+          - generic [ref=e268]:
+            - link "Få mer informasjon" [ref=e269] [cursor=pointer]:
+              - /url: /gratis-utkast
+            - link "Book en samtale" [ref=e270] [cursor=pointer]:
+              - /url: /kontakt
+        - list [ref=e272]:
+          - listitem [ref=e273]:
+            - img [ref=e274]
+            - generic [ref=e276]: Profesjonelle og moderne nettsider
+          - listitem [ref=e277]:
+            - img [ref=e278]
+            - generic [ref=e280]: Rask levering og god kommunikasjon
+          - listitem [ref=e281]:
+            - img [ref=e282]
+            - generic [ref=e284]: Fokus på brukervennlighet og konvertering
+          - listitem [ref=e285]:
+            - img [ref=e286]
+            - generic [ref=e288]: Teknisk support og vedlikehold
+          - listitem [ref=e289]:
+            - img [ref=e290]
+            - generic [ref=e292]: "Fornøyd-garanti: Vi jobber til du er 100% fornøyd"
+  - contentinfo [ref=e293]:
+    - generic [ref=e294]:
+      - generic [ref=e295]:
+        - generic [ref=e296]:
+          - heading "Nettsaga" [level=3] [ref=e297]
+          - paragraph [ref=e298]: Vi skaper digitale løsninger som styrker lokale bedrifter og bringer dem nærmere sine kunder.
+          - link [ref=e299] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61573709927929
+            - img [ref=e300]
+        - generic [ref=e302]:
+          - heading "Tjenester" [level=3] [ref=e303]
+          - list [ref=e304]:
+            - listitem [ref=e305]:
+              - link "Webutvikling" [ref=e306] [cursor=pointer]:
+                - /url: /webutvikling
+            - listitem [ref=e307]:
+              - link "SEO" [ref=e308] [cursor=pointer]:
+                - /url: /seo
+            - listitem [ref=e309]:
+              - link "Design" [ref=e310] [cursor=pointer]:
+                - /url: /design
+            - listitem [ref=e311]:
+              - link "Digital markedsføring" [ref=e312] [cursor=pointer]:
+                - /url: /digital-markedsforing
+        - generic [ref=e313]:
+          - heading "Utforsk" [level=3] [ref=e314]
+          - list [ref=e315]:
+            - listitem [ref=e316]:
+              - link "Hjem" [ref=e317] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e318]:
+              - link "Nettsidepakker" [ref=e319] [cursor=pointer]:
+                - /url: /nettsidepakker
+            - listitem [ref=e320]:
+              - link "Gratis Utkast" [ref=e321] [cursor=pointer]:
+                - /url: /gratis-utkast
+            - listitem [ref=e322]:
+              - link "Om Oss" [ref=e323] [cursor=pointer]:
+                - /url: /om-oss
+        - generic [ref=e324]:
+          - heading "Kontakt" [level=3] [ref=e325]
+          - list [ref=e326]:
+            - listitem [ref=e327]:
+              - generic [ref=e328]:
+                - img [ref=e329]
+                - text: Kirkegata 15, 0153 Oslo
+            - listitem [ref=e332]:
+              - img [ref=e333]
+              - generic [ref=e335]: 920 15 834
+            - listitem [ref=e336]:
+              - img [ref=e337]
+              - link "kontakt@nettsaga.no" [ref=e341] [cursor=pointer]:
+                - /url: mailto:kontakt@nettsaga.no
+      - generic [ref=e343]:
+        - paragraph [ref=e344]: © 2026 Nettsaga AS. Alle rettigheter reservert.
+        - generic [ref=e345]:
+          - link "Personvern" [ref=e346] [cursor=pointer]:
+            - /url: /personvern
+          - button "Samtykkeinnstillinger" [ref=e347] [cursor=pointer]:
+            - img [ref=e348]
+            - text: Samtykkeinnstillinger
+  - alert [ref=e351]

@@ -4,7 +4,7 @@ export default function CTABanner() {
   return (
     <section
       id="cta"
-      className="relative flex min-h-[calc(100vh-64px)] items-center bg-paper py-20 sm:py-28"
+      className="relative flex min-h-[calc(100vh-64px)] items-center bg-white py-20 sm:py-28"
     >
       <div className="relative mx-auto w-full max-w-7xl px-6">
         {/* Dark container */}

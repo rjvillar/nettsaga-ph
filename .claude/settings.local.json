@@ -14,7 +14,9 @@
       "Bash(tail:*)",
       "Bash(cd D:\\\\Nettsaga\\\\Projects\\\\nettsaga-ph:*)",
       "Bash(netstat:*)",
-      "Bash(true:*)"
+      "Bash(true:*)",
+      "WebFetch(domain:www.paymongo.com)",
+      "Bash(cd /d/Nettsaga/Projects/nettsaga-ph && npx next build 2>&1)"
     ]
   }
 }
