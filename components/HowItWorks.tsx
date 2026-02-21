@@ -148,7 +148,7 @@ export default function HowItWorks() {
                         s.num === "01"
                           ? "w-[90%] object-contain"
                           : s.num === "03"
-                            ? "h-full w-full object-cover saturate-[0.15]"
+                            ? "h-full w-full object-cover"
                             : "h-full w-full object-cover"
                       }
                       sizes="(min-width: 640px) 33vw, 100vw"

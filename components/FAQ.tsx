@@ -116,7 +116,7 @@ export default function FAQ() {
                 alt={logo.alt}
                 width={80}
                 height={32}
-                className="h-6 w-auto object-contain grayscale opacity-80 transition-all duration-200 hover:grayscale-0 hover:opacity-100"
+                className="h-6 w-auto object-contain opacity-80 transition-opacity duration-200 hover:opacity-100"
               />
             ))}
           </div>
