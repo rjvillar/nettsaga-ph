@@ -21,13 +21,20 @@ export default function Hero() {
             Website + hosting + support for one fixed yearly fee. No surprises,
             no hidden costs — just a website that works for your business.
           </p>
-          <a
-            href="#how-it-works"
-            className="btn-glow mt-8 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-medium tracking-wide text-dark transition-colors hover:bg-white/90"
-          >
-            See how it works
-            <ArrowDown className="h-4 w-4" />
-          </a>
+          <div className="mt-8 flex items-center gap-4">
+            <a
+              href="#how-it-works"
+              className="btn-glow inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-medium tracking-wide text-dark transition-colors hover:bg-white/90"
+            >
+              See how it works
+            </a>
+            <a
+              href="/contact"
+              className="text-sm font-medium text-white/60 transition-colors duration-200 hover:text-white"
+            >
+              Contact Sales
+            </a>
+          </div>
         </div>
 
         {/* Right — layered collage (PayMongo-style) */}
