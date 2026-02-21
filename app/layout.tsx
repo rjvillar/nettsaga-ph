@@ -44,7 +44,14 @@ export default async function RootLayout({
   const dictionary = getDictionary(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if(window.location.hash){document.documentElement.style.overflow='hidden'}`,
+          }}
+        />
+      </head>
       <body
         className={`${plusJakartaSans.variable} ${inter.variable} ${peterTest.variable} antialiased`}
       >

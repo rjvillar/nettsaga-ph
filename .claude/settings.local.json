@@ -18,7 +18,8 @@
       "WebFetch(domain:www.paymongo.com)",
       "Bash(cd /d/Nettsaga/Projects/nettsaga-ph && npx next build 2>&1)",
       "Bash(cd D:/Nettsaga/Projects/nettsaga-ph && npx next build 2>&1)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(head:*)"
     ]
   }
 }
