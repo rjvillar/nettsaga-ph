@@ -26,7 +26,7 @@ const features = [
 export default function LocalEdge() {
   return (
     <section id="local-edge" className="bg-grain relative bg-paper py-20 sm:py-28">
-      <div className="relative mx-auto max-w-5xl px-6">
+      <div className="relative mx-auto max-w-6xl px-6">
         {/* ── Top — centered headline ── */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-dark">

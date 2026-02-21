@@ -65,7 +65,7 @@ export default function HowItWorks() {
         Timeline: 07_Days
       </span>
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-7xl px-6">
         <h2 className="font-heading text-center text-[40px] font-bold leading-tight tracking-tight text-dark">
           How it works
         </h2>

@@ -5,6 +5,7 @@ import ValuePillars from "@/components/ValuePillars";
 import HowItWorks from "@/components/HowItWorks";
 import LocalEdge from "@/components/LocalEdge";
 import FAQ from "@/components/FAQ";
+import SampleWork from "@/components/SampleWork";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <HowItWorks />
       <LocalEdge />
       <FAQ />
+      <SampleWork />
       <CTABanner />
       <Footer />
     </>

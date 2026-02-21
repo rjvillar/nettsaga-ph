@@ -11,7 +11,7 @@ const checklist = [
 export default function ValuePillars() {
   return (
     <section className="bg-grain relative bg-paper py-20 sm:py-28">
-      <div className="relative mx-auto max-w-5xl px-6">
+      <div className="relative mx-auto max-w-6xl px-6">
         <h2 className="font-heading text-center text-[40px] font-bold leading-tight tracking-tight text-dark">
           Everything you need, nothing you don&apos;t.
         </h2>
@@ -22,13 +22,13 @@ export default function ValuePillars() {
         {/* ── Bento Grid ── */}
         <div className="mt-14 grid gap-4 sm:grid-cols-2">
           {/* Card 1 — All-In-One (double width, dark premium card) */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#121212] sm:col-span-2">
+          <div className="relative overflow-hidden max-h-[80vh] rounded-2xl border border-white/[0.08] bg-[#121212] sm:col-span-2">
             <span className="absolute right-6 top-6 z-10 font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-white/15">
               Full-service // Fast launch
             </span>
 
             {/* Mockup image — pinned to bottom, spans full width on right */}
-            <div className="pointer-events-none absolute bottom-0 right-0 hidden w-[67%] lg:block">
+            <div className="pointer-events-none absolute -bottom-15 right-0 hidden w-[67%] lg:block">
               <Image
                 src="/assets/mockup-transparent.png"
                 alt="Laptop displaying a website built by Nettsaga"

@@ -12,7 +12,9 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const navLinks = [
   { label: "How it works", href: "#how-it-works" },
   { label: "Why us", href: "#local-edge" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "FAQ", href: "#faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const collapseChars = "ettsaga".split("");
@@ -133,7 +135,7 @@ export default function Header() {
         WebkitBackdropFilter: "blur(0px)",
       }}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Animated Logo — fixed-width wrapper keeps nav stable */}
         <div ref={logoWrapRef} className="shrink-0">
           <a
@@ -172,7 +174,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium"
+              className="nav-link text-sm font-medium"
               style={{ color: "rgba(255,255,255,0.75)" }}
             >
               {link.label}
@@ -184,7 +186,7 @@ export default function Header() {
         <a
           ref={ctaRef}
           href="#cta"
-          className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold tracking-wide transition-shadow"
+          className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold tracking-wide transition-shadow"
           style={{
             backgroundColor: "transparent",
             color: "#ffffff",

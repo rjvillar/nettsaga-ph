@@ -27,7 +27,7 @@ const cities = [
 export default function SocialProofBar() {
   return (
     <section className="border-y border-dark/10 bg-white py-14 sm:py-16">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <p className="text-center font-heading text-lg font-semibold tracking-tight text-dark sm:text-xl">
           Built for the Philippines. Optimized for Manila, Cebu, &amp; Davao.
         </p>
