@@ -1,0 +1,253 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "N e t t s a g a ." [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e6]: "N"
+        - generic [ref=e7]:
+          - generic [ref=e8]: e
+          - generic [ref=e9]: t
+          - generic [ref=e10]: t
+          - generic [ref=e11]: s
+          - generic [ref=e12]: a
+          - generic [ref=e13]: g
+          - generic [ref=e14]: a
+        - text: .
+      - navigation [ref=e15]:
+        - link "How it works" [ref=e16] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Why us" [ref=e17] [cursor=pointer]:
+          - /url: "#local-edge"
+        - link "FAQ" [ref=e18] [cursor=pointer]:
+          - /url: "#faq"
+      - link "Talk to us" [ref=e19] [cursor=pointer]:
+        - /url: "#cta"
+        - img [ref=e20]
+        - text: Talk to us
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - heading "Get your business online this week." [level=1] [ref=e25]:
+        - text: Get your business
+        - text: online this week.
+      - paragraph [ref=e26]: Website + hosting + support for one fixed yearly fee. No surprises, no hidden costs — just a website that works for your business.
+      - link "See how it works" [ref=e27] [cursor=pointer]:
+        - /url: "#how-it-works"
+        - text: See how it works
+        - img [ref=e28]
+    - generic [ref=e30]:
+      - img "Filipino professional holding a tablet" [ref=e32]
+      - img "Filipino professional working on laptop" [ref=e34]
+      - img "Happy Filipino professional" [ref=e36]
+      - 'img "System: Live status" [ref=e38]'
+      - img "Verified Secure SSL badge" [ref=e40]
+      - 'img "Performance Score: 95" [ref=e42]'
+  - generic [ref=e44]:
+    - paragraph [ref=e45]: Built for the Philippines. Optimized for Manila, Cebu, & Davao.
+    - generic [ref=e46]:
+      - img "Manila" [ref=e48]
+      - img "Cebu" [ref=e50]
+      - img "Davao" [ref=e52]
+  - generic [ref=e54]:
+    - heading "Everything you need, nothing you don't." [level=2] [ref=e55]
+    - paragraph [ref=e56]: We keep it simple so you can focus on running your business.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: Section // 01
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: True all-in-one
+            - heading "We handle the complexity, you handle the business." [level=3] [ref=e63]:
+              - text: We handle the complexity,
+              - text: you handle the business.
+            - paragraph [ref=e64]: Design, development, hosting, domain, speed optimization — all bundled into one package. No juggling vendors.
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - img [ref=e68]
+                - generic [ref=e72]: Custom Design
+              - generic [ref=e73]:
+                - img [ref=e75]
+                - generic [ref=e78]: Development
+              - generic [ref=e79]:
+                - img [ref=e81]
+                - generic [ref=e84]: Hosting & Domain
+              - generic [ref=e85]:
+                - img [ref=e87]
+                - generic [ref=e90]: SEO & Speed
+          - img "Laptop displaying a website built by Nettsaga" [ref=e92]
+      - generic [ref=e93]:
+        - generic [ref=e94]: Section // 02
+        - paragraph [ref=e95]: Predictable Pricing
+        - heading "One transparent yearly fee." [level=3] [ref=e96]
+        - paragraph [ref=e97]: No monthly surprises. Know exactly what you pay, every year.
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]: Website Package
+            - generic [ref=e102]: Fixed / yr
+          - generic [ref=e104]:
+            - generic [ref=e105]: Hosting & Domain
+            - generic [ref=e106]: Included
+          - generic [ref=e107]:
+            - generic [ref=e108]: Content Updates
+            - generic [ref=e109]: Included
+          - generic [ref=e110]:
+            - generic [ref=e111]: Support
+            - generic [ref=e112]: Included
+          - generic [ref=e114]:
+            - generic [ref=e115]: Hidden Fees
+            - generic [ref=e116]: ₱0.00
+      - generic [ref=e117]:
+        - generic [ref=e118]: Section // 03
+        - paragraph [ref=e119]: Always-on support
+        - heading "Updates are part of the deal." [level=3] [ref=e120]
+        - paragraph [ref=e121]: Need a text change or a new photo? Just send us a message.
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - img "Support team member" [ref=e125]
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: Nettsaga Support
+              - paragraph [ref=e129]: Ready to help
+          - paragraph [ref=e131]: “Can you update the phone number on our contact page?”
+          - paragraph [ref=e133]: Done! Updated and live now. ✓
+  - generic [ref=e135]:
+    - heading "How it works" [level=2] [ref=e136]
+    - paragraph [ref=e137]: Three simple steps — no complicated process, no long contracts.
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - img [ref=e141]
+        - generic [ref=e143]: Step 1
+        - heading "Quick chat" [level=3] [ref=e144]
+        - paragraph [ref=e145]: We learn about your business and what you need. No pressure, just a friendly conversation.
+      - generic [ref=e146]:
+        - img [ref=e148]
+        - generic [ref=e153]: Step 2
+        - heading "We build a draft" [level=3] [ref=e154]
+        - paragraph [ref=e155]: You get a first version to review. We refine it together until you're happy.
+      - generic [ref=e156]:
+        - img [ref=e158]
+        - generic [ref=e161]: Step 3
+        - heading "You decide" [level=3] [ref=e162]
+        - paragraph [ref=e163]: If you like it, we publish it. If not, no worries — there's no obligation.
+  - generic [ref=e166]:
+    - generic [ref=e167]:
+      - heading "Modern tech, local heart." [level=2] [ref=e168]
+      - paragraph [ref=e169]: We build with the latest tools but we understand the Philippine market. Your customers pay with GCash, browse on their phones, and expect things to load fast.
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - img [ref=e173]
+          - generic [ref=e175]:
+            - heading "Pay the way you want" [level=3] [ref=e176]
+            - paragraph [ref=e177]: GCash, Maya, bank transfer, or credit card — whatever is easiest for you.
+        - generic [ref=e178]:
+          - img [ref=e180]
+          - generic [ref=e182]:
+            - heading "Mobile-first" [level=3] [ref=e183]
+            - paragraph [ref=e184]: Over 90% of Filipinos browse on mobile. Every site we build looks great on phones first.
+        - generic [ref=e185]:
+          - img [ref=e187]
+          - generic [ref=e190]:
+            - heading "Fast everywhere" [level=3] [ref=e191]
+            - paragraph [ref=e192]: Optimized for Philippine internet speeds so your customers never wait.
+      - generic [ref=e194]:
+        - generic [ref=e195]: GCash
+        - generic [ref=e196]: Maya
+        - generic [ref=e197]:
+          - img [ref=e198]
+          - text: Cards
+    - img [ref=e203]
+  - generic [ref=e209]:
+    - heading "Frequently asked questions" [level=2] [ref=e210]
+    - paragraph [ref=e211]: Honest answers to the things people usually ask us.
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - button "Do we own the website and domain?" [ref=e214]:
+          - generic [ref=e215]: Do we own the website and domain?
+          - img [ref=e216]
+        - paragraph [ref=e218]: Yes. The domain is registered under your name and you own all the content. If you ever decide to leave, everything is yours.
+      - generic [ref=e219]:
+        - button "How does payment work?" [ref=e220]:
+          - generic [ref=e221]: How does payment work?
+          - img [ref=e222]
+        - paragraph [ref=e224]: One simple yearly payment covers everything — design, development, hosting, domain, and support. We accept GCash, Maya, bank transfer, and credit cards.
+      - generic [ref=e225]:
+        - button "Can I cancel anytime?" [ref=e226]:
+          - generic [ref=e227]: Can I cancel anytime?
+          - img [ref=e228]
+        - paragraph [ref=e230]: Of course. There are no binding contracts. If you decide not to renew, your site stays up until the end of your paid period and we'll help you transition.
+      - generic [ref=e231]:
+        - button "How fast can you deliver?" [ref=e232]:
+          - generic [ref=e233]: How fast can you deliver?
+          - img [ref=e234]
+        - paragraph [ref=e236]: Most websites are ready within a week. Larger projects may take a bit longer, but we'll always give you a clear timeline upfront.
+      - generic [ref=e237]:
+        - button "What if I already have a website?" [ref=e238]:
+          - generic [ref=e239]: What if I already have a website?
+          - img [ref=e240]
+        - paragraph [ref=e242]: No problem! We can redesign and migrate your existing site, or build a brand new one — whatever works best for you.
+      - generic [ref=e243]:
+        - button "What's included in updates?" [ref=e244]:
+          - generic [ref=e245]: What's included in updates?
+          - img [ref=e246]
+        - paragraph [ref=e248]: Text changes, photo swaps, adding new sections, minor layout tweaks — just send us a message and we'll take care of it.
+      - generic [ref=e249]:
+        - button "Do you provide business email?" [ref=e250]:
+          - generic [ref=e251]: Do you provide business email?
+          - img [ref=e252]
+        - paragraph [ref=e254]: Yes, we can set up professional email addresses like you@yourbusiness.com as part of your package.
+      - generic [ref=e255]:
+        - button "Do you support GCash and credit cards?" [ref=e256]:
+          - generic [ref=e257]: Do you support GCash and credit cards?
+          - img [ref=e258]
+        - paragraph [ref=e260]: Absolutely. We accept GCash, Maya, bank transfer, and all major credit cards. Pay whichever way is most convenient for you.
+  - generic [ref=e262]:
+    - heading "Ready to get online?" [level=2] [ref=e263]
+    - paragraph [ref=e264]: No commitment needed. Let's have a quick chat about what you need and we'll take it from there.
+    - link "Let's talk" [ref=e265] [cursor=pointer]:
+      - /url: https://m.me/nettsaga
+      - img [ref=e266]
+      - text: Let's talk
+  - contentinfo [ref=e268]:
+    - generic [ref=e269]:
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - generic [ref=e272]: Nettsaga.
+          - paragraph [ref=e273]: Professional websites for Philippine businesses. One fixed yearly fee — no surprises.
+          - generic [ref=e275]:
+            - generic [ref=e276]: GCash
+            - generic [ref=e277]: Maya
+            - generic [ref=e278]:
+              - img [ref=e279]
+              - text: Cards
+        - generic [ref=e281]:
+          - heading "Quick links" [level=4] [ref=e282]
+          - list [ref=e283]:
+            - listitem [ref=e284]:
+              - link "How it works" [ref=e285] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e286]:
+              - link "Why us" [ref=e287] [cursor=pointer]:
+                - /url: "#local-edge"
+            - listitem [ref=e288]:
+              - link "FAQ" [ref=e289] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=e290]:
+          - heading "Get in touch" [level=4] [ref=e291]
+          - list [ref=e292]:
+            - listitem [ref=e293]:
+              - link "hello@nettsaga.com" [ref=e294] [cursor=pointer]:
+                - /url: mailto:hello@nettsaga.com
+                - img [ref=e295]
+                - text: hello@nettsaga.com
+            - listitem [ref=e298]:
+              - link "Messenger / Viber" [ref=e299] [cursor=pointer]:
+                - /url: https://m.me/nettsaga
+                - img [ref=e300]
+                - text: Messenger / Viber
+      - generic [ref=e302]:
+        - paragraph [ref=e303]: © 2026 Nettsaga. All rights reserved.
+        - generic [ref=e304]:
+          - img [ref=e305]
+          - generic [ref=e308]: No Binding Contracts
+          - generic [ref=e309]: "|"
+          - generic [ref=e310]: 100% Transparency
+  - button "Open Next.js Dev Tools" [ref=e316] [cursor=pointer]:
+    - img [ref=e317]
