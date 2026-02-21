@@ -1,75 +1,68 @@
-import { Smartphone, Globe, CreditCard } from "lucide-react";
-import PaymentBadges from "./PaymentBadges";
+import Image from "next/image";
 
 const features = [
   {
-    icon: CreditCard,
-    title: "Pay the way you want",
+    title: "Built for speed",
     description:
-      "GCash, Maya, bank transfer, or credit card — whatever is easiest for you.",
+      "Optimized for Philippine internet. Your site loads fast on any connection, keeping customers engaged.",
   },
   {
-    icon: Smartphone,
-    title: "Mobile-first",
+    title: "Mobile-first design",
     description:
-      "Over 90% of Filipinos browse on mobile. Every site we build looks great on phones first.",
+      "Over 90% of Filipinos browse on mobile. Every site we build looks and works great on phones first.",
   },
   {
-    icon: Globe,
-    title: "Fast everywhere",
+    title: "Your own online presence",
     description:
-      "Optimized for Philippine internet speeds so your customers never wait.",
+      "A professional website that makes your business easy to find, builds trust, and turns visitors into customers.",
+  },
+  {
+    title: "Always monitored",
+    description:
+      "We track uptime, speed, and security 24/7. If something needs attention, we handle it before you notice.",
   },
 ];
 
 export default function LocalEdge() {
   return (
     <section id="local-edge" className="bg-grain relative bg-paper py-20 sm:py-28">
-      <div className="relative mx-auto max-w-6xl px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Left — copy */}
-          <div>
-            <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-dark">
-              Modern tech, local heart.
-            </h2>
-            <p className="mt-4 text-[22px] text-slate">
-              We build with the latest tools but we understand the Philippine
-              market. Your customers pay with GCash, browse on their phones, and
-              expect things to load fast.
-            </p>
+      <div className="relative mx-auto max-w-5xl px-6">
+        {/* ── Top — centered headline ── */}
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-heading text-[40px] font-bold leading-tight tracking-tight text-dark">
+            Modern tech that{" "}
+            <span className="text-muted">works for your business</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-[22px] text-slate">
+            We build with the latest tools but we understand the Philippine
+            market. Fast, secure, and optimized for local customers.
+          </p>
+        </div>
 
-            <div className="mt-10 space-y-6">
-              {features.map((f) => (
-                <div key={f.title} className="flex gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-border bg-paper text-dark">
-                    <f.icon className="h-5 w-5 stroke-[1.5]" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-dark">
-                      {f.title}
-                    </h3>
-                    <p className="mt-1 text-sm text-slate">{f.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* ── Middle — hero image with baked-in widgets ── */}
+        <div className="mt-14">
+          <Image
+            src="/assets/why-us.png"
+            alt="Filipino professional managing his business online with Nettsaga — surrounded by performance metrics, deploy pipeline, and mobile-first indicators"
+            width={2060}
+            height={1080}
+            className="w-full rounded-2xl object-contain"
+            priority
+          />
+        </div>
 
-            <div className="mt-8">
-              <PaymentBadges />
+        {/* ── Bottom — feature grid ── */}
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((f) => (
+            <div key={f.title}>
+              <h3 className="font-heading text-sm font-bold text-dark">
+                {f.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate">
+                {f.description}
+              </p>
             </div>
-          </div>
-
-          {/* Right — decorative placeholder */}
-          <div className="relative hidden lg:block">
-            <div className="aspect-square rounded-3xl border border-border bg-white p-8">
-              <div className="glass flex h-full flex-col items-center justify-center gap-4 rounded-2xl p-8 shadow-tactile">
-                <Smartphone className="h-12 w-12 text-muted stroke-[1]" />
-                <div className="h-3 w-24 rounded-full bg-dark/8" />
-                <div className="h-3 w-32 rounded-full bg-dark/4" />
-                <div className="h-3 w-20 rounded-full bg-dark/8" />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

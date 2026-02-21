@@ -1,0 +1,253 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "N e t t s a g a ." [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e6]: "N"
+        - generic [ref=e7]:
+          - generic [ref=e8]: e
+          - generic [ref=e9]: t
+          - generic [ref=e10]: t
+          - generic [ref=e11]: s
+          - generic [ref=e12]: a
+          - generic [ref=e13]: g
+          - generic [ref=e14]: a
+        - text: .
+      - navigation [ref=e15]:
+        - link "How it works" [ref=e16] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Why us" [ref=e17] [cursor=pointer]:
+          - /url: "#local-edge"
+        - link "FAQ" [ref=e18] [cursor=pointer]:
+          - /url: "#faq"
+      - link "Talk to us" [ref=e19] [cursor=pointer]:
+        - /url: "#cta"
+        - img [ref=e20]
+        - text: Talk to us
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - heading "Get your business online this week." [level=1] [ref=e25]:
+        - text: Get your business
+        - text: online this week.
+      - paragraph [ref=e26]: Website + hosting + support for one fixed yearly fee. No surprises, no hidden costs — just a website that works for your business.
+      - link "See how it works" [ref=e27] [cursor=pointer]:
+        - /url: "#how-it-works"
+        - text: See how it works
+        - img [ref=e28]
+    - generic [ref=e30]:
+      - img "Filipino professional holding a tablet" [ref=e32]
+      - img "Filipino professional working on laptop" [ref=e34]
+      - img "Happy Filipino professional" [ref=e36]
+      - 'img "System: Live status" [ref=e38]'
+      - img "Verified Secure SSL badge" [ref=e40]
+      - 'img "Performance Score: 95" [ref=e42]'
+  - generic [ref=e44]:
+    - paragraph [ref=e45]: Built for the Philippines. Optimized for Manila, Cebu, & Davao.
+    - generic [ref=e46]:
+      - img "Manila" [ref=e48]
+      - img "Cebu" [ref=e50]
+      - img "Davao" [ref=e52]
+  - generic [ref=e54]:
+    - heading "Everything you need, nothing you don't." [level=2] [ref=e55]
+    - paragraph [ref=e56]: We keep it simple so you can focus on running your business.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: Full-service // Fast launch
+        - generic:
+          - img "Laptop displaying a website built by Nettsaga"
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: True all-in-one
+          - heading "We handle the complexity, you handle the business." [level=3] [ref=e62]
+          - paragraph [ref=e63]: Design, development, hosting, domain, speed optimization — all bundled into one package. No juggling vendors.
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - img [ref=e67]
+              - generic [ref=e71]: Custom Design
+            - generic [ref=e72]:
+              - img [ref=e74]
+              - generic [ref=e77]: Development
+            - generic [ref=e78]:
+              - img [ref=e80]
+              - generic [ref=e83]: Hosting & Domain
+            - generic [ref=e84]:
+              - img [ref=e86]
+              - generic [ref=e89]: SEO & Speed
+      - generic [ref=e90]:
+        - generic [ref=e91]: N.
+        - paragraph [ref=e92]: Predictable Pricing
+        - heading "One transparent yearly fee." [level=3] [ref=e93]
+        - paragraph [ref=e94]: No monthly surprises. Know exactly what you pay, every year.
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - paragraph [ref=e98]: Nettsaga Plan
+              - paragraph [ref=e99]: All-inclusive website package
+            - generic [ref=e100]:
+              - generic [ref=e101]: Monthly
+              - generic [ref=e102]: Yearly
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]: Website + Design
+              - img [ref=e107]
+            - generic [ref=e109]:
+              - generic [ref=e110]: Hosting & Domain
+              - img [ref=e111]
+            - generic [ref=e113]:
+              - generic [ref=e114]: Content Updates
+              - img [ref=e115]
+            - generic [ref=e117]:
+              - generic [ref=e118]: Support
+              - img [ref=e119]
+          - generic [ref=e122]:
+            - generic [ref=e123]: Hidden Fees
+            - generic [ref=e124]: ₱0.00
+      - generic [ref=e125]:
+        - generic [ref=e126]: Support // Included
+        - generic [ref=e127]:
+          - paragraph [ref=e128]: Always-on support
+          - heading "Updates are part of the deal." [level=3] [ref=e129]
+          - paragraph [ref=e130]: Need a text change or a new photo? Just send us a message.
+        - img "Nettsaga support team member responding to a client message" [ref=e132]
+  - generic [ref=e133]:
+    - generic [ref=e134]: "Status: System_Ready"
+    - generic [ref=e135]: "Timeline: 07_Days"
+    - generic [ref=e136]:
+      - heading "How it works" [level=2] [ref=e137]
+      - paragraph [ref=e138]: Three simple steps — no complicated process, no long contracts.
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e144]: Step 01 — Connection
+          - img "Chat conversation between a client and Nettsaga" [ref=e147]
+          - generic [ref=e148]:
+            - heading "Quick chat" [level=3] [ref=e149]
+            - paragraph [ref=e150]: We confirm your business info and exactly what you need to grow. No sales pitch, just a 15-minute alignment.
+        - generic [ref=e151]:
+          - generic [ref=e154]: Step 02 — Engineering
+          - img "Laptop displaying a website built by Nettsaga on a solid rock base" [ref=e157]
+          - generic [ref=e158]:
+            - heading "We build a draft" [level=3] [ref=e159]
+            - paragraph [ref=e160]: Our team handles the heavy lifting — design, hosting, and tech. You get a fully functional first version to review in 7 days.
+        - generic [ref=e161]:
+          - generic [ref=e164]: Step 03 — Collaboration
+          - img "Smiling Filipino professional discussing the project" [ref=e167]
+          - generic [ref=e168]:
+            - heading "You decide" [level=3] [ref=e169]
+            - paragraph [ref=e170]:
+              - text: If you love the draft, we publish. If it's not the right fit,
+              - strong [ref=e171]: no worries and no hard feelings
+              - text: . You're always in control.
+  - generic [ref=e173]:
+    - generic [ref=e174]:
+      - heading "Modern tech that works for your business" [level=2] [ref=e175]
+      - paragraph [ref=e176]: We build with the latest tools but we understand the Philippine market. Fast, secure, and optimized for local customers.
+    - img "Filipino professional managing his business online with Nettsaga — surrounded by performance metrics, deploy pipeline, and mobile-first indicators" [ref=e178]
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - heading "Built for speed" [level=3] [ref=e181]
+        - paragraph [ref=e182]: Optimized for Philippine internet. Your site loads fast on any connection, keeping customers engaged.
+      - generic [ref=e183]:
+        - heading "Mobile-first design" [level=3] [ref=e184]
+        - paragraph [ref=e185]: Over 90% of Filipinos browse on mobile. Every site we build looks and works great on phones first.
+      - generic [ref=e186]:
+        - heading "Local payment ready" [level=3] [ref=e187]
+        - paragraph [ref=e188]: GCash, Maya, bank transfer, or credit card — your customers pay whichever way is easiest for them.
+      - generic [ref=e189]:
+        - heading "Always monitored" [level=3] [ref=e190]
+        - paragraph [ref=e191]: We track uptime, speed, and security 24/7. If something needs attention, we handle it before you notice.
+  - generic [ref=e193]:
+    - heading "Frequently asked questions" [level=2] [ref=e194]
+    - paragraph [ref=e195]: Honest answers to the things people usually ask us.
+    - generic [ref=e196]:
+      - generic [ref=e197]:
+        - button "Do we own the website and domain?" [ref=e198]:
+          - generic [ref=e199]: Do we own the website and domain?
+          - img [ref=e200]
+        - paragraph [ref=e202]: Yes. The domain is registered under your name and you own all the content. If you ever decide to leave, everything is yours.
+      - generic [ref=e203]:
+        - button "How does payment work?" [ref=e204]:
+          - generic [ref=e205]: How does payment work?
+          - img [ref=e206]
+        - paragraph [ref=e208]: One simple yearly payment covers everything — design, development, hosting, domain, and support. We accept GCash, Maya, bank transfer, and credit cards.
+      - generic [ref=e209]:
+        - button "Can I cancel anytime?" [ref=e210]:
+          - generic [ref=e211]: Can I cancel anytime?
+          - img [ref=e212]
+        - paragraph [ref=e214]: Of course. There are no binding contracts. If you decide not to renew, your site stays up until the end of your paid period and we'll help you transition.
+      - generic [ref=e215]:
+        - button "How fast can you deliver?" [ref=e216]:
+          - generic [ref=e217]: How fast can you deliver?
+          - img [ref=e218]
+        - paragraph [ref=e220]: Most websites are ready within a week. Larger projects may take a bit longer, but we'll always give you a clear timeline upfront.
+      - generic [ref=e221]:
+        - button "What if I already have a website?" [ref=e222]:
+          - generic [ref=e223]: What if I already have a website?
+          - img [ref=e224]
+        - paragraph [ref=e226]: No problem! We can redesign and migrate your existing site, or build a brand new one — whatever works best for you.
+      - generic [ref=e227]:
+        - button "What's included in updates?" [ref=e228]:
+          - generic [ref=e229]: What's included in updates?
+          - img [ref=e230]
+        - paragraph [ref=e232]: Text changes, photo swaps, adding new sections, minor layout tweaks — just send us a message and we'll take care of it.
+      - generic [ref=e233]:
+        - button "Do you provide business email?" [ref=e234]:
+          - generic [ref=e235]: Do you provide business email?
+          - img [ref=e236]
+        - paragraph [ref=e238]: Yes, we can set up professional email addresses like you@yourbusiness.com as part of your package.
+      - generic [ref=e239]:
+        - button "Do you support GCash and credit cards?" [ref=e240]:
+          - generic [ref=e241]: Do you support GCash and credit cards?
+          - img [ref=e242]
+        - paragraph [ref=e244]: Absolutely. We accept GCash, Maya, bank transfer, and all major credit cards. Pay whichever way is most convenient for you.
+  - generic [ref=e246]:
+    - heading "Ready to get online?" [level=2] [ref=e247]
+    - paragraph [ref=e248]: No commitment needed. Let's have a quick chat about what you need and we'll take it from there.
+    - link "Let's talk" [ref=e249] [cursor=pointer]:
+      - /url: https://m.me/nettsaga
+      - img [ref=e250]
+      - text: Let's talk
+  - contentinfo [ref=e252]:
+    - generic [ref=e253]:
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - generic [ref=e256]: Nettsaga.
+          - paragraph [ref=e257]: Professional websites for Philippine businesses. One fixed yearly fee — no surprises.
+          - generic [ref=e259]:
+            - generic [ref=e260]: GCash
+            - generic [ref=e261]: Maya
+            - generic [ref=e262]:
+              - img [ref=e263]
+              - text: Cards
+        - generic [ref=e265]:
+          - heading "Quick links" [level=4] [ref=e266]
+          - list [ref=e267]:
+            - listitem [ref=e268]:
+              - link "How it works" [ref=e269] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e270]:
+              - link "Why us" [ref=e271] [cursor=pointer]:
+                - /url: "#local-edge"
+            - listitem [ref=e272]:
+              - link "FAQ" [ref=e273] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=e274]:
+          - heading "Get in touch" [level=4] [ref=e275]
+          - list [ref=e276]:
+            - listitem [ref=e277]:
+              - link "hello@nettsaga.com" [ref=e278] [cursor=pointer]:
+                - /url: mailto:hello@nettsaga.com
+                - img [ref=e279]
+                - text: hello@nettsaga.com
+            - listitem [ref=e282]:
+              - link "Messenger / Viber" [ref=e283] [cursor=pointer]:
+                - /url: https://m.me/nettsaga
+                - img [ref=e284]
+                - text: Messenger / Viber
+      - generic [ref=e286]:
+        - paragraph [ref=e287]: © 2026 Nettsaga. All rights reserved.
+        - generic [ref=e288]:
+          - img [ref=e289]
+          - generic [ref=e292]: No Binding Contracts
+          - generic [ref=e293]: "|"
+          - generic [ref=e294]: 100% Transparency
+  - button "Open Next.js Dev Tools" [ref=e300] [cursor=pointer]:
+    - img [ref=e301]
