@@ -90,35 +90,40 @@ function DesktopTable({ categories }: { categories: Category[] }) {
 
   return (
     <div className="hidden lg:block">
-      <div className="overflow-hidden rounded-2xl border border-dark/[0.06] bg-paper">
-        <table className="w-full text-left">
-          <thead>
-            <tr className="sticky top-[73px] z-20 bg-paper">
-              <th className="w-[280px] border-b border-dark/[0.06] py-5 pl-6 pr-4">
-                <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-                  {t.comparison.feature}
-                </span>
-              </th>
-              {plans.map((plan) => (
-                <th
-                  key={plan}
-                  className={`border-b border-dark/[0.06] px-4 py-5 text-center ${
-                    plan === "Business" ? "bg-dark/[0.02]" : ""
-                  }`}
-                >
-                  <span className="font-heading text-sm font-bold tracking-tight text-dark">
-                    {plan}
-                  </span>
-                  {plan === "Business" && (
-                    <span className="ml-2 inline-block rounded-full bg-dark px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white">
-                      {t.comparison.popular}
-                    </span>
-                  )}
-                </th>
-              ))}
-            </tr>
-          </thead>
+      <div className="sticky top-[73px] z-20 flex rounded-t-2xl border-x border-t border-dark/[0.06] bg-paper">
+        <div className="w-[280px] shrink-0 border-b border-dark/[0.06] py-5 pl-6 pr-4">
+          <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+            {t.comparison.feature}
+          </span>
+        </div>
+        {plans.map((plan) => (
+          <div
+            key={plan}
+            className={`flex-1 border-b border-dark/[0.06] px-4 py-5 text-center ${
+              plan === "Business" ? "bg-dark/[0.02]" : ""
+            }`}
+          >
+            <span className="font-heading text-sm font-bold tracking-tight text-dark">
+              {plan}
+            </span>
+            {plan === "Business" && (
+              <span className="ml-2 inline-block rounded-full bg-dark px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white">
+                {t.comparison.popular}
+              </span>
+            )}
+          </div>
+        ))}
+      </div>
 
+      <div className="overflow-hidden rounded-b-2xl border-x border-b border-dark/[0.06] bg-paper">
+        <table className="w-full text-left" style={{ tableLayout: "fixed" }}>
+          <colgroup>
+            <col style={{ width: "280px" }} />
+            <col />
+            <col />
+            <col />
+            <col />
+          </colgroup>
           <tbody>
             {categories.map((category) => (
               <Fragment key={category.techLabel}>

@@ -1,0 +1,526 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "N e t t s a g a ." [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: "N"
+        - generic [ref=e7]:
+          - generic [ref=e8]: e
+          - generic [ref=e9]: t
+          - generic [ref=e10]: t
+          - generic [ref=e11]: s
+          - generic [ref=e12]: a
+          - generic [ref=e13]: g
+          - generic [ref=e14]: a
+        - text: .
+      - navigation [ref=e15]:
+        - link "How it works" [ref=e16] [cursor=pointer]:
+          - /url: /#how-it-works
+        - link "Pricing" [ref=e17] [cursor=pointer]:
+          - /url: /pricing
+        - link "Portfolio" [ref=e18] [cursor=pointer]:
+          - /url: /#portfolio
+        - link "About" [ref=e19] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e20] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - button "English" [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+          - button "Filipino" [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+        - link "Talk to us" [ref=e36] [cursor=pointer]:
+          - /url: /contact
+          - img [ref=e37]
+          - text: Talk to us
+  - generic [ref=e39]:
+    - generic [ref=e40]: Plans // Overview
+    - generic [ref=e41]: "Billing: Yearly"
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: Pricing // Plans
+        - heading "Simple, transparent pricing." [level=1] [ref=e45]
+        - paragraph [ref=e46]: One yearly fee — everything included. No monthly surprises.
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Starter" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Perfect for small businesses and startups
+          - generic [ref=e51]: ₱9,999/ year
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - img [ref=e54]
+              - generic [ref=e56]: Up to 5 pages
+            - listitem [ref=e57]:
+              - img [ref=e58]
+              - generic [ref=e60]: Responsive design
+            - listitem [ref=e61]:
+              - img [ref=e62]
+              - generic [ref=e64]: Contact form
+            - listitem [ref=e65]:
+              - img [ref=e66]
+              - generic [ref=e68]: SSL certificate
+            - listitem [ref=e69]:
+              - img [ref=e70]
+              - generic [ref=e72]: Basic SEO
+            - listitem [ref=e73]:
+              - img [ref=e74]
+              - generic [ref=e76]: Email support
+          - link "Get started" [ref=e77] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e78]
+            - text: Get started
+        - generic [ref=e80]:
+          - generic [ref=e81]: Popular
+          - heading "Business" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Ideal for growing small and medium businesses
+          - generic [ref=e84]: ₱14,999/ year
+          - list [ref=e85]:
+            - listitem [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e89]: Everything in Starter
+            - listitem [ref=e90]:
+              - img [ref=e91]
+              - generic [ref=e93]: Up to 10 pages
+            - listitem [ref=e94]:
+              - img [ref=e95]
+              - generic [ref=e97]: Custom design
+            - listitem [ref=e98]:
+              - img [ref=e99]
+              - generic [ref=e101]: Social media integration
+            - listitem [ref=e102]:
+              - img [ref=e103]
+              - generic [ref=e105]: SEO optimization
+            - listitem [ref=e106]:
+              - img [ref=e107]
+              - generic [ref=e109]: Priority support
+          - link "Get started" [ref=e110] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e111]
+            - text: Get started
+        - generic [ref=e113]:
+          - heading "Growth" [level=3] [ref=e114]
+          - paragraph [ref=e115]: For larger companies with bigger needs
+          - generic [ref=e116]: ₱29,999/ year
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - img [ref=e119]
+              - generic [ref=e121]: Everything in Business
+            - listitem [ref=e122]:
+              - img [ref=e123]
+              - generic [ref=e125]: Up to 20 pages
+            - listitem [ref=e126]:
+              - img [ref=e127]
+              - generic [ref=e129]: E-commerce ready
+            - listitem [ref=e130]:
+              - img [ref=e131]
+              - generic [ref=e133]: Advanced SEO
+            - listitem [ref=e134]:
+              - img [ref=e135]
+              - generic [ref=e137]: Analytics dashboard
+            - listitem [ref=e138]:
+              - img [ref=e139]
+              - generic [ref=e141]: Dedicated support
+          - link "Get started" [ref=e142] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e143]
+            - text: Get started
+        - generic [ref=e145]:
+          - heading "Custom" [level=3] [ref=e146]
+          - paragraph [ref=e147]: Tailor-made solution for unique needs
+          - generic [ref=e148]: Custom
+          - list [ref=e149]:
+            - listitem [ref=e150]:
+              - img [ref=e151]
+              - generic [ref=e153]: Fully custom solution
+            - listitem [ref=e154]:
+              - img [ref=e155]
+              - generic [ref=e157]: Unlimited pages
+            - listitem [ref=e158]:
+              - img [ref=e159]
+              - generic [ref=e161]: Advanced integrations
+            - listitem [ref=e162]:
+              - img [ref=e163]
+              - generic [ref=e165]: Custom functionality
+            - listitem [ref=e166]:
+              - img [ref=e167]
+              - generic [ref=e169]: Specialized design
+            - listitem [ref=e170]:
+              - img [ref=e171]
+              - generic [ref=e173]: SLA guarantee
+          - link "Get started" [ref=e174] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e175]
+            - text: Get started
+  - generic [ref=e178]:
+    - generic [ref=e179]:
+      - paragraph [ref=e180]: Compare // Features
+      - heading "What’s included in each plan" [level=2] [ref=e181]
+      - paragraph [ref=e182]: Every plan comes with hosting, updates, and support built in.
+    - generic [ref=e184]:
+      - generic [ref=e185]:
+        - generic [ref=e186]: Feature
+        - generic [ref=e187]: Starter
+        - generic [ref=e188]:
+          - text: Business
+          - generic [ref=e189]: Popular
+        - generic [ref=e190]: Growth
+        - generic [ref=e191]: Custom
+      - table [ref=e193]:
+        - rowgroup [ref=e200]:
+          - row "Core // Essentials" [ref=e201]:
+            - cell "Core // Essentials" [ref=e202]:
+              - generic [ref=e205]: Core // Essentials
+          - row "Pages Up to 5 Up to 10 Up to 20 Unlimited" [ref=e206]:
+            - cell "Pages" [ref=e207]
+            - cell "Up to 5" [ref=e208]
+            - cell "Up to 10" [ref=e209]
+            - cell "Up to 20" [ref=e210]
+            - cell "Unlimited" [ref=e211]
+          - row "Custom domain" [ref=e212]:
+            - cell "Custom domain" [ref=e213]
+            - cell [ref=e214]:
+              - img [ref=e215]
+            - cell [ref=e217]:
+              - img [ref=e218]
+            - cell [ref=e220]:
+              - img [ref=e221]
+            - cell [ref=e223]:
+              - img [ref=e224]
+          - row "SSL certificate" [ref=e226]:
+            - cell "SSL certificate" [ref=e227]
+            - cell [ref=e228]:
+              - img [ref=e229]
+            - cell [ref=e231]:
+              - img [ref=e232]
+            - cell [ref=e234]:
+              - img [ref=e235]
+            - cell [ref=e237]:
+              - img [ref=e238]
+          - row "Responsive design" [ref=e240]:
+            - cell "Responsive design" [ref=e241]
+            - cell [ref=e242]:
+              - img [ref=e243]
+            - cell [ref=e245]:
+              - img [ref=e246]
+            - cell [ref=e248]:
+              - img [ref=e249]
+            - cell [ref=e251]:
+              - img [ref=e252]
+          - row "Contact form" [ref=e254]:
+            - cell "Contact form" [ref=e255]
+            - cell [ref=e256]:
+              - img [ref=e257]
+            - cell [ref=e259]:
+              - img [ref=e260]
+            - cell [ref=e262]:
+              - img [ref=e263]
+            - cell [ref=e265]:
+              - img [ref=e266]
+          - row "Custom design" [ref=e268]:
+            - cell "Custom design" [ref=e269]
+            - cell [ref=e270]:
+              - img [ref=e271]
+            - cell [ref=e272]:
+              - img [ref=e273]
+            - cell [ref=e275]:
+              - img [ref=e276]
+            - cell [ref=e278]:
+              - img [ref=e279]
+          - row "Custom functionality" [ref=e281]:
+            - cell "Custom functionality" [ref=e282]
+            - cell [ref=e283]:
+              - img [ref=e284]
+            - cell [ref=e285]:
+              - img [ref=e286]
+            - cell [ref=e287]:
+              - img [ref=e288]
+            - cell [ref=e290]:
+              - img [ref=e291]
+          - row "Infra // Performance" [ref=e293]:
+            - cell "Infra // Performance" [ref=e294]:
+              - generic [ref=e297]: Infra // Performance
+          - row "Managed hosting" [ref=e298]:
+            - cell "Managed hosting" [ref=e299]
+            - cell [ref=e300]:
+              - img [ref=e301]
+            - cell [ref=e303]:
+              - img [ref=e304]
+            - cell [ref=e306]:
+              - img [ref=e307]
+            - cell [ref=e309]:
+              - img [ref=e310]
+          - row "Speed optimization" [ref=e312]:
+            - cell "Speed optimization" [ref=e313]
+            - cell [ref=e314]:
+              - img [ref=e315]
+            - cell [ref=e316]:
+              - img [ref=e317]
+            - cell [ref=e319]:
+              - img [ref=e320]
+            - cell [ref=e322]:
+              - img [ref=e323]
+          - row "Uptime monitoring" [ref=e325]:
+            - cell "Uptime monitoring" [ref=e326]
+            - cell [ref=e327]:
+              - img [ref=e328]
+            - cell [ref=e329]:
+              - img [ref=e330]
+            - cell [ref=e332]:
+              - img [ref=e333]
+            - cell [ref=e335]:
+              - img [ref=e336]
+          - row "CDN" [ref=e338]:
+            - cell "CDN" [ref=e339]
+            - cell [ref=e340]:
+              - img [ref=e341]
+            - cell [ref=e342]:
+              - img [ref=e343]
+            - cell [ref=e344]:
+              - img [ref=e345]
+            - cell [ref=e347]:
+              - img [ref=e348]
+          - row "Daily backups" [ref=e350]:
+            - cell "Daily backups" [ref=e351]
+            - cell [ref=e352]:
+              - img [ref=e353]
+            - cell [ref=e354]:
+              - img [ref=e355]
+            - cell [ref=e356]:
+              - img [ref=e357]
+            - cell [ref=e359]:
+              - img [ref=e360]
+          - row "Growth // Marketing" [ref=e362]:
+            - cell "Growth // Marketing" [ref=e363]:
+              - generic [ref=e366]: Growth // Marketing
+          - row "Basic SEO" [ref=e367]:
+            - cell "Basic SEO" [ref=e368]
+            - cell [ref=e369]:
+              - img [ref=e370]
+            - cell [ref=e372]:
+              - img [ref=e373]
+            - cell [ref=e375]:
+              - img [ref=e376]
+            - cell [ref=e378]:
+              - img [ref=e379]
+          - row "SEO optimization" [ref=e381]:
+            - cell "SEO optimization" [ref=e382]
+            - cell [ref=e383]:
+              - img [ref=e384]
+            - cell [ref=e385]:
+              - img [ref=e386]
+            - cell [ref=e388]:
+              - img [ref=e389]
+            - cell [ref=e391]:
+              - img [ref=e392]
+          - row "Advanced SEO" [ref=e394]:
+            - cell "Advanced SEO" [ref=e395]
+            - cell [ref=e396]:
+              - img [ref=e397]
+            - cell [ref=e398]:
+              - img [ref=e399]
+            - cell [ref=e400]:
+              - img [ref=e401]
+            - cell [ref=e403]:
+              - img [ref=e404]
+          - row "Social media integration" [ref=e406]:
+            - cell "Social media integration" [ref=e407]
+            - cell [ref=e408]:
+              - img [ref=e409]
+            - cell [ref=e410]:
+              - img [ref=e411]
+            - cell [ref=e413]:
+              - img [ref=e414]
+            - cell [ref=e416]:
+              - img [ref=e417]
+          - row "Analytics dashboard" [ref=e419]:
+            - cell "Analytics dashboard" [ref=e420]
+            - cell [ref=e421]:
+              - img [ref=e422]
+            - cell [ref=e423]:
+              - img [ref=e424]
+            - cell [ref=e425]:
+              - img [ref=e426]
+            - cell [ref=e428]:
+              - img [ref=e429]
+          - row "Google Business setup" [ref=e431]:
+            - cell "Google Business setup" [ref=e432]
+            - cell [ref=e433]:
+              - img [ref=e434]
+            - cell [ref=e435]:
+              - img [ref=e436]
+            - cell [ref=e437]:
+              - img [ref=e438]
+            - cell [ref=e440]:
+              - img [ref=e441]
+          - row "Commerce // Integrations" [ref=e443]:
+            - cell "Commerce // Integrations" [ref=e444]:
+              - generic [ref=e447]: Commerce // Integrations
+          - row "E-commerce ready" [ref=e448]:
+            - cell "E-commerce ready" [ref=e449]
+            - cell [ref=e450]:
+              - img [ref=e451]
+            - cell [ref=e452]:
+              - img [ref=e453]
+            - cell [ref=e454]:
+              - img [ref=e455]
+            - cell [ref=e457]:
+              - img [ref=e458]
+          - row "Payment integration" [ref=e460]:
+            - cell "Payment integration" [ref=e461]
+            - cell [ref=e462]:
+              - img [ref=e463]
+            - cell [ref=e464]:
+              - img [ref=e465]
+            - cell [ref=e466]:
+              - img [ref=e467]
+            - cell [ref=e469]:
+              - img [ref=e470]
+          - row "Advanced integrations" [ref=e472]:
+            - cell "Advanced integrations" [ref=e473]
+            - cell [ref=e474]:
+              - img [ref=e475]
+            - cell [ref=e476]:
+              - img [ref=e477]
+            - cell [ref=e478]:
+              - img [ref=e479]
+            - cell [ref=e480]:
+              - img [ref=e481]
+          - row "Booking system" [ref=e483]:
+            - cell "Booking system" [ref=e484]
+            - cell [ref=e485]:
+              - img [ref=e486]
+            - cell [ref=e487]:
+              - img [ref=e488]
+            - cell [ref=e489]:
+              - img [ref=e490]
+            - cell [ref=e491]:
+              - img [ref=e492]
+          - row "Support // SLA" [ref=e494]:
+            - cell "Support // SLA" [ref=e495]:
+              - generic [ref=e498]: Support // SLA
+          - row "Content updates" [ref=e499]:
+            - cell "Content updates" [ref=e500]
+            - cell [ref=e501]:
+              - img [ref=e502]
+            - cell [ref=e504]:
+              - img [ref=e505]
+            - cell [ref=e507]:
+              - img [ref=e508]
+            - cell [ref=e510]:
+              - img [ref=e511]
+          - row "Email support" [ref=e513]:
+            - cell "Email support" [ref=e514]
+            - cell [ref=e515]:
+              - img [ref=e516]
+            - cell [ref=e518]:
+              - img [ref=e519]
+            - cell [ref=e521]:
+              - img [ref=e522]
+            - cell [ref=e524]:
+              - img [ref=e525]
+          - row "Priority support" [ref=e527]:
+            - cell "Priority support" [ref=e528]
+            - cell [ref=e529]:
+              - img [ref=e530]
+            - cell [ref=e531]:
+              - img [ref=e532]
+            - cell [ref=e534]:
+              - img [ref=e535]
+            - cell [ref=e537]:
+              - img [ref=e538]
+          - row "Dedicated support" [ref=e540]:
+            - cell "Dedicated support" [ref=e541]
+            - cell [ref=e542]:
+              - img [ref=e543]
+            - cell [ref=e544]:
+              - img [ref=e545]
+            - cell [ref=e546]:
+              - img [ref=e547]
+            - cell [ref=e549]:
+              - img [ref=e550]
+          - row "SLA guarantee" [ref=e552]:
+            - cell "SLA guarantee" [ref=e553]
+            - cell [ref=e554]:
+              - img [ref=e555]
+            - cell [ref=e556]:
+              - img [ref=e557]
+            - cell [ref=e558]:
+              - img [ref=e559]
+            - cell [ref=e560]:
+              - img [ref=e561]
+          - row "Professional email" [ref=e563]:
+            - cell "Professional email" [ref=e564]
+            - cell [ref=e565]:
+              - img [ref=e566]
+            - cell [ref=e567]:
+              - img [ref=e568]
+            - cell [ref=e569]:
+              - img [ref=e570]
+            - cell [ref=e572]:
+              - img [ref=e573]
+  - generic [ref=e577]:
+    - generic [ref=e578]:
+      - img [ref=e580]
+      - heading "No lock-in" [level=3] [ref=e582]
+      - paragraph [ref=e583]: Cancel anytime. No contracts, no cancellation fees.
+    - generic [ref=e584]:
+      - img [ref=e586]
+      - heading "Live in 7 days" [level=3] [ref=e588]
+      - paragraph [ref=e589]: From kickoff to launch in a single week.
+    - generic [ref=e590]:
+      - img [ref=e592]
+      - heading "You own everything" [level=3] [ref=e596]
+      - paragraph [ref=e597]: Domain, code, content — it’s all yours.
+    - generic [ref=e598]:
+      - img [ref=e600]
+      - heading "Free updates" [level=3] [ref=e605]
+      - paragraph [ref=e606]: Content changes and tweaks included, always.
+  - generic [ref=e610]:
+    - heading "Not sure which plan fits?" [level=2] [ref=e611]
+    - paragraph [ref=e612]: No commitment needed. Let’s have a quick chat and figure out the best option for your business.
+    - link "Talk to us" [ref=e613] [cursor=pointer]:
+      - /url: /contact
+      - img [ref=e614]
+      - text: Talk to us
+  - contentinfo [ref=e616]:
+    - generic [ref=e617]:
+      - generic [ref=e618]:
+        - generic [ref=e619]:
+          - text: Nettsaga
+          - paragraph [ref=e620]: Burgundy Corporate Tower, 252 Sen. Gil J. Puyat Ave, Makati City, 1200 Metro Manila
+        - generic [ref=e621]:
+          - heading "Quick links" [level=4] [ref=e622]
+          - list [ref=e623]:
+            - listitem [ref=e624]:
+              - link "How it works" [ref=e625] [cursor=pointer]:
+                - /url: /#how-it-works
+            - listitem [ref=e626]:
+              - link "Why us" [ref=e627] [cursor=pointer]:
+                - /url: /#local-edge
+            - listitem [ref=e628]:
+              - link "Pricing" [ref=e629] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e630]:
+              - link "Portfolio" [ref=e631] [cursor=pointer]:
+                - /url: /#portfolio
+            - listitem [ref=e632]:
+              - link "FAQ" [ref=e633] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=e634]:
+              - link "About" [ref=e635] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e636]:
+              - link "Contact" [ref=e637] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e638]:
+          - heading "Get in touch" [level=4] [ref=e639]
+          - list [ref=e640]:
+            - listitem [ref=e641]:
+              - link "support@nettsaga.com" [ref=e642] [cursor=pointer]:
+                - /url: mailto:support@nettsaga.com
+                - img [ref=e643]
+                - text: support@nettsaga.com
+      - paragraph [ref=e647]: © 2026 Nettsaga. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e653] [cursor=pointer]:
+    - img [ref=e654]
