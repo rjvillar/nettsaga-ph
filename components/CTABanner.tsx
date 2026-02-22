@@ -9,7 +9,7 @@ export default function CTABanner() {
   return (
     <section
       id="cta"
-      className="relative flex min-h-[calc(100vh-64px)] items-center bg-white py-20 sm:py-28"
+      className="relative flex items-center bg-white py-6 sm:min-h-[calc(100vh-64px)] sm:py-28"
     >
       <div className="relative mx-auto w-full max-w-7xl px-6">
         <div className="bg-grain relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl bg-dark px-6 py-6 sm:aspect-auto sm:min-h-[75vh] sm:px-12 sm:py-0">
@@ -19,7 +19,8 @@ export default function CTABanner() {
 
           <div className="relative z-20 mx-auto max-w-xl text-center">
             <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[40px]">
-              {t.ctaBanner.title}<span className="text-white/50">{t.ctaBanner.titleMuted}</span>
+              {t.ctaBanner.title}
+              <span className="text-white/50">{t.ctaBanner.titleMuted}</span>
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-[22px]">
               {t.ctaBanner.subtitle}

@@ -107,7 +107,7 @@ export default function ValuePillars() {
               Support // Included
             </span>
             <div className="relative z-10 p-8 pb-0">
-              <p className="hidden font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted sm:block">
+              <p className="font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted">
                 {t.valuePillars.card3.label}
               </p>
               <h3 className="mt-3 font-heading text-xl font-bold tracking-tight text-dark">

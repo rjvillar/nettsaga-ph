@@ -247,7 +247,7 @@ const fil: Dictionary = {
       title: "Simulan natin ang usapan.",
       description:
         "Mag-reach out sa alinman sa mga channel na ito o sagutan ang form at babalikan ka namin.",
-      response: "Lun \u2014 Biy, sa loob ng araw",
+      response: "Lunes \u2014 Biyernes, sa loob ng araw",
       pipeline: {
         designApproved: "Design approved",
         codeReviewed: "Code reviewed",

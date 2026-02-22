@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -41,18 +41,6 @@ export default function Header({ solid = false }: { solid?: boolean }) {
     t.nav.about,
     t.nav.contact,
   ];
-
-  // Body scroll lock when mobile menu is open
-  useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [mobileOpen]);
 
   useGSAP(
     () => {
@@ -275,21 +263,22 @@ export default function Header({ solid = false }: { solid?: boolean }) {
       </header>
 
       <div
-        className={`fixed inset-0 z-[60] bg-black/60 backdrop-blur-md transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-[60] bg-black/60 backdrop-blur-2xl transition-opacity duration-300 md:hidden ${
           mobileOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
+        style={{ touchAction: "none" }}
         onClick={() => setMobileOpen(false)}
       />
 
       <div
-        className={`fixed inset-y-0 right-0 z-[70] flex w-4/5 max-w-xs flex-col bg-dark transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-y-0 right-0 z-[70] flex w-4/5 max-w-xs flex-col bg-dark shadow-[-12px_0_32px_rgba(0,0,0,0.8)] transition-transform duration-300 ease-in-out md:hidden ${
           mobileOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between px-6 pt-6">
-          <span className="font-logo text-2xl italic font-bold tracking-tight text-white">
+          <a href="/" onClick={() => setMobileOpen(false)} className="font-logo text-2xl italic font-bold tracking-tight text-white">
             Nettsaga
-          </span>
+          </a>
           <button
             onClick={() => setMobileOpen(false)}
             className="flex h-10 w-10 items-center justify-center text-white"

@@ -16,7 +16,7 @@ const cities = [
     alt: "Cebu",
     width: 774,
     height: 250,
-    size: "max-w-[170px] sm:max-w-[175px]",
+    size: "max-w-[145px] sm:max-w-[160px]",
   },
   {
     src: "/assets/davao.png",
@@ -42,13 +42,13 @@ export default function SocialProofBar() {
 
         <div className="mt-10 flex items-center justify-center gap-8 sm:gap-12">
           {cities.map((city) => (
-            <div key={city.alt} className={`w-1/3 ${city.size}`}>
+            <div key={city.alt} className={`flex w-1/3 justify-center ${city.size}`}>
               <Image
                 src={city.src}
                 alt={city.alt}
                 width={city.width}
                 height={city.height}
-                className="w-full object-contain"
+                className="h-5 w-auto object-contain sm:h-auto sm:w-full"
               />
             </div>
           ))}

@@ -193,9 +193,9 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
       </section>
 
       {/* ── Section 5: CTA ── */}
-      <section className="relative bg-white py-20 sm:py-28">
+      <section className="relative bg-white py-6 sm:py-28">
         <div className="relative mx-auto w-full max-w-7xl px-6">
-          <div className="bg-grain relative flex items-center justify-center overflow-hidden rounded-3xl bg-dark px-6 py-20 sm:px-12 sm:py-28">
+          <div className="bg-grain relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl bg-dark px-6 py-6 sm:aspect-auto sm:px-12 sm:py-28">
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.07)_45%,rgba(255,255,255,0.12)_55%,rgba(255,255,255,0.05)_70%,transparent_85%)]" />
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_45%_55%_at_68%_42%,rgba(255,255,255,0.10),transparent)]" />
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />

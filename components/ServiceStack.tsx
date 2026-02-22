@@ -10,7 +10,7 @@ export default function ServiceStack() {
   const { t } = useTranslation();
 
   return (
-    <div className="rounded-2xl border border-dark/[0.06] bg-paper p-5 sm:p-6">
+    <div className="rounded-2xl border border-dark/[0.06] bg-white p-5 sm:p-6">
       <div className="flex items-center gap-2">
         <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
         <span className="font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-dark/40">
@@ -24,7 +24,7 @@ export default function ServiceStack() {
           return (
             <div
               key={p.label}
-              className="flex items-center gap-3 rounded-lg border border-dark/[0.05] bg-white px-3.5 py-3"
+              className="flex items-center gap-3 rounded-lg border border-dark/[0.05] bg-paper px-3.5 py-3"
             >
               <div
                 className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg"

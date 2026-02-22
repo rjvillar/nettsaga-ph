@@ -13,6 +13,9 @@ export default function SmoothScroll() {
       touchMultiplier: 2,
     });
 
+    // Expose Lenis instance so other components (e.g. Header) can stop/start it
+    (window as unknown as Record<string, unknown>).__lenis = lenis;
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -28,9 +31,12 @@ export default function SmoothScroll() {
 
       const el = document.querySelector(hash);
       if (el) {
+        const isMobile = window.innerWidth < 768;
         requestAnimationFrame(() => {
-          const top = el.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT;
-          lenis.scrollTo(top);
+          lenis.scrollTo(el as HTMLElement, {
+            offset: -NAVBAR_HEIGHT,
+            immediate: isMobile,
+          });
         });
       }
     }
@@ -56,9 +62,12 @@ export default function SmoothScroll() {
         if (!el) return;
 
         e.preventDefault();
-        const top = el.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT;
-        lenis.scrollTo(top);
         window.history.pushState(null, "", hash);
+        const isMobile = window.innerWidth < 768;
+        lenis.scrollTo(el as HTMLElement, {
+          offset: -NAVBAR_HEIGHT,
+          immediate: isMobile,
+        });
       }
     }
 
@@ -66,6 +75,7 @@ export default function SmoothScroll() {
 
     return () => {
       document.removeEventListener("click", handleClick);
+      delete (window as unknown as Record<string, unknown>).__lenis;
       lenis.destroy();
     };
   }, []);

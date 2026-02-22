@@ -1,0 +1,384 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "N e t t s a g a ." [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: "N"
+        - generic [ref=e7]:
+          - generic [ref=e8]: e
+          - generic [ref=e9]: t
+          - generic [ref=e10]: t
+          - generic [ref=e11]: s
+          - generic [ref=e12]: a
+          - generic [ref=e13]: g
+          - generic [ref=e14]: a
+        - text: .
+      - button "Close menu" [active] [ref=e491]:
+        - img [ref=e492]
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - link "Nettsaga" [ref=e19] [cursor=pointer]:
+        - /url: /
+      - button "Close menu" [ref=e20]:
+        - img [ref=e21]
+    - navigation [ref=e24]:
+      - link "How it works" [ref=e25] [cursor=pointer]:
+        - /url: /#how-it-works
+      - link "Pricing" [ref=e26] [cursor=pointer]:
+        - /url: /pricing
+      - link "Portfolio" [ref=e27] [cursor=pointer]:
+        - /url: /#portfolio
+      - link "About" [ref=e28] [cursor=pointer]:
+        - /url: /about
+      - link "Contact" [ref=e29] [cursor=pointer]:
+        - /url: /contact
+    - generic [ref=e30]:
+      - link "support@nettsaga.com" [ref=e31] [cursor=pointer]:
+        - /url: mailto:support@nettsaga.com
+      - generic [ref=e32]:
+        - button "English" [ref=e33] [cursor=pointer]:
+          - img [ref=e34]
+        - button "Filipino" [ref=e40] [cursor=pointer]:
+          - img [ref=e41]
+  - generic [ref=e47]:
+    - generic [ref=e48]:
+      - heading "Get your business online this week." [level=1] [ref=e49]:
+        - text: Get your business
+        - text: online this week.
+      - paragraph [ref=e50]: Website + hosting + support for one fixed yearly fee. No surprises, no hidden costs — just a website that works for your business.
+      - generic [ref=e51]:
+        - link "See how it works" [ref=e52] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Contact Sales" [ref=e53] [cursor=pointer]:
+          - /url: /contact
+    - img "Filipino professional holding a tablet" [ref=e56]
+  - generic [ref=e58]:
+    - paragraph [ref=e59]: Built for the Philippines
+    - paragraph [ref=e60]: Trusted by businesses in Manila, Cebu, & Davao.
+    - generic [ref=e61]:
+      - img "Manila" [ref=e63]
+      - img "Cebu" [ref=e65]
+      - img "Davao" [ref=e67]
+  - generic [ref=e69]:
+    - heading "Everything you need, nothing you don’t." [level=2] [ref=e70]
+    - paragraph [ref=e71]: We keep it simple so you can focus on running your business.
+    - generic [ref=e72]:
+      - generic [ref=e74]:
+        - heading "We handle the complexity, you handle the business." [level=3] [ref=e75]
+        - paragraph [ref=e76]: Design, development, hosting, domain, speed optimization — all bundled into one package. No juggling vendors.
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - img [ref=e80]
+            - generic [ref=e84]: Custom Design
+          - generic [ref=e85]:
+            - img [ref=e87]
+            - generic [ref=e90]: Development
+          - generic [ref=e91]:
+            - img [ref=e93]
+            - generic [ref=e96]: Hosting & Domain
+          - generic [ref=e97]:
+            - img [ref=e99]
+            - generic [ref=e102]: SEO & Speed
+      - generic [ref=e103]:
+        - generic [ref=e104]: N.
+        - paragraph [ref=e105]: Transparent billing
+        - heading "No hidden fees. Ever." [level=3] [ref=e106]
+        - paragraph [ref=e107]: One yearly fee covers everything. No setup costs, no surprise invoices, no contracts.
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - img [ref=e110]
+            - generic [ref=e112]: No setup fees
+          - generic [ref=e113]:
+            - img [ref=e114]
+            - generic [ref=e116]: No lock-in contracts
+          - generic [ref=e117]:
+            - img [ref=e118]
+            - generic [ref=e120]: Cancel anytime
+          - generic [ref=e121]:
+            - img [ref=e122]
+            - generic [ref=e124]: You own everything
+          - generic [ref=e125]:
+            - img [ref=e126]
+            - generic [ref=e128]: Free domain included
+        - paragraph [ref=e130]: "Hidden fees: ₱0.00"
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: Always-on support
+          - heading "Updates are part of the deal." [level=3] [ref=e134]
+          - paragraph [ref=e135]: Need a text change or a new photo? Just send us a message.
+        - img "Nettsaga support team member responding to a client message" [ref=e137]
+  - generic [ref=e139]:
+    - heading "How it works" [level=2] [ref=e140]
+    - paragraph [ref=e141]: Three simple steps — no complicated process, no long contracts.
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e147]: Step 01 — Connection
+        - img "Chat conversation between a client and Nettsaga" [ref=e150]
+        - generic [ref=e151]:
+          - heading "Quick chat" [level=3] [ref=e152]
+          - paragraph [ref=e153]: We confirm your business info and exactly what you need to grow. No sales pitch, just a 15-minute alignment.
+      - generic [ref=e154]:
+        - generic [ref=e157]: Step 02 — Engineering
+        - img "Laptop displaying a website built by Nettsaga on a solid rock base" [ref=e160]
+        - generic [ref=e161]:
+          - heading "We build a draft" [level=3] [ref=e162]
+          - paragraph [ref=e163]: Our team handles the heavy lifting — design, hosting, and tech. You get a fully functional first version to review in 7 days.
+      - generic [ref=e164]:
+        - generic [ref=e167]: Step 03 — Collaboration
+        - img "Smiling Filipino professional discussing the project" [ref=e170]
+        - generic [ref=e171]:
+          - heading "You decide" [level=3] [ref=e172]
+          - paragraph [ref=e173]:
+            - text: If you love the draft, we publish. If it’s not the right fit,
+            - strong [ref=e174]: no worries and no hard feelings
+            - text: . You’re always in control.
+  - generic [ref=e176]:
+    - generic [ref=e177]:
+      - heading "Modern tech that works for your business" [level=2] [ref=e178]
+      - paragraph [ref=e179]: We build with the latest tools but we understand the Philippine market. Fast, secure, and optimized for local customers.
+    - img "Filipino professional managing his business online with Nettsaga — surrounded by performance metrics, deploy pipeline, and mobile-first indicators" [ref=e181]
+    - generic [ref=e182]:
+      - generic [ref=e183]:
+        - heading "Built for speed" [level=3] [ref=e184]
+        - paragraph [ref=e185]: Optimized for Philippine internet. Your site loads fast on any connection, keeping customers engaged.
+      - generic [ref=e186]:
+        - heading "Mobile-first design" [level=3] [ref=e187]
+        - paragraph [ref=e188]: Over 90% of Filipinos browse on mobile. Every site we build looks and works great on phones first.
+      - generic [ref=e189]:
+        - heading "Your own online presence" [level=3] [ref=e190]
+        - paragraph [ref=e191]: A professional website that makes your business easy to find, builds trust, and turns visitors into customers.
+      - generic [ref=e192]:
+        - heading "Always monitored" [level=3] [ref=e193]
+        - paragraph [ref=e194]: We track uptime, speed, and security 24/7. If something needs attention, we handle it before you notice.
+  - generic [ref=e196]:
+    - generic [ref=e197]:
+      - heading "Simple, transparent pricing." [level=2] [ref=e198]
+      - paragraph [ref=e199]: One yearly fee — everything included. No monthly surprises.
+    - generic [ref=e200]:
+      - generic [ref=e201]:
+        - heading "Starter" [level=3] [ref=e202]
+        - paragraph [ref=e203]: Perfect for small businesses and startups
+        - generic [ref=e204]: ₱9,999/ year
+        - list [ref=e205]:
+          - listitem [ref=e206]:
+            - img [ref=e207]
+            - generic [ref=e209]: Up to 5 pages
+          - listitem [ref=e210]:
+            - img [ref=e211]
+            - generic [ref=e213]: Responsive design
+          - listitem [ref=e214]:
+            - img [ref=e215]
+            - generic [ref=e217]: Contact form
+          - listitem [ref=e218]:
+            - img [ref=e219]
+            - generic [ref=e221]: SSL certificate
+          - listitem [ref=e222]:
+            - img [ref=e223]
+            - generic [ref=e225]: Basic SEO
+          - listitem [ref=e226]:
+            - img [ref=e227]
+            - generic [ref=e229]: Email support
+        - link "Get started" [ref=e230] [cursor=pointer]:
+          - /url: /contact
+          - img [ref=e231]
+          - text: Get started
+      - generic [ref=e233]:
+        - generic [ref=e234]: Popular
+        - heading "Business" [level=3] [ref=e235]
+        - paragraph [ref=e236]: Ideal for growing small and medium businesses
+        - generic [ref=e237]: ₱14,999/ year
+        - list [ref=e238]:
+          - listitem [ref=e239]:
+            - img [ref=e240]
+            - generic [ref=e242]: Everything in Starter
+          - listitem [ref=e243]:
+            - img [ref=e244]
+            - generic [ref=e246]: Up to 10 pages
+          - listitem [ref=e247]:
+            - img [ref=e248]
+            - generic [ref=e250]: Custom design
+          - listitem [ref=e251]:
+            - img [ref=e252]
+            - generic [ref=e254]: Social media integration
+          - listitem [ref=e255]:
+            - img [ref=e256]
+            - generic [ref=e258]: SEO optimization
+          - listitem [ref=e259]:
+            - img [ref=e260]
+            - generic [ref=e262]: Priority support
+        - link "Get started" [ref=e263] [cursor=pointer]:
+          - /url: /contact
+          - img [ref=e264]
+          - text: Get started
+      - generic [ref=e266]:
+        - heading "Growth" [level=3] [ref=e267]
+        - paragraph [ref=e268]: For larger companies with bigger needs
+        - generic [ref=e269]: ₱29,999/ year
+        - list [ref=e270]:
+          - listitem [ref=e271]:
+            - img [ref=e272]
+            - generic [ref=e274]: Everything in Business
+          - listitem [ref=e275]:
+            - img [ref=e276]
+            - generic [ref=e278]: Up to 20 pages
+          - listitem [ref=e279]:
+            - img [ref=e280]
+            - generic [ref=e282]: E-commerce ready
+          - listitem [ref=e283]:
+            - img [ref=e284]
+            - generic [ref=e286]: Advanced SEO
+          - listitem [ref=e287]:
+            - img [ref=e288]
+            - generic [ref=e290]: Analytics dashboard
+          - listitem [ref=e291]:
+            - img [ref=e292]
+            - generic [ref=e294]: Dedicated support
+        - link "Get started" [ref=e295] [cursor=pointer]:
+          - /url: /contact
+          - img [ref=e296]
+          - text: Get started
+      - generic [ref=e298]:
+        - heading "Custom" [level=3] [ref=e299]
+        - paragraph [ref=e300]: Tailor-made solution for unique needs
+        - generic [ref=e301]: Custom
+        - list [ref=e302]:
+          - listitem [ref=e303]:
+            - img [ref=e304]
+            - generic [ref=e306]: Fully custom solution
+          - listitem [ref=e307]:
+            - img [ref=e308]
+            - generic [ref=e310]: Unlimited pages
+          - listitem [ref=e311]:
+            - img [ref=e312]
+            - generic [ref=e314]: Advanced integrations
+          - listitem [ref=e315]:
+            - img [ref=e316]
+            - generic [ref=e318]: Custom functionality
+          - listitem [ref=e319]:
+            - img [ref=e320]
+            - generic [ref=e322]: Specialized design
+          - listitem [ref=e323]:
+            - img [ref=e324]
+            - generic [ref=e326]: SLA guarantee
+        - link "Get started" [ref=e327] [cursor=pointer]:
+          - /url: /contact
+          - img [ref=e328]
+          - text: Get started
+  - generic [ref=e331]:
+    - heading "Questions? We’ve got answers." [level=2] [ref=e333]
+    - paragraph [ref=e334]: Straight talk — no fine print, no surprises.
+    - generic [ref=e335]:
+      - generic [ref=e336]:
+        - button "Do we own the website?" [ref=e337] [cursor=pointer]:
+          - generic [ref=e338]: Do we own the website?
+          - img [ref=e339]
+        - paragraph [ref=e341]: Yes — 100%. The domain is registered under your name and you own all content, design, and code. If you ever leave, everything goes with you.
+      - generic [ref=e342]:
+        - button "How does payment work?" [ref=e343] [cursor=pointer]:
+          - generic [ref=e344]: How does payment work?
+          - img [ref=e345]
+        - paragraph [ref=e347]: One fixed yearly fee. That’s it. No hidden charges, no surprise invoices. Everything is covered — design, development, hosting, domain, and support.
+      - generic [ref=e348]:
+        - button "Can I cancel?" [ref=e349] [cursor=pointer]:
+          - generic [ref=e350]: Can I cancel?
+          - img [ref=e351]
+        - paragraph [ref=e353]: Anytime. No lock-in contracts, no cancellation fees. Your site stays live until the end of your paid period and we’ll help you transition if needed.
+      - generic [ref=e354]:
+        - button "How fast can you deliver?" [ref=e355] [cursor=pointer]:
+          - generic [ref=e356]: How fast can you deliver?
+          - img [ref=e357]
+        - paragraph [ref=e359]: Most websites go live within 7 days. You’ll get a clear timeline before we start so there are never any surprises on delivery.
+      - generic [ref=e360]:
+        - button "What if I already have a website?" [ref=e361] [cursor=pointer]:
+          - generic [ref=e362]: What if I already have a website?
+          - img [ref=e363]
+        - paragraph [ref=e365]: We can redesign and migrate your existing site or build a completely new one — whichever makes more sense for where your business is heading.
+      - generic [ref=e366]:
+        - button "What’s included in updates?" [ref=e367] [cursor=pointer]:
+          - generic [ref=e368]: What’s included in updates?
+          - img [ref=e369]
+        - paragraph [ref=e371]: Text changes, photo swaps, new sections, layout tweaks — just send a message. We handle it within the day, no extra cost.
+      - generic [ref=e372]:
+        - button "Do you provide email?" [ref=e373] [cursor=pointer]:
+          - generic [ref=e374]: Do you provide email?
+          - img [ref=e375]
+        - paragraph [ref=e377]: Yes. We set up professional email addresses like you@yourbusiness.com so your brand looks credible from the first message.
+    - generic [ref=e378]:
+      - paragraph [ref=e379]: We accept
+      - generic [ref=e380]:
+        - img "Mastercard" [ref=e381]
+        - img "Visa" [ref=e382]
+        - img "GCash" [ref=e383]
+        - img "Maya" [ref=e384]
+        - img "BPI" [ref=e385]
+        - img "BDO" [ref=e386]
+        - img "UnionBank" [ref=e387]
+  - generic [ref=e389]:
+    - generic [ref=e390]:
+      - generic [ref=e391]:
+        - heading "Real sites. Real businesses." [level=2] [ref=e392]
+        - paragraph [ref=e393]: Different industries, different needs — every site is custom-designed to match your brand and business.
+      - generic [ref=e394]:
+        - button "Previous samples" [disabled] [ref=e395]:
+          - img [ref=e396]
+        - button "Next samples" [ref=e398] [cursor=pointer]:
+          - img [ref=e399]
+    - generic [ref=e402]:
+      - img "Haaland — Certified property appraiser website" [ref=e410]
+      - img "Land Tak og Fasade — Roofing & facade company website" [ref=e418]
+      - img "Frozti — Handmade frozen treats shop website" [ref=e426]
+      - img "Torsnes Bygg — Local carpentry & construction website" [ref=e434]
+    - generic [ref=e435]:
+      - button "Go to slide 1" [ref=e436] [cursor=pointer]
+      - button "Go to slide 2" [ref=e437] [cursor=pointer]
+      - button "Go to slide 3" [ref=e438] [cursor=pointer]
+      - button "Go to slide 4" [ref=e439] [cursor=pointer]
+  - generic [ref=e443]:
+    - heading "Ready to get online?" [level=2] [ref=e444]
+    - paragraph [ref=e445]: No commitment needed. Let’s have a quick chat about what you need and we’ll take it from there.
+    - link "Let’s talk" [ref=e446] [cursor=pointer]:
+      - /url: /contact
+      - img [ref=e447]
+      - text: Let’s talk
+  - contentinfo [ref=e449]:
+    - generic [ref=e450]:
+      - generic [ref=e451]:
+        - generic [ref=e452]:
+          - text: Nettsaga
+          - paragraph [ref=e453]: Burgundy Corporate Tower, 252 Sen. Gil J. Puyat Ave, Makati City, 1200 Metro Manila
+        - generic [ref=e454]:
+          - heading "Quick links" [level=4] [ref=e455]
+          - list [ref=e456]:
+            - listitem [ref=e457]:
+              - link "How it works" [ref=e458] [cursor=pointer]:
+                - /url: /#how-it-works
+            - listitem [ref=e459]:
+              - link "Why us" [ref=e460] [cursor=pointer]:
+                - /url: /#local-edge
+            - listitem [ref=e461]:
+              - link "Pricing" [ref=e462] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e463]:
+              - link "Portfolio" [ref=e464] [cursor=pointer]:
+                - /url: /#portfolio
+            - listitem [ref=e465]:
+              - link "FAQ" [ref=e466] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=e467]:
+              - link "About" [ref=e468] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e469]:
+              - link "Contact" [ref=e470] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e471]:
+          - heading "Get in touch" [level=4] [ref=e472]
+          - list [ref=e473]:
+            - listitem [ref=e474]:
+              - link "support@nettsaga.com" [ref=e475] [cursor=pointer]:
+                - /url: mailto:support@nettsaga.com
+                - img [ref=e476]
+                - text: support@nettsaga.com
+      - paragraph [ref=e480]: © 2026 Nettsaga. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e486] [cursor=pointer]:
+    - img [ref=e487]
+  - alert [ref=e490]
