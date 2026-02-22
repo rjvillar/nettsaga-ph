@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -33,6 +33,18 @@ export default function Header({ solid = false }: { solid?: boolean }) {
   const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    const lenis = (window as unknown as Record<string, unknown>).__lenis as
+      | { stop: () => void; start: () => void }
+      | undefined;
+    if (mobileOpen) {
+      lenis?.stop();
+    } else {
+      lenis?.start();
+    }
+    return () => lenis?.start();
+  }, [mobileOpen]);
 
   const navLabels = [
     t.nav.howItWorks,
