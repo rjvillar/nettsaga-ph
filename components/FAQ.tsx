@@ -6,13 +6,13 @@ import Image from "next/image";
 import { useTranslation } from "@/lib/i18n/context";
 
 const paymentLogos = [
-  { src: "/assets/payment-logos/mastercard.webp", alt: "Mastercard" },
-  { src: "/assets/payment-logos/visa.webp", alt: "Visa" },
-  { src: "/assets/payment-logos/gcash.webp", alt: "GCash" },
-  { src: "/assets/payment-logos/maya.webp", alt: "Maya" },
-  { src: "/assets/payment-logos/bpi.webp", alt: "BPI" },
-  { src: "/assets/payment-logos/bdo.webp", alt: "BDO" },
-  { src: "/assets/payment-logos/unionbank.webp", alt: "UnionBank" },
+  { src: "/assets/payment-logos/mastercard.webp", alt: "Mastercard", w: 96, h: 59 },
+  { src: "/assets/payment-logos/visa.webp", alt: "Visa", w: 96, h: 30 },
+  { src: "/assets/payment-logos/gcash.webp", alt: "GCash", w: 96, h: 23 },
+  { src: "/assets/payment-logos/maya.webp", alt: "Maya", w: 96, h: 28 },
+  { src: "/assets/payment-logos/bpi.webp", alt: "BPI", w: 96, h: 51 },
+  { src: "/assets/payment-logos/bdo.webp", alt: "BDO", w: 96, h: 34 },
+  { src: "/assets/payment-logos/unionbank.webp", alt: "UnionBank", w: 96, h: 24 },
 ];
 
 export default function FAQ() {
@@ -82,8 +82,8 @@ export default function FAQ() {
                 key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
-                width={80}
-                height={32}
+                width={logo.w}
+                height={logo.h}
                 className="h-6 w-auto object-contain opacity-80 transition-opacity duration-200 hover:opacity-100"
               />
             ))}

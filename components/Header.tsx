@@ -271,8 +271,8 @@ export default function Header({ solid = false }: { solid?: boolean }) {
       />
 
       <div
-        className={`fixed inset-y-0 right-0 z-[70] flex w-4/5 max-w-xs flex-col bg-dark shadow-[-12px_0_32px_rgba(0,0,0,0.8)] transition-transform duration-300 ease-in-out md:hidden ${
-          mobileOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed inset-y-0 right-0 z-[70] flex w-4/5 max-w-xs flex-col bg-dark transition-transform duration-300 ease-in-out md:hidden ${
+          mobileOpen ? "translate-x-0 shadow-[-12px_0_32px_rgba(0,0,0,0.8)]" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between px-6 pt-6">

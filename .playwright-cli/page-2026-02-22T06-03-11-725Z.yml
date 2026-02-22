@@ -4,7 +4,7 @@
       - link "N e t t s a g a ." [ref=e5] [cursor=pointer]:
         - /url: /
         - generic [ref=e6]: "N"
-        - generic [ref=e7]:
+        - generic:
           - generic [ref=e8]: e
           - generic [ref=e9]: t
           - generic [ref=e10]: t
@@ -13,20 +13,20 @@
           - generic [ref=e13]: g
           - generic [ref=e14]: a
         - text: .
-      - button "Open menu" [ref=e553]:
-        - img [ref=e554]
+      - button "Open menu" [ref=e547]:
+        - img [ref=e548]
   - generic [ref=e502]:
     - generic [ref=e503]:
       - link "Nettsaga" [ref=e504] [cursor=pointer]:
         - /url: /
-      - button "Close menu" [active] [ref=e505]:
+      - button "Close menu" [ref=e505]:
         - img [ref=e506]
     - navigation [ref=e509]:
       - link "How it works" [ref=e510] [cursor=pointer]:
         - /url: /#how-it-works
       - link "Pricing" [ref=e511] [cursor=pointer]:
         - /url: /pricing
-      - link "Portfolio" [ref=e512] [cursor=pointer]:
+      - link "Portfolio" [active] [ref=e512] [cursor=pointer]:
         - /url: /#portfolio
       - link "About" [ref=e513] [cursor=pointer]:
         - /url: /about

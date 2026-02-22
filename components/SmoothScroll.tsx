@@ -31,12 +31,8 @@ export default function SmoothScroll() {
 
       const el = document.querySelector(hash);
       if (el) {
-        const isMobile = window.innerWidth < 768;
         requestAnimationFrame(() => {
-          lenis.scrollTo(el as HTMLElement, {
-            offset: -NAVBAR_HEIGHT,
-            immediate: isMobile,
-          });
+          lenis.scrollTo(el as HTMLElement, { offset: -NAVBAR_HEIGHT });
         });
       }
     }
@@ -63,11 +59,7 @@ export default function SmoothScroll() {
 
         e.preventDefault();
         window.history.pushState(null, "", hash);
-        const isMobile = window.innerWidth < 768;
-        lenis.scrollTo(el as HTMLElement, {
-          offset: -NAVBAR_HEIGHT,
-          immediate: isMobile,
-        });
+        lenis.scrollTo(el as HTMLElement, { offset: -NAVBAR_HEIGHT });
       }
     }
 
