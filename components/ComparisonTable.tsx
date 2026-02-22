@@ -200,7 +200,7 @@ function MobileAccordion({ categories }: { categories: Category[] }) {
             </button>
 
             <div
-              className={`grid transition-all duration-200 ${
+              className={`grid transition-all duration-500 ease-in-out ${
                 isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
               }`}
             >
