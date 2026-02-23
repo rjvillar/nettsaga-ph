@@ -43,9 +43,9 @@ export default function Hero() {
             <Image
               src="/assets/person-tablet.png"
               alt={t.hero.altTablet}
-              fill
-              className="object-cover"
-              sizes="300px"
+              width={500}
+              height={500}
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
@@ -55,9 +55,9 @@ export default function Hero() {
             <Image
               src="/assets/person-tablet.png"
               alt={t.hero.altTablet}
-              fill
-              className="object-cover"
-              sizes="340px"
+              width={500}
+              height={500}
+              className="h-full w-full object-cover"
             />
           </div>
 
@@ -65,9 +65,9 @@ export default function Hero() {
             <Image
               src="/assets/person-laptop.png"
               alt={t.hero.altLaptop}
-              fill
-              className="object-cover"
-              sizes="190px"
+              width={500}
+              height={500}
+              className="h-full w-full object-cover"
             />
           </div>
 
@@ -75,9 +75,9 @@ export default function Hero() {
             <Image
               src="/assets/person-smiling.png"
               alt={t.hero.altSmiling}
-              fill
-              className="object-cover"
-              sizes="190px"
+              width={500}
+              height={500}
+              className="h-full w-full object-cover"
             />
           </div>
 
