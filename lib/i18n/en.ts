@@ -275,26 +275,34 @@ const en: Dictionary = {
   },
   about: {
     hero: {
-      title: "Built in Norway, ",
-      titleMuted: "made for the Philippines.",
+      title: "Every business deserves to be online. ",
+      titleMuted: "We make it happen.",
       subtitle:
-        "Norwegian quality standards, honest pricing, and a 1–3 day turnaround — now serving Filipino businesses.",
+        "Nettsaga helps Filipino businesses launch professional websites — fast, honest, and without the headache.",
     },
     story: {
-      title: "From Scandinavia ",
-      titleMuted: "to Southeast Asia",
-      description:
-        "Nettsaga started in Oslo, Norway — a team of engineers, developers, and designers helping Scandinavian businesses get online. After 500+ projects, we saw the same problem everywhere: agencies overcharge, overcomplicate, and underdeliver. We brought Nettsaga to the Philippines to fix that — same standards, same speed, honest pricing.",
-      hqLabel: "Kirkegata 15, Oslo",
-      officeLabel: "Burgundy Tower, Makati",
+      problem: {
+        lead: "Right now, getting a website is harder than it should be.",
+        body: "Most agencies overcharge, overcomplicate the process, and lock you into contracts you don\u2019t need. Small business owners end up paying too much for too little — or giving up entirely.",
+      },
+      shift: {
+        lead: "But the world has gone digital.",
+        body: "Your customers search online first. If they can\u2019t find you, they find someone else. No website means you\u2019re invisible — and that\u2019s a problem no business can afford.",
+      },
+      solution: {
+        lead: "That\u2019s why we built Nettsaga.",
+        body: "Simple, honest, and fast. We build your website for free, handle all the technical stuff, and charge one flat yearly fee. No surprises, no jargon — just a real website for a real business.",
+      },
     },
+    values: [
+      { title: "Honest pricing" },
+      { title: "Built for speed" },
+      { title: "Real people, real support" },
+      { title: "No lock-in, ever" },
+    ],
     scope: {
       title: "Everything your business ",
       titleMuted: "needs to go live",
-    },
-    team: {
-      title: "The team behind ",
-      titleBold: "Nettsaga",
     },
     cta: {
       title: "Want to work ",
@@ -415,7 +423,7 @@ const en: Dictionary = {
     about: {
       title: "About — Nettsaga",
       description:
-        "Born in Norway, built for the Philippines. Learn about the team behind Nettsaga and our mission to help Filipino businesses thrive online.",
+        "We help Filipino businesses get online — fast, honest, and affordable. Learn about Nettsaga and our mission to make the web accessible to every business.",
     },
     pricing: {
       title: "Pricing — Nettsaga",

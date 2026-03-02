@@ -147,19 +147,14 @@ export interface Dictionary {
       subtitle: string;
     };
     story: {
-      title: string;
-      titleMuted: string;
-      description: string;
-      hqLabel: string;
-      officeLabel: string;
+      problem: { lead: string; body: string };
+      shift: { lead: string; body: string };
+      solution: { lead: string; body: string };
     };
+    values: { title: string }[];
     scope: {
       title: string;
       titleMuted: string;
-    };
-    team: {
-      title: string;
-      titleBold: string;
     };
     cta: {
       title: string;

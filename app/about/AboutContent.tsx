@@ -6,47 +6,30 @@ import Image from "next/image";
 import ServiceStack from "@/components/ServiceStack";
 import BuildPipeline from "@/components/BuildPipeline";
 import StatusPanel from "@/components/StatusPanel";
-import { MessageCircle, Globe, Rocket, User } from "lucide-react";
+import { MessageCircle, Shield, Zap, HeartHandshake, LockOpen } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/context";
 
-interface TeamMember {
-  name: string;
-  role: string;
-  email: string;
-  phone: string;
-  accent: string;
-}
+const valueIcons = [Shield, Zap, HeartHandshake, LockOpen];
 
-export default function AboutContent({ team }: { team: TeamMember[] }) {
+export default function AboutContent() {
   const { t } = useTranslation();
 
   return (
     <>
       <Header solid />
 
-      {/* ── Section 1: Hero + Image ── */}
-      <section className="bg-grain relative bg-paper pt-28 pb-10 sm:pt-36">
-        <span className="absolute left-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
-          Origin // Oslo_Norway
-        </span>
-        <span className="absolute right-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
-          Market: Philippines
-        </span>
+      {/* ── Hero ── */}
+      <section className="bg-grain relative bg-dark pt-28 pb-10 sm:pt-36 sm:pb-16">
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.05)_45%,rgba(255,255,255,0.08)_55%,rgba(255,255,255,0.03)_70%,transparent_85%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.4))]" />
 
-        <div className="relative mx-auto max-w-4xl px-6 text-center">
-          <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.3em] text-muted">
-            About // Nettsaga
-          </p>
-          <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[2.75rem]">
-            {t.about.hero.title}
-            <span className="text-muted">{t.about.hero.titleMuted}</span>
+        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+          <h1 className="font-heading text-[2rem] font-semibold leading-[1.1] tracking-[-0.02em] bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent sm:text-[3rem] md:text-[3.75rem]">
+            {t.about.hero.title}{t.about.hero.titleMuted}
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate sm:text-lg">
-            {t.about.hero.subtitle}
-          </p>
         </div>
 
-        <div className="relative mx-auto mt-14 max-w-6xl px-6">
+        <div className="relative z-10 mx-auto mt-12 max-w-6xl px-6 sm:mt-16">
           <Image
             src="/assets/about-hero.jpg"
             alt="Nettsaga website mockup — modern, mobile-first design built for Filipino businesses"
@@ -58,65 +41,83 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
         </div>
       </section>
 
-      {/* ── Section 2: Story ── */}
-      <section className="bg-grain relative border-t border-dark/[0.06] bg-white py-20 sm:py-28">
-        <div className="relative mx-auto max-w-3xl px-6">
-          <div className="flex items-center justify-center gap-2">
-            <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-            <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
-              Story // How_We_Started
-            </span>
-          </div>
-          <h2 className="mt-4 text-center font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2rem]">
-            {t.about.story.title}
-            <span className="text-muted">{t.about.story.titleMuted}</span>
-          </h2>
-          <p className="mt-5 text-center text-sm leading-relaxed text-slate sm:text-base">
-            {t.about.story.description}
-          </p>
+      {/* ── Story ── */}
+      <section className="relative bg-white">
+        <div className="mx-auto max-w-5xl px-6">
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-10">
-            <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-dark/[0.06] bg-paper">
-                <Globe className="h-4 w-4 text-[#3B82F6]" />
+          {/* Problem — lead left, body right */}
+          <div className="border-b border-dark/[0.06] py-20 sm:py-28">
+            <div className="grid gap-6 md:grid-cols-12 md:gap-8">
+              <div className="md:col-span-7">
+                <h3 className="font-heading text-[1.5rem] font-bold leading-[1.15] tracking-tight text-dark sm:text-[1.75rem] md:text-[2.125rem]">
+                  {t.about.story.problem.lead}
+                </h3>
               </div>
-              <div>
-                <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-dark/30">
-                  HQ // Oslo
-                </p>
-                <p className="text-sm font-medium text-dark">
-                  {t.about.story.hqLabel}
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-dark/[0.06] bg-paper">
-                <Rocket className="h-4 w-4 text-[#F59E0B]" />
-              </div>
-              <div>
-                <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-dark/30">
-                  Office // Makati
-                </p>
-                <p className="text-sm font-medium text-dark">
-                  {t.about.story.officeLabel}
+              <div className="self-end md:col-span-4 md:col-start-9">
+                <p className="text-sm leading-relaxed text-slate sm:text-[0.9375rem]">
+                  {t.about.story.problem.body}
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Shift — lead right, body left */}
+          <div className="border-b border-dark/[0.06] py-20 sm:py-28">
+            <div className="grid gap-6 md:grid-cols-12 md:gap-8">
+              <div className="self-end md:col-span-4 md:col-start-1 md:row-start-1">
+                <p className="text-sm leading-relaxed text-slate sm:text-[0.9375rem]">
+                  {t.about.story.shift.body}
+                </p>
+              </div>
+              <div className="md:col-span-7 md:col-start-6 md:text-right">
+                <h3 className="font-heading text-[1.5rem] font-bold leading-[1.15] tracking-tight text-dark sm:text-[1.75rem] md:text-[2.125rem]">
+                  {t.about.story.shift.lead}
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          {/* Solution — centered, larger, the payoff */}
+          <div className="py-20 sm:py-28">
+            <div className="mx-auto max-w-3xl text-center">
+              <h3 className="font-heading text-[1.75rem] font-bold leading-[1.1] tracking-tight text-dark sm:text-[2.25rem] md:text-[2.75rem]">
+                {t.about.story.solution.lead}
+              </h3>
+              <p className="mx-auto mt-5 max-w-lg text-sm leading-relaxed text-slate sm:text-base">
+                {t.about.story.solution.body}
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── Values ── */}
+      <section className="bg-grain relative border-t border-dark/[0.06] bg-paper py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {t.about.values.map((item, i) => {
+              const Icon = valueIcons[i];
+              return (
+                <div key={item.title} className="text-center">
+                  <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl border border-dark/[0.06] bg-paper">
+                    <Icon className="h-5 w-5 text-dark/60" />
+                  </div>
+                  <h3 className="mt-4 font-heading text-[0.9375rem] font-semibold tracking-[-0.01em] text-dark/70">
+                    {item.title}
+                  </h3>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* ── Section 3: What We Deliver ── */}
+      {/* ── What We Deliver ── */}
       <section className="bg-grain relative bg-paper py-20 sm:py-28">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="flex items-center justify-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
-                Scope // What_You_Get
-              </span>
-            </div>
-            <h2 className="mt-4 font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2rem]">
+            <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2rem]">
               {t.about.scope.title}
               <span className="text-muted">{t.about.scope.titleMuted}</span>
             </h2>
@@ -130,81 +131,24 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
         </div>
       </section>
 
-      {/* ── Section 4: Team (dark) ── */}
-      <section className="bg-grain relative bg-dark py-20 sm:py-28">
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.05)_45%,rgba(255,255,255,0.08)_55%,rgba(255,255,255,0.03)_70%,transparent_85%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.4))]" />
+      {/* ── CTA ── */}
+      <section className="relative overflow-hidden bg-dark py-20 sm:py-28">
+        <Image
+          src="/assets/cta-bg.jpg"
+          alt=""
+          fill
+          className="object-cover opacity-20"
+          sizes="100vw"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/40" />
 
-        <div className="relative z-10 mx-auto max-w-5xl px-6">
-          <h2 className="text-center font-heading text-xl font-bold tracking-tight text-white sm:text-2xl">
-            {t.about.team.title}<span className="font-extrabold">{t.about.team.titleBold}</span>
-          </h2>
-
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="w-full overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.04] sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.6875rem)]"
-              >
-                <div
-                  className="h-1"
-                  style={{ backgroundColor: member.accent }}
-                />
-
-                <div className="p-5">
-                  <div className="flex items-center gap-3.5">
-                    <div
-                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full"
-                      style={{
-                        backgroundColor: `${member.accent}18`,
-                        color: member.accent,
-                      }}
-                    >
-                      <User className="h-4.5 w-4.5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-white">
-                        {member.name}
-                      </p>
-                      <p className="font-mono text-[0.625rem] uppercase tracking-[0.15em] text-white/40">
-                        {member.role}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mt-3.5 flex items-center justify-between border-t border-white/[0.06] pt-3.5">
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="font-mono text-[0.6875rem] text-white/50 transition-colors hover:text-white"
-                    >
-                      {member.email}
-                    </a>
-                    {member.phone && (
-                      <span className="font-mono text-[0.625rem] text-white/30">
-                        {member.phone}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Section 5: CTA ── */}
-      <section className="relative bg-white py-6 sm:py-28">
-        <div className="relative mx-auto w-full max-w-7xl px-6">
-          <div className="bg-grain relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl bg-dark px-6 py-6 sm:aspect-auto sm:px-12 sm:py-28">
-            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.07)_45%,rgba(255,255,255,0.12)_55%,rgba(255,255,255,0.05)_70%,transparent_85%)]" />
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_45%_55%_at_68%_42%,rgba(255,255,255,0.10),transparent)]" />
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />
-
-            <div className="relative z-20 mx-auto max-w-xl text-center">
-              <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[2.5rem]">
-                {t.about.cta.title}<span className="text-white/50">{t.about.cta.titleMuted}</span>
+        <div className="relative z-10 mx-auto max-w-4xl px-6">
+          <div className="rounded-xl border border-white/[0.08] bg-white/[0.06] px-8 py-12 backdrop-blur-sm sm:px-16 sm:py-16 md:px-20">
+            <div className="mx-auto max-w-xl text-center">
+              <h2 className="font-heading text-3xl font-semibold leading-tight tracking-[-0.02em] bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent sm:text-4xl md:text-[3rem]">
+                {t.about.cta.title}{t.about.cta.titleMuted}
               </h2>
-              <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-[1.375rem]">
+              <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-lg">
                 {t.about.cta.subtitle}
               </p>
               <a

@@ -280,32 +280,40 @@ const fil: Dictionary = {
   },
   about: {
     hero: {
-      title: "Ginawa sa Norway, ",
-      titleMuted: "para sa Pilipinas.",
+      title: "Bawat negosyo ay dapat na nasa online. ",
+      titleMuted: "Gagawin namin ito.",
       subtitle:
-        "Norwegian quality standards, honest pricing, at 1–3 day turnaround—ngayon para sa mga negosyong Pilipino.",
+        "Tinutulungan ng Nettsaga ang mga negosyong Pilipino na magkaroon ng propesyonal na website — mabilis, tapat, at walang sakit ng ulo.",
     },
     story: {
-      title: "Mula sa Scandinavia ",
-      titleMuted: "hanggang Southeast Asia",
-      description:
-        "Nagsimula ang Nettsaga sa Oslo, Norway—isang team ng engineers, developers, at designers na tumutulong sa mga negosyong Scandinavian na mag-online. Pagkatapos ng 500+ projects, pareho ang nakita naming problema kahit saan: sobrang mahal, sobrang komplikado, at kulang sa delivery. Dinala namin ang Nettsaga sa Pilipinas para ayusin ’yon—parehong standards, parehong bilis, honest pricing.",
-      hqLabel: "Kirkegata 15, Oslo",
-      officeLabel: "Burgundy Tower, Makati",
+      problem: {
+        lead: "Sa ngayon, mas mahirap mag-website kaysa sa dapat.",
+        body: "Karamihan ng mga agency ay sobrang mahal, ginagawang komplikado ang proseso, at ini-lock ka sa kontratang hindi mo kailangan. Nagtatapos ang mga small business owners na nagbabayad nang sobra para sa kulang na serbisyo — o sumusuko na lang.",
+      },
+      shift: {
+        lead: "Pero digital na ang mundo.",
+        body: "Online muna naghahanap ang mga customer mo. Kung hindi ka nila mahanap, iba ang hahanapin nila. Walang website ibig sabihin invisible ka — at problema \u2019yon na walang negosyong kayang balewalain.",
+      },
+      solution: {
+        lead: "Kaya ginawa namin ang Nettsaga.",
+        body: "Simple, tapat, at mabilis. Ginagawa namin ang website mo nang libre, kami na bahala sa lahat ng teknikal, at iisang flat na taunang bayad lang. Walang sorpresa, walang jargon — totoong website para sa totoong negosyo.",
+      },
     },
+    values: [
+      { title: "Tapat na presyo" },
+      { title: "Gawa para sa bilis" },
+      { title: "Totoong tao, totoong suporta" },
+      { title: "Walang lock-in, kahit kailan" },
+    ],
     scope: {
       title: "Lahat ng kailangan ng iyong negosyo ",
       titleMuted: "para mag-live",
-    },
-    team: {
-      title: "Ang team sa likod ng ",
-      titleBold: "Nettsaga",
     },
     cta: {
       title: "Gusto mong magtrabaho ",
       titleMuted: "kasama namin?",
       subtitle:
-        "Kung kailangan mo ng bagong website o gusto mong pagandahin ang meron ka—usap tayo kung paano kami makakatulong.",
+        "Kung kailangan mo ng bagong website o gusto mong pagandahin ang meron ka — usap tayo kung paano kami makakatulong.",
       cta: "Makipag-ugnayan",
     },
   },
@@ -423,7 +431,7 @@ const fil: Dictionary = {
     about: {
       title: "Tungkol sa Amin — Nettsaga",
       description:
-        "Ipinanganak sa Norway, ginawa para sa Pilipinas. Kilalanin ang team sa likod ng Nettsaga at ang misyon naming tulungan ang mga negosyong Pilipino na umunlad online.",
+        "Tinutulungan namin ang mga negosyong Pilipino na mag-online — mabilis, tapat, at abot-kaya. Alamin ang tungkol sa Nettsaga at ang misyon naming gawing accessible ang web sa bawat negosyo.",
     },
     pricing: {
       title: "Presyo — Nettsaga",
