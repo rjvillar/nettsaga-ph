@@ -7,13 +7,13 @@ const en: Dictionary = {
     portfolio: "Portfolio",
     about: "About",
     contact: "Contact",
-    talkToUs: "Talk to us",
+    talkToUs: "Get started",
   },
   hero: {
     title1: "Get your business",
     title2: "online this week.",
     subtitle:
-      "Website + hosting + support for one fixed yearly fee. No surprises, no hidden costs — just a website that works for your business.",
+      "We build your website for free. You only pay for hosting and support — one fixed yearly fee, no surprises.",
     ctaPrimary: "See how it works",
     ctaSecondary: "Contact Sales",
     altTablet: "Filipino professional holding a tablet",
@@ -36,18 +36,23 @@ const en: Dictionary = {
       title: "We handle the complexity, you handle the business.",
       description:
         "Design, development, hosting, domain, speed optimization — all bundled into one package. No juggling vendors.",
-      checklist: ["Custom Design", "Development", "Hosting & Domain", "SEO & Speed"],
+      checklist: [
+        "Custom Design",
+        "Development",
+        "Hosting & Domain",
+        "SEO & Speed",
+      ],
     },
     card2: {
       label: "Transparent billing",
-      title: "No hidden fees. Ever.",
+      title: "Free website. Seriously.",
       description:
-        "One yearly fee covers everything. No setup costs, no surprise invoices, no contracts.",
+        "We design and build your website at no cost. You only pay a yearly fee for hosting, domain, and ongoing support — no surprise invoices, no contracts.",
       items: [
         "No setup fees",
         "No lock-in contracts",
         "Cancel anytime",
-        "You own everything",
+        "Fully managed service",
         "Free domain included",
       ],
       hiddenFees: "Hidden fees:",
@@ -61,29 +66,25 @@ const en: Dictionary = {
   howItWorks: {
     title: "How it ",
     titleMuted: "works",
-    subtitle: "Three simple steps — no complicated process, no long contracts.",
+    subtitle: "Three simple steps — no complicated process.",
     steps: [
       {
         phase: "Connection",
-        title: "Quick chat",
+        title: "A quick chat to get to know you and your business",
         description:
-          "We confirm your business info and exactly what you need to grow. No sales pitch, just a 15-minute alignment.",
+          "Just a quick alignment on your business needs. No heavy sales pitch, just getting to know you.",
       },
       {
         phase: "Engineering",
-        title: "We build a draft",
+        title: "We craft your entire website from the ground up",
         description:
-          "Our team handles the heavy lifting — design, hosting, and tech. You get a fully functional first version to review in 7 days.",
+          "We handle all the heavy lifting. You get a fully functional website built with care, ready to review.",
       },
       {
-        phase: "Collaboration",
-        title: "You decide",
-        description: "",
-        descriptionParts: [
-          "If you love the draft, we publish. If it\u2019s not the right fit, ",
-          "no worries and no hard feelings",
-          ". You\u2019re always in control.",
-        ],
+        phase: "Review",
+        title: "Don\u2019t like it? No problem. Like it? It\u2019s yours.",
+        description: "Don't like it? No problem. If you like it, you keep it.",
+        descriptionParts: [],
       },
     ],
   },
@@ -120,57 +121,53 @@ const en: Dictionary = {
   pricing: {
     title: "Simple, transparent ",
     titleMuted: "pricing.",
-    subtitle: "One yearly fee — everything included. No monthly surprises.",
+    subtitle: "Free website — you only pay for hosting, domain, and support.",
     popular: "Popular",
     getStarted: "Get started",
     period: "/ year",
     plans: [
       {
-        name: "Starter",
-        description: "Perfect for small businesses and startups",
+        name: "Essential",
+        description: "Everything you need to get your business online",
         features: [
-          "Up to 5 pages",
-          "Responsive design",
-          "Contact form",
-          "SSL certificate",
-          "Basic SEO",
-          "Email support",
+          "Custom website design",
+          "Professional business email",
+          "Hosting & security included",
+          "Content updates included",
+          "Business email included",
         ],
       },
       {
         name: "Business",
-        description: "Ideal for growing small and medium businesses",
+        description: "For growing businesses that need more",
         features: [
-          "Everything in Starter",
-          "Up to 10 pages",
-          "Custom design",
-          "Social media integration",
-          "SEO optimization",
+          "Everything in Essential",
           "Priority support",
+          "Social media setup",
+          "Speed & performance boost",
+          "Monthly progress reports",
         ],
       },
       {
         name: "Growth",
-        description: "For larger companies with bigger needs",
+        description: "For businesses ready to scale",
         features: [
           "Everything in Business",
-          "Up to 20 pages",
-          "E-commerce ready",
-          "Advanced SEO",
-          "Analytics dashboard",
-          "Dedicated support",
+          "24/7 dedicated support",
+          "Online store features",
+          "Advanced tools & integrations",
+          "Faster turnaround on requests",
         ],
       },
       {
         name: "Custom",
-        description: "Tailor-made solution for unique needs",
+        description: "Tailored to your exact needs",
         features: [
-          "Fully custom solution",
-          "Unlimited pages",
-          "Advanced integrations",
-          "Custom functionality",
-          "Specialized design",
-          "SLA guarantee",
+          "Fully customized solution",
+          "Custom features & tools",
+          "Dedicated account manager",
+          "Service level guarantee",
+          "Unlimited revisions",
         ],
       },
     ],
@@ -183,11 +180,11 @@ const en: Dictionary = {
     items: [
       {
         q: "Do we own the website?",
-        a: "Yes — 100%. The domain is registered under your name and you own all content, design, and code. If you ever leave, everything goes with you.",
+        a: "All the content on your website — text, photos, branding — is 100% yours. The platform, source code, development tools, and hosting infrastructure remain part of the Nettsaga service. Think of it as a fully managed service — we handle the technical side so you can focus on your business.",
       },
       {
         q: "How does payment work?",
-        a: "One fixed yearly fee. That\u2019s it. No hidden charges, no surprise invoices. Everything is covered — design, development, hosting, domain, and support.",
+        a: "We build your website completely free — you get to see the finished product before paying anything. Don\u2019t like it? You don\u2019t pay. Love it? One fixed yearly fee covers hosting, domain, support, and everything else to keep it running.",
       },
       {
         q: "Can I cancel?",
@@ -195,7 +192,7 @@ const en: Dictionary = {
       },
       {
         q: "How fast can you deliver?",
-        a: "Most websites go live within 7 days. You\u2019ll get a clear timeline before we start so there are never any surprises on delivery.",
+        a: "Most websites are ready within 1–3 days. You\u2019ll get a clear timeline before we start so there are never any surprises on delivery.",
       },
       {
         q: "What if I already have a website?",
@@ -203,7 +200,7 @@ const en: Dictionary = {
       },
       {
         q: "What\u2019s included in updates?",
-        a: "Text changes, photo swaps, new sections, layout tweaks — just send a message. We handle it within the day, no extra cost.",
+        a: "Text changes, photo swaps, new sections, layout tweaks — just send a message. We handle it ASAP, no extra cost.",
       },
       {
         q: "Do you provide email?",
@@ -228,7 +225,15 @@ const en: Dictionary = {
     quickLinks: "Quick links",
     getInTouch: "Get in touch",
     copyright: "\u00a9 {year} Nettsaga. All rights reserved.",
-    links: ["How it works", "Why us", "Pricing", "Portfolio", "FAQ", "About", "Contact"],
+    links: [
+      "How it works",
+      "Why us",
+      "Pricing",
+      "Portfolio",
+      "FAQ",
+      "About",
+      "Contact",
+    ],
   },
   contact: {
     title: "Get in touch",
@@ -273,7 +278,7 @@ const en: Dictionary = {
       title: "Built in Norway, ",
       titleMuted: "made for the Philippines.",
       subtitle:
-        "Norwegian quality standards, honest pricing, and a 7-day turnaround — now serving Filipino businesses.",
+        "Norwegian quality standards, honest pricing, and a 1–3 day turnaround — now serving Filipino businesses.",
     },
     story: {
       title: "From Scandinavia ",
@@ -331,56 +336,41 @@ const en: Dictionary = {
     popular: "Popular",
     categories: [
       {
-        label: "Website Essentials",
+        label: "What's Included",
         features: [
-          "Pages",
-          "Custom domain",
-          "SSL certificate",
-          "Responsive design",
-          "Contact form",
-          "Custom design",
-          "Custom functionality",
+          "Custom website design",
+          "Business email",
+          "Hosting & security",
+          "Content updates",
+          "Custom features",
         ],
       },
       {
-        label: "Hosting & Performance",
+        label: "Performance & Visibility",
         features: [
-          "Managed hosting",
+          "Search engine visibility",
           "Speed optimization",
-          "Uptime monitoring",
-          "CDN",
-          "Daily backups",
-        ],
-      },
-      {
-        label: "SEO & Marketing",
-        features: [
-          "Basic SEO",
-          "SEO optimization",
-          "Advanced SEO",
-          "Social media integration",
-          "Analytics dashboard",
+          "Social media setup",
           "Google Business setup",
+          "Monthly reports",
         ],
       },
       {
-        label: "E-commerce",
+        label: "Online Store",
         features: [
-          "E-commerce ready",
-          "Payment integration",
-          "Advanced integrations",
+          "Online store features",
+          "Payment setup",
           "Booking system",
         ],
       },
       {
-        label: "Support & Maintenance",
+        label: "Support",
         features: [
-          "Content updates",
-          "Email support",
+          "Business email included",
           "Priority support",
-          "Dedicated support",
-          "SLA guarantee",
-          "Professional email",
+          "24/7 support",
+          "Dedicated account manager",
+          "Service guarantee",
         ],
       },
     ],
@@ -399,20 +389,20 @@ const en: Dictionary = {
     },
     trust: [
       {
-        title: "No lock-in",
-        description: "Cancel anytime. No contracts, no cancellation fees.",
+        title: "Cancel anytime — no contracts",
+        description: "",
       },
       {
-        title: "Live in 7 days",
-        description: "From kickoff to launch in a single week.",
+        title: "Live in 1–3 days",
+        description: "",
       },
       {
-        title: "You own everything",
-        description: "Domain, code, content — it\u2019s all yours.",
+        title: "We handle everything",
+        description: "",
       },
       {
-        title: "Free updates",
-        description: "Content changes and tweaks included, always.",
+        title: "Free updates included",
+        description: "",
       },
     ],
   },
@@ -420,7 +410,7 @@ const en: Dictionary = {
     home: {
       title: "Nettsaga — Get Your Business Online This Week",
       description:
-        "Professional websites for Philippine businesses. One fixed yearly fee covers your website, hosting, and support. Get online fast with Nettsaga.",
+        "Free website for Philippine businesses. We build it, you only pay for hosting and support. Don\u2019t like it? Don\u2019t pay. Get online fast with Nettsaga.",
     },
     about: {
       title: "About — Nettsaga",

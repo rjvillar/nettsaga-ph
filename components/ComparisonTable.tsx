@@ -4,7 +4,7 @@ import { useState, Fragment } from "react";
 import { Check, Minus, ChevronDown } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/context";
 
-const plans = ["Starter", "Business", "Growth", "Custom"] as const;
+const plans = ["Essential", "Business", "Growth", "Custom"] as const;
 
 type CellValue = boolean | string;
 
@@ -20,65 +20,51 @@ interface Category {
 }
 
 const techLabels = [
-  "Core // Essentials",
-  "Infra // Performance",
-  "Growth // Marketing",
-  "Commerce // Integrations",
-  "Support // SLA",
+  "Package // Included",
+  "Growth // Visibility",
+  "Commerce // Store",
+  "Support // Help",
 ];
 
 const featureValues: [CellValue, CellValue, CellValue, CellValue][][] = [
-  // Website Essentials
+  // What's Included
   [
-    ["Up to 5", "Up to 10", "Up to 20", "Unlimited"],
-    [true, true, true, true],
-    [true, true, true, true],
-    [true, true, true, true],
-    [true, true, true, true],
-    [false, true, true, true],
-    [false, false, true, true],
+    [true, true, true, true],       // Custom website design
+    [true, true, true, true],       // Business email
+    [true, true, true, true],       // Hosting & security
+    [true, true, true, true],       // Content updates
+    [false, false, true, true],     // Custom features
   ],
-  // Hosting & Performance
+  // Performance & Visibility
   [
-    [true, true, true, true],
-    [false, true, true, true],
-    [false, true, true, true],
-    [false, false, true, true],
-    [false, false, true, true],
+    ["Basic", "Enhanced", "Advanced", "Full"], // Search engine visibility
+    [false, true, true, true],      // Speed optimization
+    [false, true, true, true],      // Social media setup
+    [false, false, true, true],     // Google Business setup
+    [false, true, true, true],      // Monthly reports
   ],
-  // SEO & Marketing
+  // Online Store
   [
-    [true, true, true, true],
-    [false, true, true, true],
-    [false, false, true, true],
-    [false, true, true, true],
-    [false, false, true, true],
-    [false, false, true, true],
+    [false, false, true, true],     // Online store features
+    [false, false, true, true],     // Payment setup
+    [false, false, false, true],    // Booking system
   ],
-  // E-commerce
+  // Support
   [
-    [false, false, true, true],
-    [false, false, true, true],
-    [false, false, false, true],
-    [false, false, false, true],
-  ],
-  // Support & Maintenance
-  [
-    [true, true, true, true],
-    [true, true, true, true],
-    [false, true, true, true],
-    [false, false, true, true],
-    [false, false, false, true],
-    [false, false, true, true],
+    [true, true, true, true],       // Email support
+    [false, true, true, true],      // Priority support
+    [false, false, true, true],     // 24/7 support
+    [false, false, false, true],    // Dedicated account manager
+    [false, false, false, true],    // Service guarantee
   ],
 ];
 
 function CellContent({ value }: { value: CellValue }) {
   if (value === true) {
-    return <Check className="mx-auto h-4 w-4 text-green-500" />;
+    return <Check className="mx-auto h-4 w-4 text-dark" />;
   }
   if (value === false) {
-    return <Minus className="mx-auto h-4 w-4 text-dark/20" />;
+    return <Minus className="mx-auto h-4 w-4 text-dark/15" />;
   }
   return (
     <span className="text-sm font-medium text-dark">{value}</span>
@@ -90,9 +76,9 @@ function DesktopTable({ categories }: { categories: Category[] }) {
 
   return (
     <div className="hidden lg:block">
-      <div className="sticky top-[4.5625rem] z-20 flex rounded-t-2xl border-x border-t border-dark/[0.06] bg-paper">
+      <div className="sticky top-[4.5625rem] z-20 flex rounded-t-lg border-x border-t border-dark/[0.06] bg-paper">
         <div className="w-[17.5rem] shrink-0 border-b border-dark/[0.06] py-5 pl-6 pr-4">
-          <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-muted">
+          <span className="text-xs font-semibold uppercase tracking-wide text-dark/40">
             {t.comparison.feature}
           </span>
         </div>
@@ -115,7 +101,7 @@ function DesktopTable({ categories }: { categories: Category[] }) {
         ))}
       </div>
 
-      <div className="overflow-hidden rounded-b-2xl border-x border-b border-dark/[0.06] bg-paper">
+      <div className="overflow-hidden rounded-b-lg border-x border-b border-dark/[0.06] bg-paper">
         <table className="w-full text-left" style={{ tableLayout: "fixed" }}>
           <colgroup>
             <col style={{ width: "17.5rem" }} />
@@ -130,14 +116,11 @@ function DesktopTable({ categories }: { categories: Category[] }) {
                 <tr>
                   <td
                     colSpan={5}
-                    className="border-b border-dark/[0.06] bg-white px-6 py-3"
+                    className="border-b border-dark/[0.06] bg-dark/[0.02] px-6 py-3"
                   >
-                    <div className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                      <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
-                        {category.techLabel}
-                      </span>
-                    </div>
+                    <span className="text-xs font-semibold uppercase tracking-wide text-dark/50">
+                      {category.label}
+                    </span>
                   </td>
                 </tr>
 
@@ -146,7 +129,7 @@ function DesktopTable({ categories }: { categories: Category[] }) {
                     key={feature.name}
                     className="transition-colors hover:bg-dark/[0.01]"
                   >
-                    <td className="border-b border-dark/[0.06] py-3.5 pl-6 pr-4 text-sm text-slate">
+                    <td className="border-b border-dark/[0.06] py-3.5 pl-6 pr-4 text-sm text-dark/70">
                       {feature.name}
                     </td>
                     {feature.values.map((val, i) => (
@@ -180,18 +163,15 @@ function MobileAccordion({ categories }: { categories: Category[] }) {
         return (
           <div
             key={category.techLabel}
-            className="rounded-2xl border border-dark/[0.06] bg-white"
+            className="rounded-lg border border-dark/[0.06] bg-white"
           >
             <button
               onClick={() => setOpenIndex(isOpen ? null : catIdx)}
               className="flex w-full cursor-pointer items-center justify-between px-5 py-4 text-left"
             >
-              <div className="flex items-center gap-2">
-                <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                <span className="font-heading text-sm font-semibold text-dark">
-                  {category.label}
-                </span>
-              </div>
+              <span className="font-heading text-sm font-semibold text-dark">
+                {category.label}
+              </span>
               <ChevronDown
                 className={`h-5 w-5 shrink-0 text-muted transition-transform duration-200 ${
                   isOpen ? "rotate-180" : ""
@@ -206,8 +186,8 @@ function MobileAccordion({ categories }: { categories: Category[] }) {
             >
               <div className="overflow-hidden">
                 <div className="border-t border-dark/[0.06] px-5 pb-5 pt-4">
-                  <p className="mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/30">
-                    {category.techLabel}
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-dark/40">
+                    {category.label}
                   </p>
                   {category.features.map((feature) => (
                     <div

@@ -7,39 +7,25 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-grain relative flex min-h-svh flex-col justify-center overflow-hidden bg-dark pt-28 pb-20 sm:min-h-0 sm:block sm:py-28 lg:py-32">
+    <section className="bg-grain relative flex min-h-svh flex-col justify-center overflow-hidden bg-dark py-28 lg:py-32">
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.07)_45%,rgba(255,255,255,0.12)_55%,rgba(255,255,255,0.05)_70%,transparent_85%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_45%_55%_at_68%_42%,rgba(255,255,255,0.10),transparent)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_120%_60%_at_50%_0%,transparent_40%,rgba(0,0,0,0.45))]" />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-8">
-        <div className="max-w-xl">
-          <h1 className="font-heading text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[3.75rem]">
+      <div className="relative mx-auto grid w-full max-w-[100rem] items-center gap-12 px-6 md:px-12 lg:px-24 lg:grid-cols-2 lg:gap-8">
+        <div className="max-w-2xl">
+          <h1 className="font-heading text-[4.5vw] font-black leading-[1.08] tracking-tight text-white mb-6">
             {t.hero.title1}
             <br />
             {t.hero.title2}
           </h1>
-          <p className="mt-6 max-w-md text-base leading-relaxed text-white/50 sm:text-lg">
+          <p className="max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
             {t.hero.subtitle}
           </p>
-          <div className="mt-8 flex items-center gap-4">
-            <a
-              href="#how-it-works"
-              className="btn-glow inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-medium tracking-wide text-dark transition-colors hover:bg-white/90"
-            >
-              {t.hero.ctaPrimary}
-            </a>
-            <a
-              href="/contact"
-              className="text-sm font-medium text-white/60 transition-colors duration-200 hover:text-white"
-            >
-              {t.hero.ctaSecondary}
-            </a>
-          </div>
         </div>
 
         <div className="mt-10 flex justify-center lg:hidden">
-          <div className="relative h-[18.75rem] w-[18.75rem] overflow-hidden rounded-3xl border border-white/5">
+          <div className="relative h-[18.75rem] w-[18.75rem] overflow-hidden rounded-xl border border-white/5">
             <Image
               src="/assets/person-tablet.png"
               alt={t.hero.altTablet}
@@ -51,7 +37,7 @@ export default function Hero() {
         </div>
 
         <div className="relative hidden h-[35rem] lg:block">
-          <div className="absolute left-1/2 top-1/2 z-20 h-[21.25rem] w-[21.25rem] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-3xl border border-white/5">
+          <div className="absolute left-1/2 top-1/2 z-20 h-[21.25rem] w-[21.25rem] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-xl border border-white/5">
             <Image
               src="/assets/person-tablet.png"
               alt={t.hero.altTablet}
@@ -61,7 +47,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -left-6 bottom-2 z-10 h-[11.875rem] w-[11.875rem] overflow-hidden rounded-2xl border border-white/10">
+          <div className="absolute left-0 bottom-4 z-10 h-[11.875rem] w-[11.875rem] overflow-hidden rounded-lg border border-white/10">
             <Image
               src="/assets/person-laptop.png"
               alt={t.hero.altLaptop}
@@ -71,7 +57,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -right-6 top-0 z-10 h-[11.875rem] w-[11.875rem] overflow-hidden rounded-2xl border border-white/10">
+          <div className="absolute right-0 top-2 z-10 h-[11.875rem] w-[11.875rem] overflow-hidden rounded-lg border border-white/10">
             <Image
               src="/assets/person-smiling.png"
               alt={t.hero.altSmiling}
@@ -81,7 +67,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute bottom-[1.875rem] right-[-3.75rem] z-30 w-[13.75rem] overflow-hidden rounded-xl border border-white/10 bg-white">
+          <div className="absolute bottom-[2rem] right-[-1.875rem] z-30 w-[13.75rem] overflow-hidden rounded-lg border border-white/10 bg-white">
             <Image
               src="/assets/live-card.png"
               alt={t.hero.altLiveCard}
@@ -91,7 +77,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute left-[0.625rem] top-[9.375rem] z-30 w-[9.375rem] overflow-hidden rounded-xl border border-white/10 bg-white">
+          <div className="absolute left-[1.5rem] top-[10rem] z-30 w-[9.375rem] overflow-hidden rounded-lg border border-white/10 bg-white">
             <Image
               src="/assets/ssl.png"
               alt={t.hero.altSSL}
@@ -101,7 +87,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute left-[13.75rem] top-[-0.9375rem] z-30 w-[7.75rem] overflow-hidden rounded-xl border border-white/10 bg-white">
+          <div className="absolute left-[13.125rem] top-[0.5rem] z-30 w-[7.75rem] overflow-hidden rounded-lg border border-white/10 bg-white">
             <Image
               src="/assets/performance-score.png"
               alt={t.hero.altPerformance}

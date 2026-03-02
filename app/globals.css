@@ -21,8 +21,9 @@
 html {
   /* Scale the entire site proportionally on large screens.
      At 1440px viewport → 16px (laptop baseline).
-     Above 1440px → grows with viewport so rem-based layout fills the screen. */
-  font-size: max(16px, 1.111vw);
+     Above 1440px → grows with viewport so rem-based layout fills the screen.
+     Slightly smaller baseline to zoom out. */
+  font-size: max(13px, 0.9vw);
   scroll-behavior: smooth;
   scroll-padding-top: 3.75rem;
   scrollbar-width: thin;
@@ -38,14 +39,17 @@ html {
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
+
 ::-webkit-scrollbar-track {
   background: #F5F5F0;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #0B0B0B;
   border-radius: 9999px;
   border: 0.125rem solid #F5F5F0;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #4B5563;
 }
@@ -60,6 +64,15 @@ body {
 .bg-grain {
   position: relative;
 }
+
+.bg-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.045) 100%);
+}
+
 .bg-grain::after {
   content: "";
   position: absolute;
@@ -98,6 +111,7 @@ body {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -112,7 +126,59 @@ body {
   transition: opacity 0.25s ease, text-shadow 0.25s ease;
   opacity: 0.85;
 }
+
 .nav-link:hover {
   opacity: 1;
   text-shadow: 0.3px 0 0 currentColor, -0.3px 0 0 currentColor;
+}
+
+/* ── Local Edge Scene Animations ── */
+@keyframes edge-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes edge-fill-ring {
+  to {
+    stroke-dashoffset: 16.34;
+  }
+}
+
+@keyframes edge-fill-bar {
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes edge-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes edge-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes edge-draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

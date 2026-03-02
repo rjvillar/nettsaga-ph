@@ -1,6 +1,6 @@
 export default function JourneyMap() {
   return (
-    <div className="rounded-2xl border border-dark/[0.06] bg-paper p-4 sm:p-6">
+    <div className="rounded-lg border border-dark/[0.06] bg-paper p-4 sm:p-6">
       <svg
         viewBox="0 0 480 380"
         fill="none"

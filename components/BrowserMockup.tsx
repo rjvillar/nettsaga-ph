@@ -1,6 +1,6 @@
 export default function BrowserMockup() {
   return (
-    <div className="w-full overflow-hidden rounded-2xl border border-border bg-white shadow-tactile">
+    <div className="w-full overflow-hidden rounded-lg border border-border bg-white shadow-tactile">
       {/* Title bar */}
       <div className="flex items-center gap-2 border-b border-border bg-paper px-4 py-3">
         <div className="flex gap-1.5">

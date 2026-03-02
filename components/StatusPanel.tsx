@@ -9,7 +9,7 @@ export default function StatusPanel() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-grain relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#121212] p-5 sm:p-6">
+    <div className="bg-grain relative overflow-hidden rounded-lg border border-white/[0.08] bg-[#121212] p-5 sm:p-6">
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.04)_50%,transparent_75%)]" />
 
       <div className="relative">

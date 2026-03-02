@@ -43,7 +43,7 @@ export default function ContactForm() {
           value={form.name}
           onChange={update}
           placeholder={t.contact.form.placeholders.name}
-          className="mt-2 w-full rounded-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
+          className="mt-2 w-full rounded-md border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
         />
       </div>
 
@@ -62,7 +62,7 @@ export default function ContactForm() {
           value={form.email}
           onChange={update}
           placeholder={t.contact.form.placeholders.email}
-          className="mt-2 w-full rounded-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
+          className="mt-2 w-full rounded-md border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
         />
       </div>
 
@@ -77,7 +77,7 @@ export default function ContactForm() {
           </span>
         </label>
         <div className="mt-2 flex">
-          <span className="inline-flex items-center rounded-l-xl border border-r-0 border-dark/[0.08] bg-dark/[0.04] px-3 text-sm text-slate">
+          <span className="inline-flex items-center rounded-l-md border border-r-0 border-dark/[0.08] bg-dark/[0.04] px-3 text-sm text-slate">
             +63
           </span>
           <input
@@ -87,7 +87,7 @@ export default function ContactForm() {
             value={form.phone}
             onChange={update}
             placeholder={t.contact.form.placeholders.phone}
-            className="w-full rounded-r-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
+            className="w-full rounded-r-md border border-dark/[0.08] bg-paper px-4 py-3 text-sm text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
           />
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={update}
           placeholder={t.contact.form.placeholders.message}
-          className="mt-2 w-full resize-none rounded-xl border border-dark/[0.08] bg-paper px-4 py-3 text-sm leading-relaxed text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
+          className="mt-2 w-full resize-none rounded-md border border-dark/[0.08] bg-paper px-4 py-3 text-sm leading-relaxed text-dark outline-none transition-colors placeholder:text-muted focus:border-dark/20 focus:ring-1 focus:ring-dark/10"
         />
       </div>
 
@@ -126,7 +126,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={!consent}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-dark px-6 py-3.5 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-dark/90 disabled:cursor-not-allowed disabled:opacity-40"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-dark px-6 md:px-12 lg:px-24 py-3.5 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-dark/90 disabled:cursor-not-allowed disabled:opacity-40"
       >
         <Send className="h-4 w-4" />
         {t.contact.form.submit}

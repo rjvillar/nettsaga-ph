@@ -31,18 +31,18 @@ export default function SocialProofBar() {
   const { t } = useTranslation();
 
   return (
-    <section className="border-y border-dark/10 bg-white py-14 sm:py-16">
-      <div className="mx-auto max-w-6xl px-6">
-        <p className="text-center font-heading text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-          {t.socialProof.label}
-        </p>
-        <p className="mt-2 text-center font-heading text-lg font-semibold tracking-tight text-dark sm:text-xl">
+    <section className="relative bg-dark py-14 sm:py-16">
+      <div className="relative mx-auto w-full max-w-[90rem] px-6 md:px-12 lg:px-24">
+        <p className="text-center font-heading text-lg font-semibold tracking-tight text-white/90 sm:text-xl">
           {t.socialProof.headline}
         </p>
 
         <div className="mt-10 flex items-center justify-center gap-8 sm:gap-12">
           {cities.map((city) => (
-            <div key={city.alt} className={`flex w-1/3 justify-center ${city.size}`}>
+            <div
+              key={city.alt}
+              className={`flex w-1/3 justify-center ${city.size}`}
+            >
               <Image
                 src={city.src}
                 alt={city.alt}

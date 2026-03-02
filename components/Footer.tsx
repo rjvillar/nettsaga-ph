@@ -18,7 +18,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-dark pt-16 pb-8">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <span className="font-logo text-2xl italic font-black text-white">

@@ -41,6 +41,7 @@ export default function SampleWork() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line
     setOffset((o) => Math.min(o, samples.length - visible));
   }, [visible]);
 
@@ -60,19 +61,17 @@ export default function SampleWork() {
         Delivered: 7_Days
       </span>
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
         <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between">
           <div className="text-center sm:text-left">
-            <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[2.5rem]">
+            <h2 className="font-heading text-4xl font-semibold leading-tight tracking-[-0.02em] bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent sm:text-[3.5rem]">
               {t.sampleWork.title}
-              <span className="text-white/50">{t.sampleWork.titleMuted}</span>
+              <br />
+              <span>{t.sampleWork.titleMuted}</span>
             </h2>
-            <p className="mt-4 max-w-2xl text-base text-white/50 sm:text-[1.375rem]">
-              {t.sampleWork.subtitle}
-            </p>
           </div>
 
-          <div className="mt-6 flex items-center gap-3 sm:mt-0 sm:shrink-0">
+          <div className="mt-8 flex items-center gap-3 sm:mt-0 sm:shrink-0">
             <button
               onClick={prev}
               disabled={offset === 0}
@@ -105,7 +104,7 @@ export default function SampleWork() {
             {samples.map((sample) => (
               <div
                 key={sample.src}
-                className="group w-full shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] transition-colors hover:bg-white/[0.06] sm:w-[calc(50%-0.75rem)]"
+                className="group w-full shrink-0 overflow-hidden rounded-lg border border-white/[0.08] bg-white/[0.03] transition-colors hover:bg-white/[0.06] sm:w-[calc(50%-0.75rem)]"
               >
                 <div className="flex items-center border-b border-white/[0.06] px-4 py-3">
                   <div className="flex gap-1.5">

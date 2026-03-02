@@ -7,13 +7,13 @@ const fil: Dictionary = {
     portfolio: "Portfolio",
     about: "Tungkol sa amin",
     contact: "Makipag-ugnayan",
-    talkToUs: "Kausapin kami",
+    talkToUs: "Magsimula",
   },
   hero: {
     title1: "Ipa-online ang negosyo mo",
     title2: "ngayong linggo.",
     subtitle:
-      "Website + hosting + support sa iisang fixed na taunang bayad. Walang sorpresa, walang hidden fees — website na talagang gumagana para sa negosyo mo.",
+      "Ginagawa namin ang website mo nang libre. Ang bayad mo lang ay para sa hosting at support — iisang fixed na taunang bayad, walang sorpresa.",
     ctaPrimary: "Paano gumagana",
     ctaSecondary: "Kausapin kami",
     altTablet: "Pilipinong propesyonal na may hawak na tablet",
@@ -46,14 +46,14 @@ const fil: Dictionary = {
     },
     card2: {
       label: "Malinaw na singil",
-      title: "Walang hidden fees. Kailanman.",
+      title: "Libreng website. Totoo 'yan.",
       description:
-        "Isang fixed na taunang bayad lang—kasama na lahat. Walang setup fee, walang biglaang invoice, walang kontrata.",
+        "Dine-design at ginagawa namin ang website mo nang walang bayad. Ang taunang bayad mo lang ay para sa hosting, domain, at patuloy na support — walang biglaang invoice, walang kontrata.",
       items: [
         "Walang setup fee",
         "Walang lock-in na kontrata",
         "Mag-cancel kahit kailan",
-        "Sa’yo ang lahat",
+        "Fully managed na serbisyo",
         "Kasama ang libreng domain",
       ],
       hiddenFees: "Hidden fees:",
@@ -68,30 +68,26 @@ const fil: Dictionary = {
   howItWorks: {
     title: "Paano ito ",
     titleMuted: "gumagana",
-    subtitle:
-      "Tatlong simpleng hakbang lang—walang komplikadong proseso, walang mahabang kontrata.",
+    subtitle: "Tatlong simpleng hakbang lang—walang komplikadong proseso.",
     steps: [
       {
         phase: "Pagkilala",
-        title: "Mabilisang usap",
+        title: "Mabilisang usap para makilala ka at ang negosyo mo",
         description:
-          "Kinukumpirma namin ang details ng negosyo mo at kung ano talaga ang kailangan mo para lumago. Walang sales pitch—15 minuto lang para mag-align.",
+          "Mabilisang alignment lang sa kailangan ng negosyo mo. Walang mabigat na sales pitch, kilalanin lang natin ang isa't-isa.",
       },
       {
         phase: "Engineering",
-        title: "Gagawa kami ng draft",
+        title: "Gagawa kami ng buong website mo mula sa simula",
         description:
-          "Kami na ang bahala sa heavy lifting—design, hosting, at tech. Makakakuha ka ng fully working na unang version para i-review sa loob ng 7 araw.",
+          "Kami na bahala sa heavy lifting. Makakakuha ka ng fully working na website na ginawa nang maayos, handa na para i-review.",
       },
       {
-        phase: "Collaboration",
-        title: "Ikaw ang magdedesisyon",
-        description: "",
-        descriptionParts: [
-          "Kung okay sa’yo ang draft, ipo-publish namin. Kung hindi pa tugma, ",
-          "walang problema—walang hard feelings",
-          ". Ikaw pa rin ang may control.",
-        ],
+        phase: "Review",
+        title: "Ayaw mo? Walang problema. Gusto mo? Sa iyo na.",
+        description:
+          "Ayaw mo? Walang problema. Kapag nagustuhan mo, sa iyo na.",
+        descriptionParts: [],
       },
     ],
   },
@@ -129,58 +125,53 @@ const fil: Dictionary = {
     title: "Simple, transparent na ",
     titleMuted: "presyo.",
     subtitle:
-      "Isang taunang bayad — kasama na lahat. Walang buwanang sorpresa.",
+      "Libreng website — ang bayad mo lang ay para sa hosting, domain, at support.",
     popular: "Pinakasikat",
     getStarted: "Magsimula",
     period: "/ taon",
     plans: [
       {
-        name: "Starter",
-        description: "Para sa maliliit na negosyo at startups",
+        name: "Essential",
+        description: "Lahat ng kailangan mo para ma-online ang negosyo mo",
         features: [
-          "Hanggang 5 pahina",
-          "Responsive na design",
-          "Contact form",
-          "SSL certificate",
-          "Basic SEO",
-          "Email support",
+          "Custom na website design",
+          "Propesyonal na business email",
+          "Hosting at seguridad kasama na",
+          "Content updates kasama na",
+          "Kasama ang business email",
         ],
       },
       {
         name: "Business",
-        description: "Para sa lumalaking SME",
+        description: "Para sa lumalaking negosyo na kailangan ng mas marami",
         features: [
-          "Lahat ng nasa Starter",
-          "Hanggang 10 pahina",
-          "Custom na design",
-          "Social media integration",
-          "SEO optimization",
+          "Lahat ng nasa Essential",
           "Priority support",
+          "Social media setup",
+          "Bilis at performance boost",
+          "Buwanang progress reports",
         ],
       },
       {
         name: "Growth",
-        description:
-          "Para sa mas malalaking negosyo na mas marami ang kailangan",
+        description: "Para sa mga negosyong handang lumaki",
         features: [
           "Lahat ng nasa Business",
-          "Hanggang 20 pahina",
-          "E-commerce ready",
-          "Advanced SEO",
-          "Analytics dashboard",
-          "Dedicated support",
+          "24/7 dedicated support",
+          "Online store features",
+          "Advanced tools at integrations",
+          "Mas mabilis na turnaround sa mga request",
         ],
       },
       {
         name: "Custom",
-        description: "Solusyong sakto sa kailangan mo",
+        description: "Akma sa eksaktong kailangan mo",
         features: [
-          "Fully custom na solusyon",
-          "Walang limit sa pahina",
-          "Advanced integrations",
-          "Custom functionality",
-          "Specialized na design",
-          "SLA guarantee",
+          "Fully customized na solusyon",
+          "Custom features at tools",
+          "Dedicated account manager",
+          "Service level guarantee",
+          "Walang limitasyon sa revisions",
         ],
       },
     ],
@@ -193,11 +184,11 @@ const fil: Dictionary = {
     items: [
       {
         q: "Akin ba ang website?",
-        a: "Oo—100%. Nakapangalan sa’yo ang domain at sa’yo rin ang lahat ng content, design, at code. Kapag umalis ka, dala mo lahat.",
+        a: "Lahat ng content sa website mo — text, photos, branding — 100% sa\u2019yo. Ang platform, source code, development tools, at hosting infrastructure ay nananatiling bahagi ng serbisyo ng Nettsaga. Isipin mo itong isang fully managed service — kami ang bahala sa technical side para makapag-focus ka sa negosyo mo.",
       },
       {
         q: "Paano ang bayad?",
-        a: "Isang fixed na taunang bayad lang. Yun na ’yon. Walang hidden charges, walang biglaang invoice. Kasama na lahat—design, development, hosting, domain, at support.",
+        a: "Ginagawa namin ang website mo nang libre — makikita mo muna ang tapos na website bago ka magbayad. Hindi mo gusto? Hindi ka magbabayad. Nagustuhan mo? Isang fixed na taunang bayad na lang para sa hosting, domain, support, at lahat ng kailangan para patakbuhin ito.",
       },
       {
         q: "Puwede ba akong mag-cancel?",
@@ -205,7 +196,7 @@ const fil: Dictionary = {
       },
       {
         q: "Gaano kabilis ang delivery?",
-        a: "Karamihan ng website ay live within 7 days. May malinaw kang timeline bago kami magsimula para walang sorpresa.",
+        a: "Karamihan ng website ay handa na sa loob ng 1–3 araw. May malinaw kang timeline bago kami magsimula para walang sorpresa.",
       },
       {
         q: "Paano kung meron na akong website?",
@@ -213,7 +204,7 @@ const fil: Dictionary = {
       },
       {
         q: "Ano ang kasama sa updates?",
-        a: "Text changes, photo swaps, bagong section, layout tweaks—message mo lang kami. Inaayos namin within the day, walang extra cost.",
+        a: "Text changes, photo swaps, bagong section, layout tweaks—message mo lang kami. Inaasikaso namin agad-agad, walang extra cost.",
       },
       {
         q: "Nagbibigay ba kayo ng email?",
@@ -292,7 +283,7 @@ const fil: Dictionary = {
       title: "Ginawa sa Norway, ",
       titleMuted: "para sa Pilipinas.",
       subtitle:
-        "Norwegian quality standards, honest pricing, at 7-day turnaround—ngayon para sa mga negosyong Pilipino.",
+        "Norwegian quality standards, honest pricing, at 1–3 day turnaround—ngayon para sa mga negosyong Pilipino.",
     },
     story: {
       title: "Mula sa Scandinavia ",
@@ -353,56 +344,41 @@ const fil: Dictionary = {
     popular: "Pinakasikat",
     categories: [
       {
-        label: "Mga Pangunahing Kailangan sa Website",
+        label: "Ano ang Kasama",
         features: [
-          "Mga pahina",
-          "Custom domain",
-          "SSL certificate",
-          "Responsive na design",
-          "Contact form",
-          "Custom na design",
-          "Custom functionality",
+          "Custom na website design",
+          "Business email",
+          "Hosting at seguridad",
+          "Content updates",
+          "Custom features",
         ],
       },
       {
-        label: "Hosting at Performance",
+        label: "Performance at Visibility",
         features: [
-          "Managed hosting",
+          "Search engine visibility",
           "Speed optimization",
-          "Uptime monitoring",
-          "CDN",
-          "Daily backups",
-        ],
-      },
-      {
-        label: "SEO at Marketing",
-        features: [
-          "Basic SEO",
-          "SEO optimization",
-          "Advanced SEO",
-          "Social media integration",
-          "Analytics dashboard",
+          "Social media setup",
           "Google Business setup",
+          "Buwanang reports",
         ],
       },
       {
-        label: "E-commerce",
+        label: "Online Store",
         features: [
-          "E-commerce ready",
-          "Payment integration",
-          "Advanced integrations",
+          "Online store features",
+          "Payment setup",
           "Booking system",
         ],
       },
       {
-        label: "Suporta at Maintenance",
+        label: "Suporta",
         features: [
-          "Content updates",
-          "Email support",
+          "Kasama ang business email",
           "Priority support",
-          "Dedicated support",
-          "SLA guarantee",
-          "Propesyonal na email",
+          "24/7 support",
+          "Dedicated account manager",
+          "Service guarantee",
         ],
       },
     ],
@@ -421,21 +397,20 @@ const fil: Dictionary = {
     },
     trust: [
       {
-        title: "Walang lock-in",
-        description:
-          "Mag-cancel kahit kailan. Walang kontrata, walang cancellation fees.",
+        title: "Mag-cancel kahit kailan — walang kontrata",
+        description: "",
       },
       {
-        title: "Live sa 7 araw",
-        description: "Mula kickoff hanggang launch sa loob ng isang linggo.",
+        title: "Live sa 1–3 araw",
+        description: "",
       },
       {
-        title: "Ikaw ang may-ari ng lahat",
-        description: "Domain, code, content—lahat sa’yo.",
+        title: "Kami ang bahala sa lahat",
+        description: "",
       },
       {
-        title: "Libreng updates",
-        description: "Kasama lagi ang content changes at tweaks.",
+        title: "Kasama ang libreng updates",
+        description: "",
       },
     ],
   },
@@ -443,7 +418,7 @@ const fil: Dictionary = {
     home: {
       title: "Nettsaga — I-online ang Iyong Negosyo Ngayong Linggo",
       description:
-        "Propesyonal na website para sa mga negosyong Pilipino. Isang fixed na taunang bayad para sa website, hosting, at support. Mabilis kang makakapag-online kasama ang Nettsaga.",
+        "Libreng website para sa mga negosyong Pilipino. Kami ang gagawa, ang bayad mo lang ay para sa hosting at support. Hindi mo gusto? Hindi ka magbabayad. Mabilis kang makakapag-online kasama ang Nettsaga.",
     },
     about: {
       title: "Tungkol sa Amin — Nettsaga",

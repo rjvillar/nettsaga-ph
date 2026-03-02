@@ -32,7 +32,7 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="bg-grain relative overflow-hidden bg-white py-20 sm:py-28"
+      className="bg-grain relative overflow-hidden bg-paper py-20 sm:py-28"
     >
       <span className="absolute left-6 top-8 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
         Status: System_Ready
@@ -41,112 +41,50 @@ export default function HowItWorks() {
         Timeline: 07_Days
       </span>
 
-      <div className="relative mx-auto max-w-7xl px-6">
-        <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
-          {t.howItWorks.title}<span className="text-muted">{t.howItWorks.titleMuted}</span>
+      <div className="relative mx-auto mt-24 w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
+        <h2 className="font-heading text-center text-4xl font-semibold leading-tight tracking-[-0.02em] bg-gradient-to-r from-dark to-dark/40 bg-clip-text text-transparent sm:text-[3.5rem]">
+          {t.howItWorks.title}
+          <span>{t.howItWorks.titleMuted}</span>
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate sm:text-[1.375rem]">
-          {t.howItWorks.subtitle}
-        </p>
 
-        <div className="relative mt-16 sm:mt-20">
-          <div className="pointer-events-none absolute inset-x-0 top-[1.125rem] z-0 hidden lg:block">
-            <div
-              className="mx-auto h-px w-2/3"
-              style={{
-                background:
-                  "linear-gradient(90deg, transparent, rgba(34,197,94,0.2) 20%, rgba(34,197,94,0.3) 50%, rgba(34,197,94,0.2) 80%, transparent)",
-              }}
-            />
-            <div
-              className="mx-auto -mt-px w-2/3"
-              style={{
-                height: "0.0625rem",
-                backgroundImage:
-                  "repeating-linear-gradient(90deg, rgba(0,0,0,0.08) 0, rgba(0,0,0,0.08) 0.375rem, transparent 0.375rem, transparent 0.75rem)",
-              }}
-            />
-            <div className="absolute left-[16.67%] top-1/2 -translate-x-[0.125rem] -translate-y-1/2">
-              <div className="h-1.5 w-1.5 rounded-full bg-dark/10" />
-            </div>
-            <div className="absolute left-[33.33%] top-1/2 translate-x-[0.125rem] -translate-y-1/2">
-              <div className="h-1.5 w-1.5 rounded-full bg-dark/10" />
-            </div>
-            <div className="absolute left-[36%] top-1/2 -translate-x-[0.125rem] -translate-y-1/2">
-              <div className="h-1.5 w-1.5 rounded-full bg-dark/10" />
-            </div>
-            <div className="absolute left-[64%] top-1/2 translate-x-[0.125rem] -translate-y-1/2">
-              <div className="h-1.5 w-1.5 rounded-full bg-dark/10" />
-            </div>
-            <div className="absolute left-[66.67%] top-1/2 -translate-x-[0.125rem] -translate-y-1/2">
-              <div className="h-1.5 w-1.5 rounded-full bg-dark/10" />
-            </div>
-            <div className="absolute left-[83.33%] top-1/2 translate-x-[0.125rem] -translate-y-1/2">
-              <div className="h-1.5 w-1.5 rounded-full bg-dark/10" />
-            </div>
-          </div>
+        <div className="mt-20 flex flex-col gap-24 sm:gap-32">
+          {t.howItWorks.steps.map((step, i) => {
+            const img = stepImages[i];
+            const num = nums[i];
+            const isEven = i % 2 !== 0;
 
-          <div className="relative z-10 grid gap-10 sm:grid-cols-3 sm:gap-6">
-            {t.howItWorks.steps.map((step, i) => {
-              const img = stepImages[i];
-              const num = nums[i];
-              return (
-                <div
-                  key={num}
-                  className="flex flex-col overflow-hidden rounded-2xl border border-dark/[0.06] bg-paper"
-                  style={{
-                    boxShadow:
-                      "0 0.125rem 0.25rem rgba(0,0,0,0.02), 0 0.75rem 2.25rem rgba(0,0,0,0.04)",
-                  }}
-                >
-                  <div className="flex items-center gap-2 px-5 pt-4">
-                    <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                    <span className="font-heading text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
-                      Step {num} — {step.phase}
-                    </span>
-                  </div>
+            return (
+              <div
+                key={num}
+                className={`flex flex-col items-center gap-12 sm:gap-20 md:flex-row ${
+                  isEven ? "md:flex-row-reverse" : ""
+                }`}
+              >
+                <div className="flex-1 flex flex-col justify-center">
+                  <span className="font-mono text-sm font-semibold tracking-widest text-muted">
+                    {num}
+                  </span>
+                  <h3 className="mt-4 font-heading text-3xl font-semibold tracking-[-0.01em] text-dark md:text-5xl">
+                    {step.title}
+                  </h3>
+                </div>
 
-                  <div className="mt-3 overflow-hidden px-4">
-                    <div
-                      className={`relative overflow-hidden rounded-xl ${num === "01" ? "flex aspect-[4/3] items-center justify-center bg-paper" : "aspect-[4/3]"}`}
-                    >
-                      <Image
-                        src={img.src}
-                        alt={img.alt}
-                        width={img.width}
-                        height={img.height}
-                        className={
-                          num === "01"
-                            ? "w-[90%] object-contain"
-                            : "h-full w-full object-cover"
-                        }
-                        sizes="(min-width: 640px) 33vw, 100vw"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="flex flex-grow flex-col px-5 pb-5 pt-4">
-                    <h3 className="font-heading text-lg font-bold tracking-tight text-dark">
-                      {step.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate">
-                      {step.descriptionParts ? (
-                        <>
-                          {step.descriptionParts[0]}
-                          <strong className="font-semibold text-dark">
-                            {step.descriptionParts[1]}
-                          </strong>
-                          {step.descriptionParts[2]}
-                        </>
-                      ) : (
-                        step.description
-                      )}
-                    </p>
+                <div className="flex-1 w-full">
+                  <div className="relative overflow-hidden rounded-xl border border-dark/[0.04] bg-paper shadow-[0_2rem_4rem_rgba(0,0,0,0.04)] ring-1 ring-white/50 aspect-square sm:aspect-[4/3]">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-black/[0.02] to-transparent mix-blend-multiply" />
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      width={img.width}
+                      height={img.height}
+                      className={`h-full w-full ${num === "01" ? "object-contain p-8" : "object-cover"}`}
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                    />
                   </div>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

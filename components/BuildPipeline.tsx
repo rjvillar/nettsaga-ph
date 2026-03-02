@@ -10,7 +10,7 @@ export default function BuildPipeline() {
   const { t } = useTranslation();
 
   return (
-    <div className="rounded-2xl border border-dark/[0.06] bg-white p-5 sm:p-6">
+    <div className="rounded-lg border border-dark/[0.06] bg-white p-5 sm:p-6">
       <div className="flex items-center gap-2">
         <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
         <span className="font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
