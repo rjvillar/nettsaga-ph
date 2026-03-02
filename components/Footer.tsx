@@ -7,9 +7,10 @@ const linkHrefs = [
   "/#how-it-works",
   "/#local-edge",
   "/pricing",
-  "/#portfolio",
+  "/portfolio",
   "/#faq",
   "/about",
+  "/careers",
   "/contact",
 ];
 
@@ -61,6 +62,9 @@ export default function Footer() {
                   <Mail className="h-4 w-4 stroke-[1.5]" />
                   support@nettsaga.com
                 </a>
+              </li>
+              <li className="text-sm text-white/40">
+                {t.contact.sidebar.response}
               </li>
             </ul>
           </div>

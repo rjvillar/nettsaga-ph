@@ -6,6 +6,7 @@ const fil: Dictionary = {
     pricing: "Presyo",
     portfolio: "Portfolio",
     about: "Tungkol sa amin",
+    careers: "Careers",
     contact: "Makipag-ugnayan",
     talkToUs: "Magsimula",
   },
@@ -53,7 +54,7 @@ const fil: Dictionary = {
         "Walang setup fee",
         "Walang lock-in na kontrata",
         "Mag-cancel kahit kailan",
-        "Fully managed na serbisyo",
+        "Propesyonal na business email",
         "Kasama ang libreng domain",
       ],
       hiddenFees: "Hidden fees:",
@@ -236,29 +237,15 @@ const fil: Dictionary = {
       "Portfolio",
       "FAQ",
       "Tungkol sa amin",
+      "Careers",
       "Makipag-ugnayan",
     ],
   },
   contact: {
-    title: "Makipag-ugnayan",
-    subtitle:
-      "May proyekto ka ba sa isip? Gusto naming marinig ang tungkol dito.",
+    title: "Gumawa tayo ng maganda ",
+    titleMuted: "na magkasama.",
     sidebar: {
-      title: "Simulan natin ang usapan.",
-      description:
-        "Makipag-ugnayan sa alinman sa mga channel na ’to o sagutan ang form—babalikan ka namin.",
       response: "Lunes \u2014 Biyernes, sa loob ng araw",
-      pipeline: {
-        designApproved: "Naaprubahan ang design",
-        codeReviewed: "Na-review ang code",
-        testsPassed: "Pasado ang tests",
-        goingLive: "Magla-launch...",
-      },
-      metrics: {
-        uptime: "Uptime",
-        pageLoad: "Page Load",
-        fasterThan: "Mas mabilis kaysa sa 92% ng mga site",
-      },
     },
     form: {
       name: "Pangalan",
@@ -269,6 +256,11 @@ const fil: Dictionary = {
       consent:
         "Sumasang-ayon akong kolektahin at i-store ng Nettsaga ang impormasyon ko para masagot ang inquiry na ito. Hindi namin ibabahagi ang data mo sa third parties.",
       submit: "Ipadala ang mensahe",
+      sending: "Ipinapadala...",
+      successTitle: "Naipadala na ang mensahe",
+      successBody: "Babalikan ka namin sa loob ng araw.",
+      errorTitle: "May nangyaring mali",
+      errorBody: "Subukan ulit o mag-email sa amin direkta.",
       tellUs: "Kuwento mo sa amin ang proyekto mo",
       placeholders: {
         name: "Buong pangalan mo",
@@ -305,9 +297,26 @@ const fil: Dictionary = {
       { title: "Totoong tao, totoong suporta" },
       { title: "Walang lock-in, kahit kailan" },
     ],
-    scope: {
+    deliver: {
       title: "Lahat ng kailangan ng iyong negosyo ",
       titleMuted: "para mag-live",
+      cards: [
+        {
+          title: "Lahat nasa iisang lugar",
+          description:
+            "Disenyo, hosting, domain, email, updates — lahat nasa iisang serbisyo. Hindi mo kailangang mag-manage ng maraming vendor o tech.",
+        },
+        {
+          title: "Simpleng proseso",
+          description:
+            "Kausapin kami, gagawin namin, i-review mo, at mag-live. Apat na hakbang lang — walang komplikadong proseso, walang sorpresa.",
+        },
+        {
+          title: "Laging inaasikaso",
+          description:
+            "Minomonitor namin ang uptime, bilis, at seguridad 24/7. Kapag may kailangang ayusin, inaasikaso namin bago mo pa mapansin.",
+        },
+      ],
     },
     cta: {
       title: "Gusto mong magtrabaho ",
@@ -316,36 +325,6 @@ const fil: Dictionary = {
         "Kung kailangan mo ng bagong website o gusto mong pagandahin ang meron ka — usap tayo kung paano kami makakatulong.",
       cta: "Makipag-ugnayan",
     },
-  },
-  serviceStack: {
-    pillars: [
-      {
-        label: "Disenyo at Development",
-        detail: "Custom na gawa mula sa umpisa",
-      },
-      { label: "Hosting at Seguridad", detail: "Managed infrastructure" },
-      { label: "SEO at Performance", detail: "Optimized para sa bilis" },
-      { label: "Patuloy na Suporta", detail: "Updates at monitoring" },
-    ],
-    footer: "Isang taunang bayad — kasama na lahat",
-  },
-  buildPipeline: {
-    steps: [
-      { label: "Kausapin kami", detail: "Sabihin kung ano ang kailangan mo" },
-      { label: "Gagawin namin", detail: "Unti-unting nabubuo ang site mo" },
-      { label: "Ikaw ang mag-review", detail: "Aprubahan o i-refine" },
-      { label: "Go live", detail: "Launch at patuloy na suporta" },
-    ],
-    footer: "Walang kontrata — puwedeng mag-cancel kahit kailan",
-  },
-  statusPanel: {
-    metrics: [
-      { label: "Uptime", status: "Operational" },
-      { label: "PageSpeed", status: "Optimized" },
-      { label: "SSL", status: "Secured" },
-      { label: "Response", status: "Available" },
-    ],
-    monitoring: "Aktibo ang 24/7 monitoring",
   },
   comparison: {
     feature: "Katangian",
@@ -422,6 +401,176 @@ const fil: Dictionary = {
       },
     ],
   },
+  portfolio: {
+    hero: {
+      title: "Totoong sites, totoong negosyo. ",
+      titleMuted: "Tingnan ang mga ginawa namin.",
+    },
+    projects: [
+      {
+        label: "haaland-takst-boligveiledning-as.vercel.app",
+        url: "https://haaland-takst-boligveiledning-as.vercel.app/",
+        name: "Haaland",
+        description: "Website ng certified property appraiser na may malinis at propesyonal na disenyo",
+      },
+      {
+        label: "land-tak-og-fasade-as.vercel.app",
+        url: "https://land-tak-og-fasade-as.vercel.app/",
+        name: "Land Tak og Fasade",
+        description: "Modernong site para sa isang roofing at facade company na nagpapakita ng mga serbisyo nila",
+      },
+      {
+        label: "Food & Beverage",
+        name: "Frozti",
+        description: "Makulay na frozen treats shop na may masayang branding at mainit na pakiramdam",
+      },
+      {
+        label: "Construction",
+        name: "Torsnes Bygg",
+        description: "Lokal na carpentry at construction firm na may matatag at mapagkakatiwalaang presensya",
+      },
+    ],
+    cta: {
+      title: "Nagustuhan mo ba ang ",
+      titleMuted: "nakita mo?",
+      subtitle: "Usap tayo kung paano namin madadala ang negosyo mo online na may site na ipagmamalaki mo.",
+      cta: "Makipag-ugnayan",
+    },
+  },
+  careers: {
+    hero: {
+      title: "Bumuo ng web ",
+      titleMuted: "kasama namin.",
+      subtitle:
+        "Maliit pero mabilis na team kami na tumutulong sa mga negosyong Pilipino na mag-online. Kung gusto mo ng malinis na code, tapat na trabaho, at tunay na impact \u2014 gusto ka naming makilala.",
+    },
+    culture: {
+      title: "Bakit mag-work ",
+      titleMuted: "sa Nettsaga",
+      perks: [
+        {
+          title: "Remote-first",
+          description:
+            "Mag-trabaho kahit saan sa Pilipinas. Ang mahalaga sa amin ay ang output, hindi ang oras sa opisina.",
+        },
+        {
+          title: "Maliit na team, malaking impact",
+          description:
+            "Walang corporate red tape. Ang gawa mo ay mabilis na nai-ship at nararating ang totoong mga negosyo.",
+        },
+        {
+          title: "Para sa pag-unlad",
+          description:
+            "Ini-invest namin sa skills mo \u2014 conferences, courses, at mentorship ay kasama sa package.",
+        },
+        {
+          title: "Tapat na kultura",
+          description:
+            "Transparent na sahod, malinaw na expectations, at team na talagang sumusuporta sa\u2019yo.",
+        },
+      ],
+    },
+    openings: {
+      title: "Mga bukas ",
+      titleMuted: "na posisyon",
+      subtitle:
+        "Lagi kaming naghahanap ng mga talented na tao na may parehong misyon. Ito ang mga bukas na posisyon ngayon.",
+      positions: [
+        {
+          title: "Frontend Developer",
+          type: "Full-time",
+          location: "Remote \u2014 Pilipinas",
+          department: "Engineering",
+          description:
+            "Gumawa ng mabilis, maganda, at accessible na interfaces gamit ang React, Next.js, at Tailwind CSS.",
+          requirements: [
+            "Malawak na karanasan sa React at Next.js",
+            "Bihasa sa Tailwind CSS",
+            "Pag-unawa sa responsive design at web performance",
+            "Mata para sa malinis na UI at atensyon sa detalye",
+          ],
+        },
+        {
+          title: "Backend Developer",
+          type: "Full-time",
+          location: "Remote \u2014 Pilipinas",
+          department: "Engineering",
+          description:
+            "Mag-disenyo at mag-maintain ng APIs, databases, at server infrastructure na nagpapaandar sa client sites namin.",
+          requirements: [
+            "Karanasan sa Node.js, Python, o katulad",
+            "Pamilyar sa PostgreSQL o MongoDB",
+            "Pag-unawa sa REST APIs at authentication",
+            "Komportable sa cloud platforms (Vercel, AWS, o katulad)",
+          ],
+        },
+        {
+          title: "UI/UX Designer",
+          type: "Full-time",
+          location: "Remote \u2014 Pilipinas",
+          department: "Design",
+          description:
+            "Gumawa ng intuitive at modernong interfaces para sa mga negosyong Pilipino.",
+          requirements: [
+            "Matibay na portfolio ng web o product design",
+            "Bihasa sa Figma",
+            "Pag-unawa sa design systems at accessibility",
+            "Kakayahang i-translate ang business needs sa malinis na UI",
+          ],
+        },
+        {
+          title: "Sales Development Representative",
+          type: "Full-time",
+          location: "Remote \u2014 Pilipinas",
+          department: "Sales",
+          description:
+            "Maging unang point of contact para sa mga potential clients. Tulungan silang makita kung paano sila matutulungan ng Nettsaga.",
+          requirements: [
+            "Mahusay na communication skills sa English at Filipino",
+            "Karanasan sa outbound sales o lead generation",
+            "Pamilyar sa CRM tools",
+            "Tunay na passion sa pagtulong sa maliliit na negosyo na lumago",
+          ],
+        },
+        {
+          title: "AI-Assisted Full Stack Developer",
+          type: "Full-time",
+          location: "Remote — Pilipinas",
+          department: "Engineering",
+          description:
+            "Bumuo at mag-ship ng full-stack applications gamit ang AI-assisted workflows. Gagamit ka ng Supabase, Vercel, Next.js, at modernong AI tooling para mas mabilis na mai-deliver ang client projects.",
+          requirements: [
+            "Karanasan sa Next.js, React, at TypeScript",
+            "Pamilyar sa Supabase (auth, database, storage)",
+            "Komportable mag-deploy sa Vercel",
+            "Handang mag-integrate ng AI tools sa workflow mo",
+          ],
+        },
+        {
+          title: "E-commerce Specialist",
+          type: "Full-time",
+          location: "Remote — Pilipinas",
+          department: "Growth",
+          description:
+            "Tulungan ang mga kliyente namin na mag-benta online. Mag-setup at mag-manage ka ng e-commerce solutions, i-optimize ang product listings, at tiyaking smooth ang checkout experience para sa mga negosyong Pilipino.",
+          requirements: [
+            "Karanasan sa Shopify, WooCommerce, o katulad na platforms",
+            "Pag-unawa sa product listings, inventory, at payment gateways",
+            "Kaalaman sa e-commerce landscape ng Pilipinas (GCash, Maya, COD)",
+            "Matinding atensyon sa detalye at customer-first na mindset",
+          ],
+        },
+      ],
+      noOpenings: "Walang available na posisyon ngayon. Bumalik ka ulit soon!",
+    },
+    cta: {
+      title: "Hindi mo nakita ang role mo? ",
+      titleMuted: "Mag-reach out pa rin.",
+      subtitle:
+        "Lagi kaming bukas sa pagkilala ng mga talented na tao. I-send sa amin ang portfolio o CV mo at mag-usap tayo.",
+      cta: "Makipag-ugnayan",
+    },
+  },
   metadata: {
     home: {
       title: "Nettsaga — I-online ang Iyong Negosyo Ngayong Linggo",
@@ -442,6 +591,16 @@ const fil: Dictionary = {
       title: "Makipag-ugnayan — Nettsaga",
       description:
         "Makipag-ugnayan sa Nettsaga. Gusto naming marinig ang tungkol sa iyong proyekto.",
+    },
+    portfolio: {
+      title: "Portfolio — Nettsaga",
+      description:
+        "Tingnan ang mga website na ginawa namin para sa totoong mga negosyo. Custom na disenyo, mabilis na delivery, at propesyonal na resulta.",
+    },
+    careers: {
+      title: "Careers — Nettsaga",
+      description:
+        "Sumali sa aming team at tulungan ang mga negosyong Pilipino na mag-online. Tingnan ang mga bukas na posisyon sa Nettsaga.",
     },
   },
 };

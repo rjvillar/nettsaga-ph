@@ -6,6 +6,7 @@ const en: Dictionary = {
     pricing: "Pricing",
     portfolio: "Portfolio",
     about: "About",
+    careers: "Careers",
     contact: "Contact",
     talkToUs: "Get started",
   },
@@ -52,7 +53,7 @@ const en: Dictionary = {
         "No setup fees",
         "No lock-in contracts",
         "Cancel anytime",
-        "Fully managed service",
+        "Professional business email",
         "Free domain included",
       ],
       hiddenFees: "Hidden fees:",
@@ -232,28 +233,15 @@ const en: Dictionary = {
       "Portfolio",
       "FAQ",
       "About",
+      "Careers",
       "Contact",
     ],
   },
   contact: {
-    title: "Get in touch",
-    subtitle: "Have a project in mind? We\u2019d love to hear about it.",
+    title: "Let\u2019s build something ",
+    titleMuted: "together.",
     sidebar: {
-      title: "Let\u2019s start a conversation.",
-      description:
-        "Reach out through any of these channels or fill out the form and we\u2019ll get back to you.",
       response: "Mon \u2014 Fri, within the day",
-      pipeline: {
-        designApproved: "Design approved",
-        codeReviewed: "Code reviewed",
-        testsPassed: "Tests passed",
-        goingLive: "Going live...",
-      },
-      metrics: {
-        uptime: "Uptime",
-        pageLoad: "Page Load",
-        fasterThan: "Faster than 92% of sites",
-      },
     },
     form: {
       name: "Name",
@@ -264,6 +252,11 @@ const en: Dictionary = {
       consent:
         "I agree to Nettsaga collecting and storing my information to respond to this inquiry. Your data will not be shared with third parties.",
       submit: "Send message",
+      sending: "Sending...",
+      successTitle: "Message sent",
+      successBody: "We\u2019ll get back to you within the day.",
+      errorTitle: "Something went wrong",
+      errorBody: "Please try again or email us directly.",
       tellUs: "Tell us about your project",
       placeholders: {
         name: "Your full name",
@@ -300,9 +293,26 @@ const en: Dictionary = {
       { title: "Real people, real support" },
       { title: "No lock-in, ever" },
     ],
-    scope: {
+    deliver: {
       title: "Everything your business ",
       titleMuted: "needs to go live",
+      cards: [
+        {
+          title: "Everything in one place",
+          description:
+            "Design, hosting, domain, email, updates — all bundled into one service. No juggling vendors or managing tech.",
+        },
+        {
+          title: "A simple journey",
+          description:
+            "Chat with us, we build it, you review it, go live. Four steps — no complicated process, no surprises.",
+        },
+        {
+          title: "Always taken care of",
+          description:
+            "We monitor uptime, speed, and security around the clock. If something needs attention, we handle it before you notice.",
+        },
+      ],
     },
     cta: {
       title: "Want to work ",
@@ -311,33 +321,6 @@ const en: Dictionary = {
         "Whether you need a new website or want to improve your existing one — let\u2019s talk about how we can help.",
       cta: "Get in touch",
     },
-  },
-  serviceStack: {
-    pillars: [
-      { label: "Design & Development", detail: "Custom-built from scratch" },
-      { label: "Hosting & Security", detail: "Managed infrastructure" },
-      { label: "SEO & Performance", detail: "Optimized for speed" },
-      { label: "Ongoing Support", detail: "Updates & monitoring" },
-    ],
-    footer: "One yearly fee — everything included",
-  },
-  buildPipeline: {
-    steps: [
-      { label: "Talk to us", detail: "Tell us what you need" },
-      { label: "We build it", detail: "Your site takes shape" },
-      { label: "You review it", detail: "Approve or refine" },
-      { label: "Go live", detail: "Launch & ongoing support" },
-    ],
-    footer: "No contracts — cancel anytime",
-  },
-  statusPanel: {
-    metrics: [
-      { label: "Uptime", status: "Operational" },
-      { label: "PageSpeed", status: "Optimized" },
-      { label: "SSL", status: "Secured" },
-      { label: "Response", status: "Available" },
-    ],
-    monitoring: "24/7 monitoring active",
   },
   comparison: {
     feature: "Feature",
@@ -414,26 +397,206 @@ const en: Dictionary = {
       },
     ],
   },
+  portfolio: {
+    hero: {
+      title: "Real sites, real businesses. ",
+      titleMuted: "See what we\u2019ve built.",
+    },
+    projects: [
+      {
+        label: "haaland-takst-boligveiledning-as.vercel.app",
+        url: "https://haaland-takst-boligveiledning-as.vercel.app/",
+        name: "Haaland",
+        description: "Certified property appraiser website with clean, professional design",
+      },
+      {
+        label: "land-tak-og-fasade-as.vercel.app",
+        url: "https://land-tak-og-fasade-as.vercel.app/",
+        name: "Land Tak og Fasade",
+        description: "Modern site for a roofing and facade company showcasing their services",
+      },
+      {
+        label: "Food & Beverage",
+        name: "Frozti",
+        description: "Vibrant frozen treats shop with playful branding and warm feel",
+      },
+      {
+        label: "Construction",
+        name: "Torsnes Bygg",
+        description: "Local carpentry and construction firm with a solid, trustworthy presence",
+      },
+    ],
+    cta: {
+      title: "Like what you ",
+      titleMuted: "see?",
+      subtitle: "Let's talk about bringing your business online with a site you'll be proud of.",
+      cta: "Get in touch",
+    },
+  },
+  careers: {
+    hero: {
+      title: "Build the web ",
+      titleMuted: "with us.",
+      subtitle:
+        "We\u2019re a small, fast-moving team helping Filipino businesses get online. If you love clean code, honest work, and making an impact — we want to hear from you.",
+    },
+    culture: {
+      title: "Why work ",
+      titleMuted: "at Nettsaga",
+      perks: [
+        {
+          title: "Remote-first",
+          description:
+            "Work from anywhere in the Philippines. We care about output, not office hours.",
+        },
+        {
+          title: "Small team, big impact",
+          description:
+            "No corporate red tape. Your work ships fast and reaches real businesses.",
+        },
+        {
+          title: "Growth-oriented",
+          description:
+            "We invest in your skills — conferences, courses, and mentorship are part of the deal.",
+        },
+        {
+          title: "Honest culture",
+          description:
+            "Transparent pay, clear expectations, and a team that actually has your back.",
+        },
+      ],
+    },
+    openings: {
+      title: "Open ",
+      titleMuted: "positions",
+      subtitle:
+        "We\u2019re always looking for talented people who share our mission. Here\u2019s what\u2019s open right now.",
+      positions: [
+        {
+          title: "Frontend Developer",
+          type: "Full-time",
+          location: "Remote \u2014 Philippines",
+          department: "Engineering",
+          description:
+            "Build fast, beautiful, and accessible interfaces using React, Next.js, and Tailwind CSS. You\u2019ll work directly on client websites and our internal tools.",
+          requirements: [
+            "Strong React & Next.js experience",
+            "Proficiency with Tailwind CSS",
+            "Understanding of responsive design & web performance",
+            "Eye for clean UI and attention to detail",
+          ],
+        },
+        {
+          title: "Backend Developer",
+          type: "Full-time",
+          location: "Remote \u2014 Philippines",
+          department: "Engineering",
+          description:
+            "Design and maintain APIs, databases, and server infrastructure that power our client sites and internal platforms.",
+          requirements: [
+            "Experience with Node.js, Python, or similar",
+            "Familiarity with PostgreSQL or MongoDB",
+            "Understanding of REST APIs and authentication",
+            "Comfortable with cloud platforms (Vercel, AWS, or similar)",
+          ],
+        },
+        {
+          title: "UI/UX Designer",
+          type: "Full-time",
+          location: "Remote \u2014 Philippines",
+          department: "Design",
+          description:
+            "Craft intuitive, modern interfaces for Filipino businesses. You\u2019ll own the design process from wireframes to high-fidelity prototypes.",
+          requirements: [
+            "Strong portfolio of web or product design",
+            "Proficiency in Figma",
+            "Understanding of design systems and accessibility",
+            "Ability to translate business needs into clean UI",
+          ],
+        },
+        {
+          title: "Sales Development Representative",
+          type: "Full-time",
+          location: "Remote \u2014 Philippines",
+          department: "Sales",
+          description:
+            "Be the first point of contact for potential clients. Reach out to small businesses, understand their needs, and help them see how Nettsaga can get them online.",
+          requirements: [
+            "Excellent communication skills in English and Filipino",
+            "Experience in outbound sales or lead generation",
+            "Familiarity with CRM tools",
+            "Genuine passion for helping small businesses grow",
+          ],
+        },
+        {
+          title: "AI-Assisted Full Stack Developer",
+          type: "Full-time",
+          location: "Remote — Philippines",
+          department: "Engineering",
+          description:
+            "Build and ship full-stack applications using AI-assisted workflows. You’ll work with Supabase, Vercel, Next.js, and modern AI tooling to deliver client projects faster than traditional development.",
+          requirements: [
+            "Experience with Next.js, React, and TypeScript",
+            "Familiarity with Supabase (auth, database, storage)",
+            "Comfortable deploying on Vercel",
+            "Willingness to integrate AI tools into your workflow",
+          ],
+        },
+        {
+          title: "E-commerce Specialist",
+          type: "Full-time",
+          location: "Remote — Philippines",
+          department: "Growth",
+          description:
+            "Help our clients sell online. You’ll set up and manage e-commerce solutions, optimize product listings, and ensure smooth checkout experiences for Filipino businesses.",
+          requirements: [
+            "Experience with Shopify, WooCommerce, or similar platforms",
+            "Understanding of product listings, inventory, and payment gateways",
+            "Knowledge of Philippine e-commerce landscape (GCash, Maya, COD)",
+            "Strong attention to detail and customer-first mindset",
+          ],
+        },
+      ],
+      noOpenings: "No positions available right now. Check back soon!",
+    },
+    cta: {
+      title: "Don\u2019t see your role? ",
+      titleMuted: "Reach out anyway.",
+      subtitle:
+        "We\u2019re always open to meeting talented people. Send us your portfolio or CV and let\u2019s start a conversation.",
+      cta: "Get in touch",
+    },
+  },
   metadata: {
     home: {
-      title: "Nettsaga — Get Your Business Online This Week",
+      title: "Nettsaga \u2014 Get Your Business Online This Week",
       description:
         "Free website for Philippine businesses. We build it, you only pay for hosting and support. Don\u2019t like it? Don\u2019t pay. Get online fast with Nettsaga.",
     },
     about: {
-      title: "About — Nettsaga",
+      title: "About \u2014 Nettsaga",
       description:
-        "We help Filipino businesses get online — fast, honest, and affordable. Learn about Nettsaga and our mission to make the web accessible to every business.",
+        "We help Filipino businesses get online \u2014 fast, honest, and affordable. Learn about Nettsaga and our mission to make the web accessible to every business.",
     },
     pricing: {
-      title: "Pricing — Nettsaga",
+      title: "Pricing \u2014 Nettsaga",
       description:
-        "Simple, transparent pricing. One yearly fee — everything included. Compare plans and features.",
+        "Simple, transparent pricing. One yearly fee \u2014 everything included. Compare plans and features.",
     },
     contact: {
-      title: "Contact — Nettsaga",
+      title: "Contact \u2014 Nettsaga",
       description:
         "Get in touch with Nettsaga. We\u2019d love to hear about your project.",
+    },
+    portfolio: {
+      title: "Portfolio \u2014 Nettsaga",
+      description:
+        "See the websites we\u2019ve built for real businesses. Custom designs, fast delivery, and professional results.",
+    },
+    careers: {
+      title: "Careers \u2014 Nettsaga",
+      description:
+        "Join our team and help Filipino businesses get online. See open positions at Nettsaga.",
     },
   },
 };

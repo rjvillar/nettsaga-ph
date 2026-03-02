@@ -15,8 +15,9 @@ const collapseChars = "ettsaga".split("");
 const navHrefs = [
   "/#how-it-works",
   "/pricing",
-  "/#portfolio",
+  "/portfolio",
   "/about",
+  "/careers",
   "/contact",
 ];
 
@@ -51,6 +52,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
     t.nav.pricing,
     t.nav.portfolio,
     t.nav.about,
+    t.nav.careers,
     t.nav.contact,
   ];
 
@@ -145,7 +147,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
               <span className="inline-block">N</span>
               <span
                 ref={collapseRef}
-                className="inline-flex overflow-hidden align-bottom"
+                className="inline-flex align-bottom"
                 style={{ perspective: "25rem" }}
               >
                 {collapseChars.map((char, i) => (

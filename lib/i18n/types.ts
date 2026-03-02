@@ -6,6 +6,7 @@ export interface Dictionary {
     pricing: string;
     portfolio: string;
     about: string;
+    careers: string;
     contact: string;
     talkToUs: string;
   };
@@ -106,22 +107,9 @@ export interface Dictionary {
   };
   contact: {
     title: string;
-    subtitle: string;
+    titleMuted: string;
     sidebar: {
-      title: string;
-      description: string;
       response: string;
-      pipeline: {
-        designApproved: string;
-        codeReviewed: string;
-        testsPassed: string;
-        goingLive: string;
-      };
-      metrics: {
-        uptime: string;
-        pageLoad: string;
-        fasterThan: string;
-      };
     };
     form: {
       name: string;
@@ -131,6 +119,11 @@ export interface Dictionary {
       message: string;
       consent: string;
       submit: string;
+      sending: string;
+      successTitle: string;
+      successBody: string;
+      errorTitle: string;
+      errorBody: string;
       tellUs: string;
       placeholders: {
         name: string;
@@ -152,9 +145,13 @@ export interface Dictionary {
       solution: { lead: string; body: string };
     };
     values: { title: string }[];
-    scope: {
+    deliver: {
       title: string;
       titleMuted: string;
+      cards: {
+        title: string;
+        description: string;
+      }[];
     };
     cta: {
       title: string;
@@ -162,18 +159,6 @@ export interface Dictionary {
       subtitle: string;
       cta: string;
     };
-  };
-  serviceStack: {
-    pillars: { label: string; detail: string }[];
-    footer: string;
-  };
-  buildPipeline: {
-    steps: { label: string; detail: string }[];
-    footer: string;
-  };
-  statusPanel: {
-    metrics: { label: string; status: string }[];
-    monitoring: string;
   };
   comparison: {
     feature: string;
@@ -195,10 +180,62 @@ export interface Dictionary {
     };
     trust: { title: string; description: string }[];
   };
+  portfolio: {
+    hero: {
+      title: string;
+      titleMuted: string;
+    };
+    projects: {
+      label: string;
+      url?: string;
+      name: string;
+      description: string;
+    }[];
+    cta: {
+      title: string;
+      titleMuted: string;
+      subtitle: string;
+      cta: string;
+    };
+  };
+  careers: {
+    hero: {
+      title: string;
+      titleMuted: string;
+      subtitle: string;
+    };
+    culture: {
+      title: string;
+      titleMuted: string;
+      perks: { title: string; description: string }[];
+    };
+    openings: {
+      title: string;
+      titleMuted: string;
+      subtitle: string;
+      positions: {
+        title: string;
+        type: string;
+        location: string;
+        department: string;
+        description: string;
+        requirements: string[];
+      }[];
+      noOpenings: string;
+    };
+    cta: {
+      title: string;
+      titleMuted: string;
+      subtitle: string;
+      cta: string;
+    };
+  };
   metadata: {
     home: { title: string; description: string };
     about: { title: string; description: string };
     pricing: { title: string; description: string };
     contact: { title: string; description: string };
+    portfolio: { title: string; description: string };
+    careers: { title: string; description: string };
   };
 }

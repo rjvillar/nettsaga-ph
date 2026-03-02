@@ -4,13 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ComparisonTable from "@/components/ComparisonTable";
-import {
-  Check,
-  Shield,
-  Zap,
-  Code2,
-  RefreshCw,
-} from "lucide-react";
+import { Check, Shield, Zap, Code2, RefreshCw } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/context";
 
 const prices = ["₱9,999", "₱14,999", "₱29,999", "Custom"];
@@ -25,16 +19,19 @@ export default function PricingContent() {
       <Header solid />
 
       {/* ── Section 1: Hero + Pricing Cards ── */}
-      <section className="bg-grain relative bg-paper pt-28 pb-20 sm:pt-36 sm:pb-28">
-        <div className="relative mx-auto max-w-6xl px-6">
+      <section className="bg-grain relative bg-dark pt-28 pb-10 sm:pt-36">
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.05)_45%,rgba(255,255,255,0.08)_55%,rgba(255,255,255,0.03)_70%,transparent_85%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.4))]" />
+
+        <div className="relative z-10 mx-auto w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
           <div className="text-center">
-            <h1 className="mt-3 font-heading text-4xl font-semibold leading-tight tracking-[-0.02em] bg-gradient-to-r from-dark to-dark/40 bg-clip-text text-transparent sm:text-[3.5rem]">
+            <h1 className="font-heading text-[2rem] font-semibold pb-1 leading-[1.2] tracking-[-0.02em] bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent sm:text-[3rem] md:text-[3.75rem]">
               {t.pricing.title}
               <span>{t.pricing.titleMuted}</span>
             </h1>
           </div>
 
-          <div className="mt-20 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-20 mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {t.pricing.plans.map((plan, i) => {
               const isPopular = i === popularIndex;
               return (
@@ -42,26 +39,26 @@ export default function PricingContent() {
                   key={plan.name}
                   className={`relative flex flex-col rounded-lg p-6 sm:p-7 ${
                     isPopular
-                      ? "border-2 border-dark bg-paper shadow-[0_0.25rem_1.5rem_rgba(0,0,0,0.08)]"
-                      : "border border-dark/[0.06] bg-paper"
+                      ? "border-2 border-white/20 bg-white/[0.08] shadow-[0_0.25rem_1.5rem_rgba(0,0,0,0.3)]"
+                      : "border border-white/[0.08] bg-white/[0.04]"
                   }`}
                 >
                   {isPopular && (
-                    <span className="absolute -top-3 right-6 rounded-full bg-dark px-3 py-1 text-[0.625rem] font-semibold uppercase tracking-wide text-white">
+                    <span className="absolute -top-3 right-6 rounded-full bg-white px-3 py-1 text-[0.625rem] font-semibold uppercase tracking-wide text-dark">
                       {t.pricing.popular}
                     </span>
                   )}
 
-                  <h3 className="font-heading text-xl font-semibold tracking-[-0.01em] text-dark">
+                  <h3 className="font-heading text-xl font-semibold tracking-[-0.01em] text-white">
                     {plan.name}
                   </h3>
 
                   <div className="mt-5">
-                    <span className="font-heading text-3xl font-semibold tracking-tight text-dark">
+                    <span className="font-heading text-3xl font-semibold tracking-tight text-white">
                       {prices[i]}
                     </span>
                     {i < 3 && (
-                      <span className="ml-1 text-sm text-muted">
+                      <span className="ml-1 text-sm text-white/40">
                         {t.pricing.period}
                       </span>
                     )}
@@ -70,8 +67,8 @@ export default function PricingContent() {
                   <ul className="mt-8 flex-1 space-y-4">
                     {plan.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-2">
-                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-dark" />
-                        <span className="text-[0.9375rem] text-dark/80">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-white/60" />
+                        <span className="text-[0.9375rem] text-white/60">
                           {feature}
                         </span>
                       </li>
@@ -86,7 +83,7 @@ export default function PricingContent() {
 
       {/* ── Section 2: Feature Comparison ── */}
       <section className="bg-grain relative border-t border-dark/[0.06] bg-white py-20 sm:py-28">
-        <div className="relative mx-auto max-w-6xl px-6">
+        <div className="relative mx-auto w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
           <div className="text-center">
             <h2 className="mt-3 font-heading text-3xl font-semibold leading-tight tracking-[-0.02em] bg-gradient-to-r from-dark to-dark/40 bg-clip-text text-transparent sm:text-[3rem]">
               {t.pricingPage.comparisonTitle}
@@ -102,7 +99,7 @@ export default function PricingContent() {
 
       {/* ── Section 3: Trust Strip ── */}
       <section className="bg-grain relative border-t border-dark/[0.06] bg-paper py-16 sm:py-20">
-        <div className="relative mx-auto max-w-6xl px-6">
+        <div className="relative mx-auto w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {t.pricingPage.trust.map((item, i) => {
               const Icon = trustIcons[i];

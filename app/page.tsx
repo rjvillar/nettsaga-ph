@@ -19,9 +19,9 @@ export default function Home() {
       <ValuePillars />
       <HowItWorks />
       <LocalEdge />
+      <SampleWork />
       <Pricing />
       <FAQ />
-      <SampleWork />
       <CTABanner />
       <Footer />
     </>
