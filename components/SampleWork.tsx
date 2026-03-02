@@ -56,18 +56,18 @@ export default function SampleWork() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_45%_55%_at_68%_42%,rgba(255,255,255,0.10),transparent)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />
 
-      <span className="absolute right-6 top-8 hidden font-mono text-[10px] uppercase tracking-widest text-white/[0.07] lg:block">
+      <span className="absolute right-6 top-8 hidden font-mono text-[0.625rem] uppercase tracking-widest text-white/[0.07] lg:block">
         Delivered: 7_Days
       </span>
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between">
           <div className="text-center sm:text-left">
-            <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[40px]">
+            <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[2.5rem]">
               {t.sampleWork.title}
               <span className="text-white/50">{t.sampleWork.titleMuted}</span>
             </h2>
-            <p className="mt-4 max-w-2xl text-base text-white/50 sm:text-[22px]">
+            <p className="mt-4 max-w-2xl text-base text-white/50 sm:text-[1.375rem]">
               {t.sampleWork.subtitle}
             </p>
           </div>
@@ -98,14 +98,14 @@ export default function SampleWork() {
             style={{
               transform:
                 visible === 1
-                  ? `translateX(calc(-${offset} * (100% + 24px)))`
-                  : `translateX(calc(-${offset} * (50% + 12px)))`,
+                  ? `translateX(calc(-${offset} * (100% + 1.5rem)))`
+                  : `translateX(calc(-${offset} * (50% + 0.75rem)))`,
             }}
           >
             {samples.map((sample) => (
               <div
                 key={sample.src}
-                className="group w-full shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] transition-colors hover:bg-white/[0.06] sm:w-[calc(50%-12px)]"
+                className="group w-full shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] transition-colors hover:bg-white/[0.06] sm:w-[calc(50%-0.75rem)]"
               >
                 <div className="flex items-center border-b border-white/[0.06] px-4 py-3">
                   <div className="flex gap-1.5">

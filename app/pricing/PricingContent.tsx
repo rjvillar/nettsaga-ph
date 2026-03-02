@@ -19,23 +19,23 @@ export default function PricingContent() {
 
       {/* ── Section 1: Hero + Pricing Cards ── */}
       <section className="bg-grain relative bg-paper pt-28 pb-20 sm:pt-36 sm:pb-28">
-        <span className="absolute left-6 top-28 hidden font-mono text-[10px] uppercase tracking-widest text-dark/[0.07] lg:block">
+        <span className="absolute left-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
           Plans // Overview
         </span>
-        <span className="absolute right-6 top-28 hidden font-mono text-[10px] uppercase tracking-widest text-dark/[0.07] lg:block">
+        <span className="absolute right-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
           Billing: Yearly
         </span>
 
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="text-center">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.3em] text-muted">
+            <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.3em] text-muted">
               Pricing // Plans
             </p>
-            <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+            <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
               {t.pricing.title}
               <span className="text-muted">{t.pricing.titleMuted}</span>
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[22px]">
+            <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[1.375rem]">
               {t.pricing.subtitle}
             </p>
           </div>
@@ -48,12 +48,12 @@ export default function PricingContent() {
                   key={plan.name}
                   className={`relative flex flex-col rounded-2xl p-6 sm:p-7 ${
                     isPopular
-                      ? "border-2 border-dark bg-white shadow-[0_4px_24px_rgba(0,0,0,0.08)]"
+                      ? "border-2 border-dark bg-white shadow-[0_0.25rem_1.5rem_rgba(0,0,0,0.08)]"
                       : "border border-dark/[0.06] bg-white"
                   }`}
                 >
                   {isPopular && (
-                    <span className="absolute -top-3 right-6 rounded-full bg-dark px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-white">
+                    <span className="absolute -top-3 right-6 rounded-full bg-dark px-3 py-1 text-[0.625rem] font-semibold uppercase tracking-wide text-white">
                       {t.pricing.popular}
                     </span>
                   )}
@@ -105,14 +105,14 @@ export default function PricingContent() {
       <section className="bg-grain relative border-t border-dark/[0.06] bg-white py-20 sm:py-28">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="text-center">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.3em] text-muted">
+            <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.3em] text-muted">
               Compare // Features
             </p>
-            <h2 className="mt-3 font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+            <h2 className="mt-3 font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
               {t.pricingPage.comparisonTitle}
               <span className="text-muted">{t.pricingPage.comparisonTitleMuted}</span>
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-base text-slate sm:text-[22px]">
+            <p className="mx-auto mt-4 max-w-xl text-base text-slate sm:text-[1.375rem]">
               {t.pricingPage.comparisonSubtitle}
             </p>
           </div>
@@ -154,11 +154,11 @@ export default function PricingContent() {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />
 
             <div className="relative z-20 mx-auto max-w-xl text-center">
-              <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[40px]">
+              <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[2.5rem]">
                 {t.pricingPage.cta.title}
                 <span className="text-white/50">{t.pricingPage.cta.titleMuted}</span>
               </h2>
-              <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-[22px]">
+              <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-[1.375rem]">
                 {t.pricingPage.cta.subtitle}
               </p>
               <a

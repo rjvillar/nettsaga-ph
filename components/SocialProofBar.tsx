@@ -9,21 +9,21 @@ const cities = [
     alt: "Manila",
     width: 1076,
     height: 250,
-    size: "max-w-[200px] sm:max-w-[220px]",
+    size: "max-w-[12.5rem] sm:max-w-[13.75rem]",
   },
   {
     src: "/assets/cebu.png",
     alt: "Cebu",
     width: 774,
     height: 250,
-    size: "max-w-[145px] sm:max-w-[160px]",
+    size: "max-w-[9.0625rem] sm:max-w-[10rem]",
   },
   {
     src: "/assets/davao.png",
     alt: "Davao",
     width: 1010,
     height: 250,
-    size: "max-w-[200px] sm:max-w-[220px]",
+    size: "max-w-[12.5rem] sm:max-w-[13.75rem]",
   },
 ];
 

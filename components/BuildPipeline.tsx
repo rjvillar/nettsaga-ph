@@ -13,7 +13,7 @@ export default function BuildPipeline() {
     <div className="rounded-2xl border border-dark/[0.06] bg-white p-5 sm:p-6">
       <div className="flex items-center gap-2">
         <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-        <span className="font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-dark/40">
+        <span className="font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
           Pipeline // How_It_Works
         </span>
       </div>
@@ -40,7 +40,7 @@ export default function BuildPipeline() {
 
               <div className="pt-1">
                 <p className="text-xs font-semibold text-dark">{step.label}</p>
-                <p className="font-mono text-[10px] text-dark/40">
+                <p className="font-mono text-[0.625rem] text-dark/40">
                   {step.detail}
                 </p>
               </div>
@@ -50,7 +50,7 @@ export default function BuildPipeline() {
       </div>
 
       <div className="mt-4 rounded-lg border border-dark/[0.05] bg-paper px-3 py-2 text-center">
-        <p className="font-mono text-[10px] font-semibold text-dark/50">
+        <p className="font-mono text-[0.625rem] font-semibold text-dark/50">
           {t.buildPipeline.footer}
         </p>
       </div>

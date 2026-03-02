@@ -24,12 +24,12 @@ export default function FAQ() {
       <div className="relative mx-auto max-w-4xl px-6">
         <div className="flex items-center justify-center gap-2 sm:gap-3">
           <div className="hidden h-2 w-2 shrink-0 rounded-full bg-green-500 sm:block" />
-          <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+          <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
             {t.faq.title}
             <span className="text-muted">{t.faq.titleMuted}</span>
           </h2>
         </div>
-        <p className="mx-auto mt-4 max-w-xl text-center text-base text-slate sm:text-[22px]">
+        <p className="mx-auto mt-4 max-w-xl text-center text-base text-slate sm:text-[1.375rem]">
           {t.faq.subtitle}
         </p>
 
@@ -73,7 +73,7 @@ export default function FAQ() {
         </div>
 
         <div className="mt-10 text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/30">
+          <p className="text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/30">
             {t.faq.weAccept}
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4 sm:gap-8">

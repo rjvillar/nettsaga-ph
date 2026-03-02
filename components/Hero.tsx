@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-10 flex justify-center lg:hidden">
-          <div className="relative h-[300px] w-[300px] overflow-hidden rounded-3xl border border-white/5">
+          <div className="relative h-[18.75rem] w-[18.75rem] overflow-hidden rounded-3xl border border-white/5">
             <Image
               src="/assets/person-tablet.png"
               alt={t.hero.altTablet}
@@ -50,8 +50,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative hidden h-[560px] lg:block">
-          <div className="absolute left-1/2 top-1/2 z-20 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-3xl border border-white/5">
+        <div className="relative hidden h-[35rem] lg:block">
+          <div className="absolute left-1/2 top-1/2 z-20 h-[21.25rem] w-[21.25rem] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-3xl border border-white/5">
             <Image
               src="/assets/person-tablet.png"
               alt={t.hero.altTablet}
@@ -61,7 +61,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -left-6 bottom-2 z-10 h-[190px] w-[190px] overflow-hidden rounded-2xl border border-white/10">
+          <div className="absolute -left-6 bottom-2 z-10 h-[11.875rem] w-[11.875rem] overflow-hidden rounded-2xl border border-white/10">
             <Image
               src="/assets/person-laptop.png"
               alt={t.hero.altLaptop}
@@ -71,7 +71,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -right-6 top-0 z-10 h-[190px] w-[190px] overflow-hidden rounded-2xl border border-white/10">
+          <div className="absolute -right-6 top-0 z-10 h-[11.875rem] w-[11.875rem] overflow-hidden rounded-2xl border border-white/10">
             <Image
               src="/assets/person-smiling.png"
               alt={t.hero.altSmiling}
@@ -81,7 +81,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute bottom-[30px] right-[-60px] z-30 w-[220px] overflow-hidden rounded-xl border border-white/10 bg-white">
+          <div className="absolute bottom-[1.875rem] right-[-3.75rem] z-30 w-[13.75rem] overflow-hidden rounded-xl border border-white/10 bg-white">
             <Image
               src="/assets/live-card.png"
               alt={t.hero.altLiveCard}
@@ -91,7 +91,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute left-[10px] top-[150px] z-30 w-[150px] overflow-hidden rounded-xl border border-white/10 bg-white">
+          <div className="absolute left-[0.625rem] top-[9.375rem] z-30 w-[9.375rem] overflow-hidden rounded-xl border border-white/10 bg-white">
             <Image
               src="/assets/ssl.png"
               alt={t.hero.altSSL}
@@ -101,7 +101,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute left-[220px] top-[-15px] z-30 w-[124px] overflow-hidden rounded-xl border border-white/10 bg-white">
+          <div className="absolute left-[13.75rem] top-[-0.9375rem] z-30 w-[7.75rem] overflow-hidden rounded-xl border border-white/10 bg-white">
             <Image
               src="/assets/performance-score.png"
               alt={t.hero.altPerformance}

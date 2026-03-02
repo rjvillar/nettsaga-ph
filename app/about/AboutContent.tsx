@@ -26,18 +26,18 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
 
       {/* ── Section 1: Hero + Image ── */}
       <section className="bg-grain relative bg-paper pt-28 pb-10 sm:pt-36">
-        <span className="absolute left-6 top-28 hidden font-mono text-[10px] uppercase tracking-widest text-dark/[0.07] lg:block">
+        <span className="absolute left-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
           Origin // Oslo_Norway
         </span>
-        <span className="absolute right-6 top-28 hidden font-mono text-[10px] uppercase tracking-widest text-dark/[0.07] lg:block">
+        <span className="absolute right-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
           Market: Philippines
         </span>
 
         <div className="relative mx-auto max-w-4xl px-6 text-center">
-          <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.3em] text-muted">
+          <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.3em] text-muted">
             About // Nettsaga
           </p>
-          <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[44px]">
+          <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[2.75rem]">
             {t.about.hero.title}
             <span className="text-muted">{t.about.hero.titleMuted}</span>
           </h1>
@@ -63,11 +63,11 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
         <div className="relative mx-auto max-w-3xl px-6">
           <div className="flex items-center justify-center gap-2">
             <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-            <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/40">
+            <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
               Story // How_We_Started
             </span>
           </div>
-          <h2 className="mt-4 text-center font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[32px]">
+          <h2 className="mt-4 text-center font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2rem]">
             {t.about.story.title}
             <span className="text-muted">{t.about.story.titleMuted}</span>
           </h2>
@@ -81,7 +81,7 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
                 <Globe className="h-4 w-4 text-[#3B82F6]" />
               </div>
               <div>
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-dark/30">
+                <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-dark/30">
                   HQ // Oslo
                 </p>
                 <p className="text-sm font-medium text-dark">
@@ -94,7 +94,7 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
                 <Rocket className="h-4 w-4 text-[#F59E0B]" />
               </div>
               <div>
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-dark/30">
+                <p className="font-mono text-[0.5625rem] uppercase tracking-[0.2em] text-dark/30">
                   Office // Makati
                 </p>
                 <p className="text-sm font-medium text-dark">
@@ -112,11 +112,11 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
           <div className="mx-auto max-w-2xl text-center">
             <div className="flex items-center justify-center gap-2">
               <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/40">
+              <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
                 Scope // What_You_Get
               </span>
             </div>
-            <h2 className="mt-4 font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[32px]">
+            <h2 className="mt-4 font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2rem]">
               {t.about.scope.title}
               <span className="text-muted">{t.about.scope.titleMuted}</span>
             </h2>
@@ -144,7 +144,7 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
             {team.map((member) => (
               <div
                 key={member.name}
-                className="w-full overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.04] sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]"
+                className="w-full overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.04] sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.6875rem)]"
               >
                 <div
                   className="h-1"
@@ -166,7 +166,7 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
                       <p className="text-sm font-semibold text-white">
                         {member.name}
                       </p>
-                      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">
+                      <p className="font-mono text-[0.625rem] uppercase tracking-[0.15em] text-white/40">
                         {member.role}
                       </p>
                     </div>
@@ -175,12 +175,12 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
                   <div className="mt-3.5 flex items-center justify-between border-t border-white/[0.06] pt-3.5">
                     <a
                       href={`mailto:${member.email}`}
-                      className="font-mono text-[11px] text-white/50 transition-colors hover:text-white"
+                      className="font-mono text-[0.6875rem] text-white/50 transition-colors hover:text-white"
                     >
                       {member.email}
                     </a>
                     {member.phone && (
-                      <span className="font-mono text-[10px] text-white/30">
+                      <span className="font-mono text-[0.625rem] text-white/30">
                         {member.phone}
                       </span>
                     )}
@@ -201,10 +201,10 @@ export default function AboutContent({ team }: { team: TeamMember[] }) {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.5))]" />
 
             <div className="relative z-20 mx-auto max-w-xl text-center">
-              <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[40px]">
+              <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-[2.5rem]">
                 {t.about.cta.title}<span className="text-white/50">{t.about.cta.titleMuted}</span>
               </h2>
-              <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-[22px]">
+              <p className="mx-auto mt-4 max-w-lg text-base text-white/50 sm:text-[1.375rem]">
                 {t.about.cta.subtitle}
               </p>
               <a

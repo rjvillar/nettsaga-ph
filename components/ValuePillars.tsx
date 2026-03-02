@@ -12,18 +12,18 @@ export default function ValuePillars() {
   return (
     <section className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-6xl px-6">
-        <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+        <h2 className="font-heading text-center text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
           {t.valuePillars.title}
           <span className="text-muted">{t.valuePillars.titleMuted}</span>
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate sm:text-[22px]">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-base text-slate sm:text-[1.375rem]">
           {t.valuePillars.subtitle}
         </p>
 
         <div className="mt-14 grid gap-4 sm:grid-cols-2">
           {/* Card 1 — All-In-One */}
           <div className="relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#121212] sm:col-span-2 lg:max-h-[80vh]">
-            <span className="absolute right-6 top-6 z-10 hidden font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-white/15 sm:block">
+            <span className="absolute right-6 top-6 z-10 hidden font-heading text-[0.625rem] font-semibold uppercase tracking-[0.25em] text-white/15 sm:block">
               Full-service // Fast launch
             </span>
 
@@ -103,7 +103,7 @@ export default function ValuePillars() {
 
           {/* Card 3 — Infinite Support */}
           <div className="relative overflow-hidden rounded-2xl border border-dark/[0.06] bg-white">
-            <span className="absolute right-6 top-6 z-10 hidden font-heading text-[10px] font-semibold uppercase tracking-[0.25em] text-dark/15 sm:block">
+            <span className="absolute right-6 top-6 z-10 hidden font-heading text-[0.625rem] font-semibold uppercase tracking-[0.25em] text-dark/15 sm:block">
               Support // Included
             </span>
             <div className="relative z-10 p-8 pb-0">

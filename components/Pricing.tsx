@@ -16,11 +16,11 @@ export default function Pricing() {
     >
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="text-center">
-          <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+          <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
             {t.pricing.title}
             <span className="text-muted">{t.pricing.titleMuted}</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[22px]">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[1.375rem]">
             {t.pricing.subtitle}
           </p>
         </div>
@@ -33,12 +33,12 @@ export default function Pricing() {
                 key={plan.name}
                 className={`relative flex flex-col rounded-2xl p-6 sm:p-7 ${
                   isPopular
-                    ? "border-2 border-dark bg-paper shadow-[0_4px_24px_rgba(0,0,0,0.08)]"
+                    ? "border-2 border-dark bg-paper shadow-[0_0.25rem_1.5rem_rgba(0,0,0,0.08)]"
                     : "border border-dark/[0.06] bg-paper"
                 }`}
               >
                 {isPopular && (
-                  <span className="absolute -top-3 right-6 rounded-full bg-dark px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-white">
+                  <span className="absolute -top-3 right-6 rounded-full bg-dark px-3 py-1 text-[0.625rem] font-semibold uppercase tracking-wide text-white">
                     {t.pricing.popular}
                   </span>
                 )}

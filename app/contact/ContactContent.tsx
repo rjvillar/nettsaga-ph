@@ -13,22 +13,22 @@ export default function ContactContent() {
     <>
       <Header solid />
       <main className="bg-grain relative bg-paper pt-28 pb-20 sm:pt-36 sm:pb-28">
-        <span className="absolute left-6 top-28 hidden font-mono text-[10px] uppercase tracking-widest text-dark/[0.07] lg:block">
+        <span className="absolute left-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
           Channel // Open
         </span>
-        <span className="absolute right-6 top-28 hidden font-mono text-[10px] uppercase tracking-widest text-dark/[0.07] lg:block">
+        <span className="absolute right-6 top-28 hidden font-mono text-[0.625rem] uppercase tracking-widest text-dark/[0.07] lg:block">
           Response: Same_Day
         </span>
 
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="text-center">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.3em] text-muted">
+            <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.3em] text-muted">
               Contact // Get_Started
             </p>
-            <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+            <h1 className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
               {t.contact.title}
             </h1>
-            <p className="mx-auto mt-4 max-w-xl text-base text-slate sm:text-[22px]">
+            <p className="mx-auto mt-4 max-w-xl text-base text-slate sm:text-[1.375rem]">
               {t.contact.subtitle}
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function ContactContent() {
                 </span>
 
                 <div className="relative z-10 flex flex-1 flex-col">
-                  <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.25em] text-white/30">
+                  <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.25em] text-white/30">
                     System // Ready
                   </p>
                   <h2 className="mt-3 font-heading text-xl font-bold tracking-tight text-white sm:text-2xl">
@@ -61,7 +61,7 @@ export default function ContactContent() {
                         <Mail className="h-4 w-4 text-white/50" />
                       </div>
                       <div>
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">
+                        <p className="font-mono text-[0.625rem] uppercase tracking-[0.2em] text-white/25">
                           Channel // Email
                         </p>
                         <a
@@ -78,7 +78,7 @@ export default function ContactContent() {
                         <MapPin className="h-4 w-4 text-white/50" />
                       </div>
                       <div>
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">
+                        <p className="font-mono text-[0.625rem] uppercase tracking-[0.2em] text-white/25">
                           Location // Metro_Manila
                         </p>
                         <p className="mt-0.5 text-sm leading-relaxed text-white/80">
@@ -90,10 +90,10 @@ export default function ContactContent() {
 
                     <div className="flex items-start gap-3">
                       <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/[0.08] bg-white/[0.06]">
-                        <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]" />
+                        <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-green-500 shadow-[0_0_0.5rem_rgba(34,197,94,0.4)]" />
                       </div>
                       <div>
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">
+                        <p className="font-mono text-[0.625rem] uppercase tracking-[0.2em] text-white/25">
                           Response // Same_Day
                         </p>
                         <p className="mt-0.5 text-sm font-medium text-white/80">
@@ -108,17 +108,17 @@ export default function ContactContent() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
+                          <span className="font-mono text-[0.625rem] uppercase tracking-[0.2em] text-white/40">
                             Deploy Pipeline
                           </span>
                         </div>
-                        <span className="font-mono text-[10px] text-white/20">
+                        <span className="font-mono text-[0.625rem] text-white/20">
                           v2.4.1
                         </span>
                       </div>
                       <div className="mt-3 space-y-2">
                         <div className="flex items-center gap-2">
-                          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-[8px] text-green-400">
+                          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-[0.5rem] text-green-400">
                             ✓
                           </div>
                           <span className="text-xs text-white/50">
@@ -126,7 +126,7 @@ export default function ContactContent() {
                           </span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-[8px] text-green-400">
+                          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-[0.5rem] text-green-400">
                             ✓
                           </div>
                           <span className="text-xs text-white/50">
@@ -134,7 +134,7 @@ export default function ContactContent() {
                           </span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-[8px] text-green-400">
+                          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-[0.5rem] text-green-400">
                             ✓
                           </div>
                           <span className="text-xs text-white/50">
@@ -152,7 +152,7 @@ export default function ContactContent() {
 
                     <div className="grid grid-cols-2 gap-3">
                       <div className="rounded-xl border border-white/[0.06] bg-white/[0.04] p-4">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/30">
+                        <p className="font-mono text-[0.625rem] uppercase tracking-[0.2em] text-white/30">
                           {t.contact.sidebar.metrics.uptime}
                         </p>
                         <p className="mt-1 font-heading text-2xl font-bold text-white">
@@ -163,13 +163,13 @@ export default function ContactContent() {
                         </div>
                       </div>
                       <div className="rounded-xl border border-white/[0.06] bg-white/[0.04] p-4">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/30">
+                        <p className="font-mono text-[0.625rem] uppercase tracking-[0.2em] text-white/30">
                           {t.contact.sidebar.metrics.pageLoad}
                         </p>
                         <p className="mt-1 font-heading text-2xl font-bold text-white">
                           1.2<span className="text-base text-white/40">s</span>
                         </p>
-                        <p className="mt-2 text-[10px] text-green-400/70">
+                        <p className="mt-2 text-[0.625rem] text-green-400/70">
                           {t.contact.sidebar.metrics.fasterThan}
                         </p>
                       </div>
@@ -182,7 +182,7 @@ export default function ContactContent() {
             {/* Right — Contact form card */}
             <div className="lg:col-span-3">
               <div className="h-full rounded-2xl border border-dark/[0.06] bg-white p-6 sm:p-8">
-                <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.25em] text-muted">
+                <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.25em] text-muted">
                   Message // New_Inquiry
                 </p>
                 <h3 className="mt-2 font-heading text-lg font-bold tracking-tight text-dark">

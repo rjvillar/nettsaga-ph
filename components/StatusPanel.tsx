@@ -14,8 +14,8 @@ export default function StatusPanel() {
 
       <div className="relative">
         <div className="flex items-center gap-2">
-          <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500 shadow-[0_0_6px_rgba(34,197,94,0.4)]" />
-          <span className="font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-white/30">
+          <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500 shadow-[0_0_0.375rem_rgba(34,197,94,0.4)]" />
+          <span className="font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.2em] text-white/30">
             Status // All_Systems
           </span>
         </div>
@@ -26,7 +26,7 @@ export default function StatusPanel() {
               key={m.label}
               className="rounded-lg border border-white/[0.06] bg-white/[0.03] p-3"
             >
-              <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-white/25">
+              <p className="font-mono text-[0.5625rem] uppercase tracking-[0.15em] text-white/25">
                 {m.label}
               </p>
               <p
@@ -40,7 +40,7 @@ export default function StatusPanel() {
                   className="h-1 w-1 rounded-full"
                   style={{ backgroundColor: accents[i] }}
                 />
-                <span className="font-mono text-[8px] text-white/30">
+                <span className="font-mono text-[0.5rem] text-white/30">
                   {m.status}
                 </span>
               </div>
@@ -49,18 +49,18 @@ export default function StatusPanel() {
         </div>
 
         <div className="mt-4 flex items-center justify-center gap-1.5 rounded-lg border border-white/[0.06] bg-white/[0.02] px-3 py-2">
-          <div className="flex items-end gap-[2px]">
+          <div className="flex items-end gap-[0.125rem]">
             {[40, 65, 50, 80, 55, 70, 90, 60, 75, 85, 45, 95].map(
               (h, i) => (
                 <div
                   key={i}
-                  className="w-[3px] rounded-sm bg-green-500/40"
-                  style={{ height: `${h * 0.14}px` }}
+                  className="w-[0.1875rem] rounded-sm bg-green-500/40"
+                  style={{ height: `${h * 0.00875}rem` }}
                 />
               ),
             )}
           </div>
-          <span className="ml-1.5 font-mono text-[9px] text-white/30">
+          <span className="ml-1.5 font-mono text-[0.5625rem] text-white/30">
             {t.statusPanel.monitoring}
           </span>
         </div>

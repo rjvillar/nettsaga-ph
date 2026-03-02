@@ -146,10 +146,10 @@ export default function Header({ solid = false }: { solid?: boolean }) {
         style={{
           backgroundColor: solid ? "#ffffff" : "transparent",
           borderBottom: solid
-            ? "1px solid rgba(229, 231, 235, 0.5)"
-            : "1px solid transparent",
-          backdropFilter: "blur(0px)",
-          WebkitBackdropFilter: "blur(0px)",
+            ? "0.0625rem solid rgba(229, 231, 235, 0.5)"
+            : "0.0625rem solid transparent",
+          backdropFilter: "blur(0)",
+          WebkitBackdropFilter: "blur(0)",
         }}
       >
         <div className="mx-auto flex max-w-7xl items-center px-6 py-4">
@@ -163,7 +163,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
               <span
                 ref={collapseRef}
                 className="inline-flex overflow-hidden align-bottom"
-                style={{ perspective: "400px" }}
+                style={{ perspective: "25rem" }}
               >
                 {collapseChars.map((char, i) => (
                   <span
@@ -202,8 +202,8 @@ export default function Header({ solid = false }: { solid?: boolean }) {
               className="flex items-center gap-1 rounded-lg p-1"
               style={{
                 border: solid
-                  ? "1px solid rgba(11, 11, 11, 0.1)"
-                  : "1px solid rgba(255,255,255,0.15)",
+                  ? "0.0625rem solid rgba(11, 11, 11, 0.1)"
+                  : "0.0625rem solid rgba(255,255,255,0.15)",
               }}
             >
               <button
@@ -218,7 +218,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
                 }}
                 aria-label="English"
               >
-                <svg viewBox="0 0 60 40" className="h-3.5 w-5 rounded-[2px]">
+                <svg viewBox="0 0 60 40" className="h-3.5 w-5 rounded-[0.125rem]">
                   <rect fill="#012169" width="60" height="40" />
                   <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="8" />
                   <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" strokeWidth="4" />
@@ -238,7 +238,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
                 }}
                 aria-label="Filipino"
               >
-                <svg viewBox="0 0 60 40" className="h-3.5 w-5 rounded-[2px]">
+                <svg viewBox="0 0 60 40" className="h-3.5 w-5 rounded-[0.125rem]">
                   <rect y="0" fill="#0038A8" width="60" height="20" />
                   <rect y="20" fill="#CE1126" width="60" height="20" />
                   <polygon points="0,0 28,20 0,40" fill="#FFF" />
@@ -253,8 +253,8 @@ export default function Header({ solid = false }: { solid?: boolean }) {
             className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold tracking-wide transition-shadow"
             style={
               solid
-                ? { backgroundColor: "transparent", color: "#0B0B0B", border: "1px solid rgba(11, 11, 11, 0.2)" }
-                : { backgroundColor: "transparent", color: "#ffffff", border: "1px solid rgba(255,255,255,0.3)" }
+                ? { backgroundColor: "transparent", color: "#0B0B0B", border: "0.0625rem solid rgba(11, 11, 11, 0.2)" }
+                : { backgroundColor: "transparent", color: "#ffffff", border: "0.0625rem solid rgba(255,255,255,0.3)" }
             }
           >
             <MessageCircle className="h-4 w-4" />
@@ -284,7 +284,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
 
       <div
         className={`fixed inset-y-0 right-0 z-[70] flex w-4/5 max-w-xs flex-col bg-dark transition-transform duration-300 ease-in-out md:hidden ${
-          mobileOpen ? "translate-x-0 shadow-[-12px_0_32px_rgba(0,0,0,0.8)]" : "translate-x-full"
+          mobileOpen ? "translate-x-0 shadow-[-0.75rem_0_2rem_rgba(0,0,0,0.8)]" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between px-6 pt-6">
@@ -331,7 +331,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
               }}
               aria-label="English"
             >
-              <svg viewBox="0 0 60 40" className="h-4 w-6 rounded-[2px]">
+              <svg viewBox="0 0 60 40" className="h-4 w-6 rounded-[0.125rem]">
                 <rect fill="#012169" width="60" height="40" />
                 <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="8" />
                 <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" strokeWidth="4" />
@@ -348,7 +348,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
               }}
               aria-label="Filipino"
             >
-              <svg viewBox="0 0 60 40" className="h-4 w-6 rounded-[2px]">
+              <svg viewBox="0 0 60 40" className="h-4 w-6 rounded-[0.125rem]">
                 <rect y="0" fill="#0038A8" width="60" height="20" />
                 <rect y="20" fill="#CE1126" width="60" height="20" />
                 <polygon points="0,0 28,20 0,40" fill="#FFF" />

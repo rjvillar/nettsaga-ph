@@ -13,7 +13,7 @@ export default function ServiceStack() {
     <div className="rounded-2xl border border-dark/[0.06] bg-white p-5 sm:p-6">
       <div className="flex items-center gap-2">
         <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-        <span className="font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-dark/40">
+        <span className="font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
           Bundle // All_In_One
         </span>
       </div>
@@ -37,14 +37,14 @@ export default function ServiceStack() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-dark">{p.label}</p>
-                <p className="font-mono text-[10px] text-dark/40">{p.detail}</p>
+                <p className="font-mono text-[0.625rem] text-dark/40">{p.detail}</p>
               </div>
             </div>
           );
         })}
       </div>
 
-      <p className="mt-4 text-center font-mono text-[9px] uppercase tracking-[0.15em] text-dark/30">
+      <p className="mt-4 text-center font-mono text-[0.5625rem] uppercase tracking-[0.15em] text-dark/30">
         {t.serviceStack.footer}
       </p>
     </div>

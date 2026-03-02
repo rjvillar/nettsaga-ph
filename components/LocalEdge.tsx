@@ -10,11 +10,11 @@ export default function LocalEdge() {
     <section id="local-edge" className="bg-grain relative bg-paper py-20 sm:py-28">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[40px]">
+          <h2 className="font-heading text-2xl font-bold leading-tight tracking-tight text-dark sm:text-[2.5rem]">
             {t.localEdge.title}
             <span className="text-muted">{t.localEdge.titleMuted}</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[22px]">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate sm:text-[1.375rem]">
             {t.localEdge.subtitle}
           </p>
         </div>

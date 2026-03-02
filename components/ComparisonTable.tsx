@@ -90,9 +90,9 @@ function DesktopTable({ categories }: { categories: Category[] }) {
 
   return (
     <div className="hidden lg:block">
-      <div className="sticky top-[73px] z-20 flex rounded-t-2xl border-x border-t border-dark/[0.06] bg-paper">
-        <div className="w-[280px] shrink-0 border-b border-dark/[0.06] py-5 pl-6 pr-4">
-          <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+      <div className="sticky top-[4.5625rem] z-20 flex rounded-t-2xl border-x border-t border-dark/[0.06] bg-paper">
+        <div className="w-[17.5rem] shrink-0 border-b border-dark/[0.06] py-5 pl-6 pr-4">
+          <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-muted">
             {t.comparison.feature}
           </span>
         </div>
@@ -107,7 +107,7 @@ function DesktopTable({ categories }: { categories: Category[] }) {
               {plan}
             </span>
             {plan === "Business" && (
-              <span className="ml-2 inline-block rounded-full bg-dark px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white">
+              <span className="ml-2 inline-block rounded-full bg-dark px-2 py-0.5 text-[0.5625rem] font-semibold uppercase tracking-wide text-white">
                 {t.comparison.popular}
               </span>
             )}
@@ -118,7 +118,7 @@ function DesktopTable({ categories }: { categories: Category[] }) {
       <div className="overflow-hidden rounded-b-2xl border-x border-b border-dark/[0.06] bg-paper">
         <table className="w-full text-left" style={{ tableLayout: "fixed" }}>
           <colgroup>
-            <col style={{ width: "280px" }} />
+            <col style={{ width: "17.5rem" }} />
             <col />
             <col />
             <col />
@@ -134,7 +134,7 @@ function DesktopTable({ categories }: { categories: Category[] }) {
                   >
                     <div className="flex items-center gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                      <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/40">
+                      <span className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/40">
                         {category.techLabel}
                       </span>
                     </div>
@@ -206,7 +206,7 @@ function MobileAccordion({ categories }: { categories: Category[] }) {
             >
               <div className="overflow-hidden">
                 <div className="border-t border-dark/[0.06] px-5 pb-5 pt-4">
-                  <p className="mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-dark/30">
+                  <p className="mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-dark/30">
                     {category.techLabel}
                   </p>
                   {category.features.map((feature) => (
@@ -227,7 +227,7 @@ function MobileAccordion({ categories }: { categories: Category[] }) {
                                 : "bg-dark/[0.01]"
                             }`}
                           >
-                            <span className="text-[10px] font-medium uppercase tracking-wide text-muted">
+                            <span className="text-[0.625rem] font-medium uppercase tracking-wide text-muted">
                               {plan}
                             </span>
                             <span className="ml-auto">
