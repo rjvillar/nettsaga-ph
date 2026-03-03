@@ -13,12 +13,12 @@ export default function ContactContent() {
       <Header solid />
 
       {/* ── Hero ── */}
-      <section className="bg-grain relative bg-dark pt-28 pb-10 sm:pt-36 sm:pb-16">
+      <section className="bg-grain relative bg-dark pt-36 pb-16 sm:pb-16">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,transparent_25%,rgba(255,255,255,0.05)_45%,rgba(255,255,255,0.08)_55%,rgba(255,255,255,0.03)_70%,transparent_85%)]" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.4))]" />
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-          <h1 className="font-heading text-[2rem] font-semibold pb-1 leading-[1.2] tracking-[-0.02em] bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent sm:text-[3rem] md:text-[3.75rem]">
+          <h1 className="font-heading text-[2.75rem] font-black leading-[0.98] tracking-tight pb-1 bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent sm:text-[3rem] sm:font-semibold sm:leading-[1.2] sm:tracking-[-0.02em] md:text-[3.75rem]">
             {t.contact.title}
             {t.contact.titleMuted}
           </h1>
