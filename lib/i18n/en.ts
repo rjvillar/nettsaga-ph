@@ -348,11 +348,7 @@ const en: Dictionary = {
       },
       {
         label: "Online Store",
-        features: [
-          "Online store features",
-          "Payment setup",
-          "Booking system",
-        ],
+        features: ["Online store features", "Payment setup", "Booking system"],
       },
       {
         label: "Support",
@@ -407,29 +403,34 @@ const en: Dictionary = {
         label: "haaland-takst-boligveiledning-as.vercel.app",
         url: "https://haaland-takst-boligveiledning-as.vercel.app/",
         name: "Haaland",
-        description: "Certified property appraiser website with clean, professional design",
+        description:
+          "Certified property appraiser website with clean, professional design",
       },
       {
         label: "land-tak-og-fasade-as.vercel.app",
         url: "https://land-tak-og-fasade-as.vercel.app/",
         name: "Land Tak og Fasade",
-        description: "Modern site for a roofing and facade company showcasing their services",
+        description:
+          "Modern site for a roofing and facade company showcasing their services",
       },
       {
         label: "Food & Beverage",
         name: "Frozti",
-        description: "Vibrant frozen treats shop with playful branding and warm feel",
+        description:
+          "Vibrant frozen treats shop with playful branding and warm feel",
       },
       {
         label: "Construction",
         name: "Torsnes Bygg",
-        description: "Local carpentry and construction firm with a solid, trustworthy presence",
+        description:
+          "Local carpentry and construction firm with a solid, trustworthy presence",
       },
     ],
     cta: {
       title: "Like what you ",
       titleMuted: "see?",
-      subtitle: "Let's talk about bringing your business online with a site you'll be proud of.",
+      subtitle:
+        "Let's talk about bringing your business online with a site you'll be proud of.",
       cta: "Get in touch",
     },
   },

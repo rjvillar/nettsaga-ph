@@ -352,11 +352,7 @@ const fil: Dictionary = {
       },
       {
         label: "Online Store",
-        features: [
-          "Online store features",
-          "Payment setup",
-          "Booking system",
-        ],
+        features: ["Online store features", "Payment setup", "Booking system"],
       },
       {
         label: "Suporta",
@@ -411,29 +407,34 @@ const fil: Dictionary = {
         label: "haaland-takst-boligveiledning-as.vercel.app",
         url: "https://haaland-takst-boligveiledning-as.vercel.app/",
         name: "Haaland",
-        description: "Website ng certified property appraiser na may malinis at propesyonal na disenyo",
+        description:
+          "Website ng certified property appraiser na may malinis at propesyonal na disenyo",
       },
       {
         label: "land-tak-og-fasade-as.vercel.app",
         url: "https://land-tak-og-fasade-as.vercel.app/",
         name: "Land Tak og Fasade",
-        description: "Modernong site para sa isang roofing at facade company na nagpapakita ng mga serbisyo nila",
+        description:
+          "Modernong site para sa isang roofing at facade company na nagpapakita ng mga serbisyo nila",
       },
       {
         label: "Food & Beverage",
         name: "Frozti",
-        description: "Makulay na frozen treats shop na may masayang branding at mainit na pakiramdam",
+        description:
+          "Makulay na frozen treats shop na may masayang branding at mainit na pakiramdam",
       },
       {
         label: "Construction",
         name: "Torsnes Bygg",
-        description: "Lokal na carpentry at construction firm na may matatag at mapagkakatiwalaang presensya",
+        description:
+          "Lokal na carpentry at construction firm na may matatag at mapagkakatiwalaang presensya",
       },
     ],
     cta: {
       title: "Nagustuhan mo ba ang ",
       titleMuted: "nakita mo?",
-      subtitle: "Usap tayo kung paano namin madadala ang negosyo mo online na may site na ipagmamalaki mo.",
+      subtitle:
+        "Usap tayo kung paano namin madadala ang negosyo mo online na may site na ipagmamalaki mo.",
       cta: "Makipag-ugnayan",
     },
   },
