@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: dict.metadata.home.title,
     description: dict.metadata.home.description,
-    metadataBase: new URL("https://nettsaga.com"),
+    metadataBase: new URL("https://regendigitalsolutions.com"),
   };
 }
 

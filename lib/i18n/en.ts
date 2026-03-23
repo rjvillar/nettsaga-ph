@@ -95,7 +95,7 @@ const en: Dictionary = {
     subtitle:
       "We build with the latest tools but we understand the Philippine market. Fast, secure, and optimized for local customers.",
     altImage:
-      "Filipino professional managing his business online with Nettsaga — surrounded by performance metrics, deploy pipeline, and mobile-first indicators",
+      "Filipino professional managing his business online with Regen Digital Solutions — surrounded by performance metrics, deploy pipeline, and mobile-first indicators",
     features: [
       {
         title: "Built for speed",
@@ -181,7 +181,7 @@ const en: Dictionary = {
     items: [
       {
         q: "Do we own the website?",
-        a: "All the content on your website — text, photos, branding — is 100% yours. The platform, source code, development tools, and hosting infrastructure remain part of the Nettsaga service. Think of it as a fully managed service — we handle the technical side so you can focus on your business.",
+        a: "All the content on your website — text, photos, branding — is 100% yours. The platform, source code, development tools, and hosting infrastructure remain part of the Regen Digital Solutions service. Think of it as a fully managed service — we handle the technical side so you can focus on your business.",
       },
       {
         q: "How does payment work?",
@@ -225,7 +225,7 @@ const en: Dictionary = {
   footer: {
     quickLinks: "Quick links",
     getInTouch: "Get in touch",
-    copyright: "\u00a9 {year} Nettsaga. All rights reserved.",
+    copyright: "\u00a9 {year} Regen Digital Solutions. All rights reserved.",
     links: [
       "How it works",
       "Why us",
@@ -250,7 +250,7 @@ const en: Dictionary = {
       phoneOptional: "(optional)",
       message: "Message",
       consent:
-        "I agree to Nettsaga collecting and storing my information to respond to this inquiry. Your data will not be shared with third parties.",
+        "I agree to Regen Digital Solutions collecting and storing my information to respond to this inquiry. Your data will not be shared with third parties.",
       submit: "Send message",
       sending: "Sending...",
       successTitle: "Message sent",
@@ -271,7 +271,7 @@ const en: Dictionary = {
       title: "Every business deserves to be online. ",
       titleMuted: "We make it happen.",
       subtitle:
-        "Nettsaga helps Filipino businesses launch professional websites — fast, honest, and without the headache.",
+        "Regen Digital Solutions helps Filipino businesses launch professional websites — fast, honest, and without the headache.",
     },
     story: {
       problem: {
@@ -283,7 +283,7 @@ const en: Dictionary = {
         body: "Your customers search online first. If they can\u2019t find you, they find someone else. No website means you\u2019re invisible — and that\u2019s a problem no business can afford.",
       },
       solution: {
-        lead: "That\u2019s why we built Nettsaga.",
+        lead: "That\u2019s why we built Regen.",
         body: "Simple, honest, and fast. We build your website for free, handle all the technical stuff, and charge one flat yearly fee. No surprises, no jargon — just a real website for a real business.",
       },
     },
@@ -443,7 +443,7 @@ const en: Dictionary = {
     },
     culture: {
       title: "Why work ",
-      titleMuted: "at Nettsaga",
+      titleMuted: "at Regen",
       perks: [
         {
           title: "Remote-first",
@@ -521,7 +521,7 @@ const en: Dictionary = {
           location: "Remote \u2014 Philippines",
           department: "Sales",
           description:
-            "Be the first point of contact for potential clients. Reach out to small businesses, understand their needs, and help them see how Nettsaga can get them online.",
+            "Be the first point of contact for potential clients. Reach out to small businesses, understand their needs, and help them see how Regen can get them online.",
           requirements: [
             "Excellent communication skills in English and Filipino",
             "Experience in outbound sales or lead generation",
@@ -570,34 +570,34 @@ const en: Dictionary = {
   },
   metadata: {
     home: {
-      title: "Nettsaga \u2014 Get Your Business Online This Week",
+      title: "Regen Digital Solutions \u2014 Get Your Business Online This Week",
       description:
-        "Free website for Philippine businesses. We build it, you only pay for hosting and support. Don\u2019t like it? Don\u2019t pay. Get online fast with Nettsaga.",
+        "Free website for Philippine businesses. We build it, you only pay for hosting and support. Don\u2019t like it? Don\u2019t pay. Get online fast with Regen.",
     },
     about: {
-      title: "About \u2014 Nettsaga",
+      title: "About \u2014 Regen Digital Solutions",
       description:
-        "We help Filipino businesses get online \u2014 fast, honest, and affordable. Learn about Nettsaga and our mission to make the web accessible to every business.",
+        "We help Filipino businesses get online \u2014 fast, honest, and affordable. Learn about Regen Digital Solutions and our mission to make the web accessible to every business.",
     },
     pricing: {
-      title: "Pricing \u2014 Nettsaga",
+      title: "Pricing \u2014 Regen Digital Solutions",
       description:
         "Simple, transparent pricing. One yearly fee \u2014 everything included. Compare plans and features.",
     },
     contact: {
-      title: "Contact \u2014 Nettsaga",
+      title: "Contact \u2014 Regen Digital Solutions",
       description:
-        "Get in touch with Nettsaga. We\u2019d love to hear about your project.",
+        "Get in touch with Regen Digital Solutions. We\u2019d love to hear about your project.",
     },
     portfolio: {
-      title: "Portfolio \u2014 Nettsaga",
+      title: "Portfolio \u2014 Regen Digital Solutions",
       description:
         "See the websites we\u2019ve built for real businesses. Custom designs, fast delivery, and professional results.",
     },
     careers: {
-      title: "Careers \u2014 Nettsaga",
+      title: "Careers \u2014 Regen Digital Solutions",
       description:
-        "Join our team and help Filipino businesses get online. See open positions at Nettsaga.",
+        "Join our team and help Filipino businesses get online. See open positions at Regen Digital Solutions.",
     },
   },
 };

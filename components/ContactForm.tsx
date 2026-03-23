@@ -41,7 +41,7 @@ export default function ContactForm() {
       body.append("message", form.message);
       body.append("_captcha", "false");
 
-      await fetch("https://formsubmit.co/ajax/support@nettsaga.com", {
+      await fetch("https://formsubmit.co/ajax/contact@regendigitalsolutions.com", {
         method: "POST",
         body,
       });

@@ -1,6 +1,7 @@
 "use client";
 
 import { Mail } from "lucide-react";
+import Image from "next/image";
 import { useTranslation } from "@/lib/i18n/context";
 
 const linkHrefs = [
@@ -22,9 +23,14 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-[100rem] px-6 md:px-12 lg:px-24">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
           <div>
-            <span className="font-logo text-2xl italic font-black text-white">
-              Nettsaga
-            </span>
+            <Image
+              src="/assets/logo.png"
+              alt="Regen Digital Solutions"
+              width={140}
+              height={40}
+              className="h-14 w-auto"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
             <p className="mt-3 text-sm leading-relaxed text-white/40">
               Burgundy Corporate Tower, 252 Sen. Gil J. Puyat Ave, Makati City,
               1200 Metro Manila
@@ -56,11 +62,11 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href="mailto:support@nettsaga.com"
+                  href="mailto:contact@regendigitalsolutions.com"
                   className="inline-flex items-center gap-2 text-sm text-white/40 transition-colors hover:text-white"
                 >
                   <Mail className="h-4 w-4 stroke-[1.5]" />
-                  support@nettsaga.com
+                  contact@regendigitalsolutions.com
                 </a>
               </li>
               <li className="text-sm text-white/40">
@@ -72,7 +78,10 @@ export default function Footer() {
 
         <div className="mt-16 border-t border-white/10 pt-8 text-center">
           <p className="text-xs text-white/30">
-            {t.footer.copyright.replace("{year}", String(new Date().getFullYear()))}
+            {t.footer.copyright.replace(
+              "{year}",
+              String(new Date().getFullYear()),
+            )}
           </p>
         </div>
       </div>

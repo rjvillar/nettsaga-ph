@@ -6,7 +6,7 @@ export default function JourneyMap() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="h-full w-full"
-        aria-label="Journey map showing Nettsaga's path from Oslo to Makati"
+        aria-label="Journey map showing Regen Digital Solutions' path from Oslo to Makati"
       >
         {/* ── Curved dotted path ── */}
         <path

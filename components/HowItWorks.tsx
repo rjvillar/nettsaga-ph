@@ -6,13 +6,13 @@ import { useTranslation } from "@/lib/i18n/context";
 const stepImages = [
   {
     src: "/assets/chat-bubbles.png",
-    alt: "Chat conversation between a client and Nettsaga",
+    alt: "Chat conversation between a client and Regen Digital Solutions",
     width: 1990,
     height: 1080,
   },
   {
     src: "/assets/web-laptop.png",
-    alt: "Laptop displaying a website built by Nettsaga on a solid rock base",
+    alt: "Laptop displaying a website built by Regen Digital Solutions on a solid rock base",
     width: 1332,
     height: 1080,
   },

@@ -6,11 +6,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useTranslation } from "@/lib/i18n/context";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
-
-const collapseChars = "ettsaga".split("");
 
 const navHrefs = [
   "/#how-it-works",
@@ -24,11 +23,6 @@ const navHrefs = [
 export default function Header({ solid = false }: { solid?: boolean }) {
   const { t, locale, setLocale } = useTranslation();
   const headerRef = useRef<HTMLElement>(null);
-  const logoWrapRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLAnchorElement>(null);
-  const logoDotRef = useRef<HTMLSpanElement>(null);
-  const collapseRef = useRef<HTMLSpanElement>(null);
-  const charsRef = useRef<(HTMLSpanElement | null)[]>([]);
   const navRef = useRef<HTMLElement>(null);
   const ctaRef = useRef<HTMLAnchorElement>(null);
   const hamburgerRef = useRef<HTMLButtonElement>(null);
@@ -58,53 +52,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
 
   useGSAP(
     () => {
-      const chars = charsRef.current.filter(Boolean) as HTMLSpanElement[];
-      if (
-        !collapseRef.current ||
-        !logoWrapRef.current ||
-        !headerRef.current ||
-        chars.length === 0
-      )
-        return;
-
-      const fullWidth = logoWrapRef.current.offsetWidth;
-      gsap.set(logoWrapRef.current, { width: fullWidth });
-
-      const naturalWidth = collapseRef.current.offsetWidth;
-      gsap.set(collapseRef.current, { width: naturalWidth });
-
-      const logoTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: document.documentElement,
-          start: "50px top",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      logoTl.to(chars, {
-        opacity: 0,
-        y: 14,
-        rotateX: -90,
-        scale: 0.8,
-        filter: "blur(2px)",
-        stagger: 0.025,
-        duration: 0.35,
-        ease: "power3.inOut",
-      });
-
-      logoTl.to(
-        collapseRef.current,
-        { width: 0, duration: 0.35, ease: "power3.inOut" },
-        "<0.05",
-      );
-
-      logoTl.to(
-        logoDotRef.current,
-        { opacity: 1, duration: 0.25, ease: "power2.in" },
-        "<0.15",
-      );
-
-      if (solid) return;
+      if (!headerRef.current || solid) return;
 
       const headerTl = gsap.timeline({
         scrollTrigger: {
@@ -137,35 +85,18 @@ export default function Header({ solid = false }: { solid?: boolean }) {
         }}
       >
         <div className="mx-auto flex w-full max-w-[100rem] items-center px-6 py-4">
-          <div ref={logoWrapRef} className="flex-1 shrink-0">
+          <div className="flex-1 shrink-0">
             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a
-              ref={logoRef}
-              href="/"
-              className="font-logo text-2xl italic font-bold tracking-tight text-white select-none"
-            >
-              <span className="inline-block">N</span>
-              <span
-                ref={collapseRef}
-                className="inline-flex align-bottom"
-                style={{ perspective: "25rem" }}
-              >
-                {collapseChars.map((char, i) => (
-                  <span
-                    key={i}
-                    ref={(el) => {
-                      charsRef.current[i] = el;
-                    }}
-                    className="inline-block origin-top"
-                    style={{ willChange: "transform, opacity, filter" }}
-                  >
-                    {char}
-                  </span>
-                ))}
-              </span>
-              <span ref={logoDotRef} style={{ color: "#ffffff", opacity: 0 }}>
-                .
-              </span>
+            <a href="/" className="inline-block">
+              <Image
+                src="/assets/logo.png"
+                alt="Regen Digital Solutions"
+                width={140}
+                height={40}
+                className="h-8 w-auto"
+                style={{ filter: "brightness(0) invert(1)" }}
+                priority
+              />
             </a>
           </div>
 
@@ -288,9 +219,16 @@ export default function Header({ solid = false }: { solid?: boolean }) {
           <a
             href="/"
             onClick={() => setMobileOpen(false)}
-            className="font-logo text-2xl italic font-bold tracking-tight text-white"
+            className="inline-block"
           >
-            Nettsaga
+            <Image
+              src="/assets/logo.png"
+              alt="Regen Digital Solutions"
+              width={140}
+              height={40}
+              className="h-8 w-auto"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
           </a>
           <button
             onClick={() => setMobileOpen(false)}
@@ -316,10 +254,10 @@ export default function Header({ solid = false }: { solid?: boolean }) {
 
         <div className="flex flex-col items-center gap-4 px-6 pb-8">
           <a
-            href="mailto:support@nettsaga.com"
+            href="mailto:contact@regendigitalsolutions.com"
             className="text-sm text-white/40 transition-colors hover:text-white/70"
           >
-            support@nettsaga.com
+            contact@regendigitalsolutions.com
           </a>
 
           <div className="flex items-center gap-1 rounded-lg border border-white/[0.15] p-1">

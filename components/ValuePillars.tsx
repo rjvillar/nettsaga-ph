@@ -26,7 +26,7 @@ export default function ValuePillars() {
             <div className="pointer-events-none absolute -bottom-28 right-0 hidden w-[67%] lg:block">
               <Image
                 src="/assets/mockup-transparent.png"
-                alt="Laptop displaying a website built by Nettsaga"
+                alt="Laptop displaying a website built by Regen Digital Solutions"
                 width={1920}
                 height={1080}
                 className="w-full object-contain object-bottom"
@@ -95,7 +95,7 @@ export default function ValuePillars() {
             <div className="pt-6">
               <Image
                 src="/assets/person-message.png"
-                alt="Nettsaga support team member responding to a client message"
+                alt="Regen Digital Solutions support team member responding to a client message"
                 width={1866}
                 height={1000}
                 className="w-full object-contain object-bottom"

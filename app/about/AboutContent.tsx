@@ -58,7 +58,7 @@ export default function AboutContent() {
         <div className="relative z-10 mx-auto mt-12 w-full max-w-[100rem] px-6 md:px-12 lg:px-24 pb-6 sm:mt-16 sm:pb-10">
           <Image
             src="/assets/about-hero.jpg"
-            alt="Nettsaga website mockup — modern, mobile-first design built for Filipino businesses"
+            alt="Regen Digital Solutions website mockup — modern, mobile-first design built for Filipino businesses"
             width={2060}
             height={1080}
             className="w-full rounded-2xl object-contain"

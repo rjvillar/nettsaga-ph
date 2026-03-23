@@ -98,7 +98,7 @@ const fil: Dictionary = {
     subtitle:
       "Gumagamit kami ng latest tools, pero kabisado namin ang market sa Pilipinas. Mabilis, ligtas, at optimized para sa local customers.",
     altImage:
-      "Pilipinong propesyonal na namamahala ng negosyo online gamit ang Nettsaga — napapaligiran ng performance metrics, deploy pipeline, at mobile-first indicators",
+      "Pilipinong propesyonal na namamahala ng negosyo online gamit ang Regen Digital Solutions — napapaligiran ng performance metrics, deploy pipeline, at mobile-first indicators",
     features: [
       {
         title: "Gawa para sa bilis",
@@ -185,7 +185,7 @@ const fil: Dictionary = {
     items: [
       {
         q: "Akin ba ang website?",
-        a: "Lahat ng content sa website mo — text, photos, branding — 100% sa\u2019yo. Ang platform, source code, development tools, at hosting infrastructure ay nananatiling bahagi ng serbisyo ng Nettsaga. Isipin mo itong isang fully managed service — kami ang bahala sa technical side para makapag-focus ka sa negosyo mo.",
+        a: "Lahat ng content sa website mo — text, photos, branding — 100% sa\u2019yo. Ang platform, source code, development tools, at hosting infrastructure ay nananatiling bahagi ng serbisyo ng Regen Digital Solutions. Isipin mo itong isang fully managed service — kami ang bahala sa technical side para makapag-focus ka sa negosyo mo.",
       },
       {
         q: "Paano ang bayad?",
@@ -229,7 +229,7 @@ const fil: Dictionary = {
   footer: {
     quickLinks: "Quick links",
     getInTouch: "Makipag-ugnayan",
-    copyright: "\u00a9 {year} Nettsaga. Lahat ng karapatan ay nakalaan.",
+    copyright: "\u00a9 {year} Regen Digital Solutions. Lahat ng karapatan ay nakalaan.",
     links: [
       "Paano gumagana",
       "Bakit kami",
@@ -254,7 +254,7 @@ const fil: Dictionary = {
       phoneOptional: "(opsyonal)",
       message: "Mensahe",
       consent:
-        "Sumasang-ayon akong kolektahin at i-store ng Nettsaga ang impormasyon ko para masagot ang inquiry na ito. Hindi namin ibabahagi ang data mo sa third parties.",
+        "Sumasang-ayon akong kolektahin at i-store ng Regen Digital Solutions ang impormasyon ko para masagot ang inquiry na ito. Hindi namin ibabahagi ang data mo sa third parties.",
       submit: "Ipadala ang mensahe",
       sending: "Ipinapadala...",
       successTitle: "Naipadala na ang mensahe",
@@ -275,7 +275,7 @@ const fil: Dictionary = {
       title: "Bawat negosyo ay dapat na nasa online. ",
       titleMuted: "Gagawin namin ito.",
       subtitle:
-        "Tinutulungan ng Nettsaga ang mga negosyong Pilipino na magkaroon ng propesyonal na website — mabilis, tapat, at walang sakit ng ulo.",
+        "Tinutulungan ng Regen Digital Solutions ang mga negosyong Pilipino na magkaroon ng propesyonal na website — mabilis, tapat, at walang sakit ng ulo.",
     },
     story: {
       problem: {
@@ -287,7 +287,7 @@ const fil: Dictionary = {
         body: "Online muna naghahanap ang mga customer mo. Kung hindi ka nila mahanap, iba ang hahanapin nila. Walang website ibig sabihin invisible ka — at problema \u2019yon na walang negosyong kayang balewalain.",
       },
       solution: {
-        lead: "Kaya ginawa namin ang Nettsaga.",
+        lead: "Kaya ginawa namin ang Regen.",
         body: "Simple, tapat, at mabilis. Ginagawa namin ang website mo nang libre, kami na bahala sa lahat ng teknikal, at iisang flat na taunang bayad lang. Walang sorpresa, walang jargon — totoong website para sa totoong negosyo.",
       },
     },
@@ -447,7 +447,7 @@ const fil: Dictionary = {
     },
     culture: {
       title: "Bakit mag-work ",
-      titleMuted: "sa Nettsaga",
+      titleMuted: "sa Regen",
       perks: [
         {
           title: "Remote-first",
@@ -525,7 +525,7 @@ const fil: Dictionary = {
           location: "Remote \u2014 Pilipinas",
           department: "Sales",
           description:
-            "Maging unang point of contact para sa mga potential clients. Tulungan silang makita kung paano sila matutulungan ng Nettsaga.",
+            "Maging unang point of contact para sa mga potential clients. Tulungan silang makita kung paano sila matutulungan ng Regen.",
           requirements: [
             "Mahusay na communication skills sa English at Filipino",
             "Karanasan sa outbound sales o lead generation",
@@ -574,34 +574,34 @@ const fil: Dictionary = {
   },
   metadata: {
     home: {
-      title: "Nettsaga — I-online ang Iyong Negosyo Ngayong Linggo",
+      title: "Regen Digital Solutions — I-online ang Iyong Negosyo Ngayong Linggo",
       description:
-        "Libreng website para sa mga negosyong Pilipino. Kami ang gagawa, ang bayad mo lang ay para sa hosting at support. Hindi mo gusto? Hindi ka magbabayad. Mabilis kang makakapag-online kasama ang Nettsaga.",
+        "Libreng website para sa mga negosyong Pilipino. Kami ang gagawa, ang bayad mo lang ay para sa hosting at support. Hindi mo gusto? Hindi ka magbabayad. Mabilis kang makakapag-online kasama ang Regen.",
     },
     about: {
-      title: "Tungkol sa Amin — Nettsaga",
+      title: "Tungkol sa Amin — Regen Digital Solutions",
       description:
-        "Tinutulungan namin ang mga negosyong Pilipino na mag-online — mabilis, tapat, at abot-kaya. Alamin ang tungkol sa Nettsaga at ang misyon naming gawing accessible ang web sa bawat negosyo.",
+        "Tinutulungan namin ang mga negosyong Pilipino na mag-online — mabilis, tapat, at abot-kaya. Alamin ang tungkol sa Regen Digital Solutions at ang misyon naming gawing accessible ang web sa bawat negosyo.",
     },
     pricing: {
-      title: "Presyo — Nettsaga",
+      title: "Presyo — Regen Digital Solutions",
       description:
         "Simple at transparent na presyo. Isang taunang bayad—kasama na lahat. Ihambing ang plans at features.",
     },
     contact: {
-      title: "Makipag-ugnayan — Nettsaga",
+      title: "Makipag-ugnayan — Regen Digital Solutions",
       description:
-        "Makipag-ugnayan sa Nettsaga. Gusto naming marinig ang tungkol sa iyong proyekto.",
+        "Makipag-ugnayan sa Regen Digital Solutions. Gusto naming marinig ang tungkol sa iyong proyekto.",
     },
     portfolio: {
-      title: "Portfolio — Nettsaga",
+      title: "Portfolio — Regen Digital Solutions",
       description:
         "Tingnan ang mga website na ginawa namin para sa totoong mga negosyo. Custom na disenyo, mabilis na delivery, at propesyonal na resulta.",
     },
     careers: {
-      title: "Careers — Nettsaga",
+      title: "Careers — Regen Digital Solutions",
       description:
-        "Sumali sa aming team at tulungan ang mga negosyong Pilipino na mag-online. Tingnan ang mga bukas na posisyon sa Nettsaga.",
+        "Sumali sa aming team at tulungan ang mga negosyong Pilipino na mag-online. Tingnan ang mga bukas na posisyon sa Regen Digital Solutions.",
     },
   },
 };
